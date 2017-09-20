@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <language name="Norsk" rtl="0">
- <app key="core" version="101114">
+ <app key="core" version="102020">
   <word key="__app_core" js="0">System</word>
   <word key="__indefart_personal_conversation" js="0">en personlig samtale</word>
   <word key="__indefart_personal_conversation_message" js="0">en melding i en personlig samtale</word>
@@ -55,8 +55,6 @@
   <word key="menu_manager_access" js="0">Hvem kan se menypunktet?</word>
   <word key="menu_custom_menu" js="0">Nedtrekksmeny</word>
   <word key="menu_custom_menu_title" js="0">Tittel</word>
-  <word key="menu_item_1" js="0">Utforsk</word>
-  <word key="menu_item_2" js="0">Aktivitet</word>
   <word key="save_menu_item" js="0">Lagre menypunkt</word>
   <word key="menu_manager_preview_note" js="0">Merk: mange menypunkter kan bety at noen blir samlet opp i et &quot;Mer&quot;-menypunkt for å få plass på brukerens skjerm</word>
   <word key="menu_item_type" js="0">Menypunkt-type</word>
@@ -368,7 +366,7 @@
   <word key="editor_code_linenumbers" js="0">Linjenummer</word>
   <word key="editor_pasted_with_formatting" js="0">Du har limt inn tekst med formatering</word>
   <word key="editor_keep_formatting" js="0">Behold formatering</word>
-  <word key="editor_remove_formatting" js="0">Fjern formatering</word>
+  <word key="editor_remove_formatting" js="0">Lim inn uten formatering i stedet</word>
   <word key="editor_restore_formatting" js="0">Gjenopprett formatering</word>
   <word key="editor_keep_no_formatting" js="0">Ikke behold formatering</word>
   <word key="editor_pasted_embed_link" js="0">Lenken din har blitt bygget inn på siden automatisk</word>
@@ -381,9 +379,9 @@
   <word key="editor_settings_general" js="0">Generelt</word>
   <word key="editor_settings_advanced" js="0">Avansert</word>
   <word key="editor_paste_behaviour" js="0">Lim inn-oppførsel</word>
-  <word key="editor_paste_behaviour_rich" js="0">Behold formatering, men la brukeren bestemme at de vil fjerne den</word>
-  <word key="editor_paste_behaviour_force" js="0">Fjern formatering og ikke la brukeren bestemme selv</word>
-  <word key="editor_paste_behaviour_desc" js="0">Formatering inkluderer at tekst blir markert som fet, lenker blir tatt med osv. som kan følge med i det brukeren limer inn.</word>
+  <word key="editor_paste_behaviour_rich" js="0">Behold formatering, men la brukeren få bestemme at de vil fjerne den</word>
+  <word key="editor_paste_behaviour_force" js="0">Alltid lim inn som ren tekst</word>
+  <word key="editor_paste_behaviour_desc" js="0"><![CDATA[Formatering inkluderer at tekst blir markert som fet, lenker, listeformatering følger med osv. i det brukeren limer inn. Brukere vil kun være i stand til å fjerne formateringen ved å bruke knappen for å fjerne formatering <a href='{internal.app=core&module=editor&controller=toolbar}' target='_blank'>dersom denne er aktivert i verktøylinjen</a>.]]></word>
   <word key="editor_paragraph_padding" js="0">Enter-oppføresel</word>
   <word key="editor_paragraph_padding_on" js="0">Start ny paragraf</word>
   <word key="editor_paragraph_padding_off" js="0">Gå til neste linje</word>
@@ -750,15 +748,15 @@
   <word key="years" js="0">år</word>
   <word key="f_seconds" js="0">{# [1:sekund][?:sekunder]}</word>
   <word key="f_minutes" js="0">{# [1:minutt][?:minutter]}</word>
-  <word key="f_minutes_short" js="0">%d min</word>
+  <word key="f_minutes_short" js="0">{# [1:min][?:min]}</word>
   <word key="f_hours" js="0">{# [1:time][?:timer]}</word>
-  <word key="f_hours_short" js="0">%d t</word>
+  <word key="f_hours_short" js="0">{# [1:t][?:t]}</word>
   <word key="f_days" js="0">{!#[1:dag][?:# dager]}</word>
-  <word key="f_days_short" js="0">%d dg</word>
+  <word key="f_days_short" js="0">{# [1:dg][?:dg]}</word>
   <word key="f_weeks" js="0">{!#[1:uke][?:# uker]}</word>
   <word key="f_months" js="0">{!#[1:måned][?:# måneder]}</word>
   <word key="f_years" js="0">{!#[1:år][?:# år]}</word>
-  <word key="f_years_short" js="0">%d y</word>
+  <word key="f_years_short" js="0">{# [1:år][?:år]}</word>
   <word key="less_than_a_minute" js="0">Mindre enn et minutt</word>
   <word key="always" js="0">Alltid</word>
   <word key="forever" js="0">Alltid</word>
@@ -3133,7 +3131,7 @@ Det anbefales at du <strong>ikke</strong> aktiverer dette, eller at det kun gis 
   <word key="siteprofilelink_slack" js="0">Slack</word>
   <word key="siteprofilelink_xing" js="0">Xing</word>
   <word key="siteprofilelink_weibo" js="0">Weibo</word>
-  <word key="siteprofilelink_vk" js="0">vk.com</word>
+  <word key="siteprofilelink_vk" js="0">VKontakte</word>
   <word key="site_social_profiles" js="0">Sosiale profiler</word>
   <word key="menutab__core_icon" js="0">cogs</word>
   <word key="menutab__members_icon" js="0">user</word>
@@ -3901,7 +3899,7 @@ Det anbefales at du <strong>ikke</strong> aktiverer dette, eller at det kun gis 
   <word key="themesetting_widget_font" js="0">Skrifttype i tittellinje for widgets</word>
   <word key="themesetting_ajax_pagination" js="0">Bruk ajax-sidenavigering?</word>
   <word key="themesetting_tabs_background" js="0">Bakgrunn for fane-område</word>
-  <word key="themesetting_main_nav" js="0">App/søkelinje</word>
+  <word key="themesetting_main_nav" js="0">Bakgrunnsfarge i app/søkelinje</word>
   <word key="themesetting_main_nav_font" js="0">Skrifttype i hovedmenylinjen</word>
   <word key="themesetting_main_nav_active" js="0">Sekundær menylinje</word>
   <word key="themesetting_main_nav_active_font" js="0">Skrifttype i sekundær menylinje</word>
@@ -6251,7 +6249,7 @@ For å støtte dette må du <a href='{internal.app=core&module=promotion&control
   <word key="replog_rate_comment_gave_no_recipient" js="0"><![CDATA[%s <strong>ga</strong> poeng i]]></word>
   <word key="replog_rate_comment_gave_no_recipient_no_in" js="0"><![CDATA[%s <strong>reagerte</strong>]]></word>
   <word key="replog_rate_item_gave_no_recipient" js="0"><![CDATA[%s <strong>ga</strong> poeng for %s,]]></word>
-  <word key="replog_rate_item_gave_no_recipient_no_in" js="0"><![CDATA[%s <strong>fikk en reaksjon</strong> for %s]]></word>
+  <word key="replog_rate_item_gave_no_recipient_no_in" js="0"><![CDATA[%s <strong>ga en reaksjon</strong> for %s]]></word>
   <word key="replog_like_item_no_recipient" js="0">%s likte %s,</word>
   <word key="replog_like_item_no_recipient_no_in" js="0">%s likte %s</word>
   <word key="replog_like_comment_no_recipient" js="0"><![CDATA[%s likte <a href='%s'>%s</a> i]]></word>
@@ -7072,7 +7070,7 @@ For å støtte dette må du <a href='{internal.app=core&module=promotion&control
   <word key="menu__core_settings_mfa" js="0">To-trinns-bekreftelse</word>
   <word key="mfa_handlers" js="0">Leverandører</word>
   <word key="mfa_settings" js="0">Innstillinger</word>
-  <word key="mfa_blurb" js="0"><![CDATA[To-trinns-bekreftelse lar medlemmer av siden din sikre kontoene sine gjennom et ekstra lag med sikkerhet, i tillegg til brukernavn og passord. Ulike <strong>leverandører</strong> tilbyr forskjellige måter å sikre kontoen på.]]></word>
+  <word key="mfa_blurb" js="0"><![CDATA[To-trinns-bekreftelse lar medlemmer av siden din sikre kontoene sine gjennom et ekstra lag med sikkerhet, i tillegg til brukernavn og passord. Ulike <strong>leverandører</strong> tilbyr forskjellige måter å sikre kontoen på. Brukere vil ikke kunne sikre seg gjennom noen to-trinns-bekreftelse dersom ikke minst en av disse måtene er aktivert]]></word>
   <word key="mfa_google_title" js="0">Google Authenticator</word>
   <word key="mfa_google_desc" js="0">Et gratis system som vil vise en kode i en app på brukerens smarttelefon, som de blir bedt om å skrive inn.</word>
   <word key="mfa_google_desc_user" js="0">Du må installere Google Authenticator-appen på smarttelefonen din. Vi sender deg en kode som du skal fylle inn når vi har behov for å verifisere deg.</word>
@@ -7659,7 +7657,7 @@ For å støtte dette må du <a href='{internal.app=core&module=promotion&control
   <word key="club_whats_new" js="0">Dette er nytt i klubben</word>
   <word key="clubs_custom_fields" js="0">Egne klubbfelter</word>
   <word key="editor__core_Clubs" js="0">Klubber</word>
-  <word key="filestorage__core_Clubs" js="0">Klubbilder og tilpassede felt</word>
+  <word key="filestorage__core_Clubs" js="0">Klubb-bilder</word>
   <word key="club_filter_type" js="0">Klubbtype</word>
   <word key="f_filterable" js="0">Tillat filtrering?</word>
   <word key="club_member" js="0">Du er med i denne klubben</word>
@@ -8327,8 +8325,30 @@ For å støtte dette må du <a href='{internal.app=core&module=promotion&control
   <word key="imageProxyRebuildNo" js="1">Nei</word>
   <word key="acplogs__members_language_reset" js="0">Endret alle medlemmers språk til %s</word>
   <word key="today" js="0">I dag</word>
+  <word key="log_type_title_group_promotion_o" js="0">Gruppepromotering (Sekundærgrupper)</word>
+  <word key="editor_paste_behaviour_rich_desc" js="0">Når rik tekst limes inn vil en statusbar dukke opp i bunn av tekstverktøyet med en knapp for å konvertere innholdet til ren tekst. Brukere kan også lime inn som ren tekst ved å benytte Ctrl + Shift + V i Google Chrome på Windows, eller ⌥⇧⌘V i alle nettlesere på Mac.</word>
+  <word key="mod_error_invalid_action" js="0">Det oppsto en feil med å gjennomføre denne handlingen</word>
+  <word key="mod_error_invalid_action_admin" js="0">Handlingen du forsøkte er ikke en gyldig handling</word>
+  <word key="promote_group_secondary_desc" js="0">Merk at når du legger til sekundærgruppe vil promoterings-innstillingen for ekskludering bli ignorert med sekundærgrupper for å kunne la medlemmer bli promotert igjen</word>
+  <word key="timezone__Europe/Saratov" js="0">Saratov</word>
+  <word key="stats_include_hidden_content" js="0">Telleren som vises her inkluderer både synlig og skjult innhold.</word>
+  <word key="promote_twitter_setup_post" js="0">Feil under oppsett av Twitter</word>
+  <word key="promote_twitter_setup_post_desc" js="0">Twitter-applikasjonen har kun leserettigheter, vennligst endre Twitter-applikasjonen til å ha både lese og skrive-rettigheter.</word>
+  <word key="r__fields" js="0">Ekstrafelt</word>
+  <word key="r__fields_manage" js="0">Kan se ekstra felter? </word>
+  <word key="r__fields_add" js="0">Kan opprette ekstra felter?</word>
+  <word key="r__fields_edit" js="0">Kan endre ekstra felter?</word>
+  <word key="r__fields_delete" js="0">Kan slette ekstra felter? </word>
+  <word key="menu_item_1" js="0">Utforsk</word>
+  <word key="menu_item_2" js="0">Aktivitet</word>
+  <word key="unhidden" js="0">Synlig</word>
+  <word key="cannot_react" js="0">Du kan ikke reagere på dette</word>
+  <word key="dashboard_tasks_cron_broken_desc_cic" js="0"><![CDATA[Ditt nettsamfunn er satt opp til å <a href='{internal.app=core&module=settings&controller=advanced&tab=settings&searchResult=task_use_cron}'>kjøre rutineoppgaver med cron</a>, men det ser ikke ut som dette kjører. Vennligst kjør <a href='{internal.app=core&module=support&controller=support}'>verktøyet for teknisk støtte</a> og send inn en melding for teknisk kundestøtte hvis dette ikke løser problemet. ]]></word>
+  <word key="utf8mb4_converter_cic_explain" js="0"><![CDATA[Databasen din er for øyeblikket konfigurert til å bruke single-byte UTF-8 enkoding. Noen ikke-vanlige symboler (som musikksymboler, historiske symboler og emojis) krever 4-byte UTF-8 enkoding. Hvis du ønsker at brukere skal kunne poste disse symbolene må databasen din konverteres.<br><br>Siden 4-byte UTF-8 enkoding er en superversjon av single-byte UTF-8 enkoding kan dette gjøres uten tap av data. Det kan derimot være en intensiv prosess for databasen din, derfor anbefales det at du <strong>kun bruker dette verktøyet under lav-trafikk-perioder</strong>.<br><br><strong>Denne oppgaven kan ikke stanses når den er satt i gang.</strong>]]></word>
+  <word key="filestorage__core_ClubField" js="0">Tilpassede/egne felt for klubber</word>
+  <word key="view_all" js="0">Vis alle</word>
  </app>
- <app key="forums" version="101114">
+ <app key="forums" version="102020">
   <word key="__app_forums" js="0">Forum</word>
   <word key="frontnavigation_forums" js="0">Forum</word>
   <word key="__indefart_post" js="0">et innlegg i et emne</word>
@@ -8924,7 +8944,7 @@ Arkiverte tråder kan ikke bli skrevet i eller redigert. Du kan hente tråder ti
   <word key="topicsFromXForums" js="1">Viser tråder fra {# [1:kategori][?:kategorier]}</word>
   <word key="markForumAsReadConfirm" js="1">Er du sikker på at du vil markere alle trådene i forumet som lest?</word>
  </app>
- <app key="gallery" version="101114">
+ <app key="gallery" version="102020">
   <word key="__app_gallery" js="0">Galleri</word>
   <word key="frontnavigation_gallery" js="0">Galleri</word>
   <word key="gallery_title" js="0">Galleri</word>
@@ -9642,8 +9662,10 @@ Dette kan være nyttig dersom du ønsker å kopiere bildedetaljene til andre bil
   <word key="images_without_data" js="1">Du har ikke lagt inn noen informasjon for {{count}}. Er du sikker på at du vil fortsette?</word>
   <word key="images_without_data_desc" js="1">Du kan redigere bildene senere for å oppdatere dem.</word>
   <word key="set_as_photo_confirm" js="1">Er du sikker på at du vil oppdatere ditt profilbilde?</word>
+  <word key="album_user_own_activity_item" js="0">%s la til bilder til %s i</word>
+  <word key="gallery_images_no_more" js="0">Du kan ikke laste opp flere bilder til dette albumet.</word>
  </app>
- <app key="downloads" version="101114">
+ <app key="downloads" version="102020">
   <word key="__app_downloads" js="0">Nedlastninger</word>
   <word key="frontnavigation_downloads" js="0">Nedlastninger</word>
   <word key="__indefart_downloads_file_comment" js="0">en kommentar på en fil</word>
@@ -10150,7 +10172,7 @@ Dette kan være nyttig dersom du ønsker å kopiere bildedetaljene til andre bil
   <word key="makePrimaryScreenshot" js="1">Gjør dette til hovedbildet</word>
   <word key="removeScreenshot" js="1">Fjern bildet</word>
  </app>
- <app key="cms" version="101114">
+ <app key="cms" version="102020">
   <word key="__app_cms" js="0">Sider</word>
   <word key="menutab__cms" js="0">Sider</word>
   <word key="menutab__cms_icon" js="0">book</word>
@@ -10470,7 +10492,7 @@ Dette kan være nyttig dersom du ønsker å kopiere bildedetaljene til andre bil
   <word key="cms_error_page_code" js="0">Feilkode</word>
   <word key="cms_articles_homepage_form" js="0">Hjemmesidevalg</word>
   <word key="cms_move_to_root" js="0">Flytt sider til rot-nivået (ingen mappe)</word>
-  <word key="cms_move_pages" js="0">Flytt sider til</word>
+  <word key="cms_move_pages" js="0">Flytt sider og mapper til</word>
   <word key="menu_content_page" js="0">Side</word>
   <word key="content_page_form_tab__menu" js="0">Meny</word>
   <word key="page_add_to_menu" js="0">Legg til i meny</word>
@@ -11106,8 +11128,11 @@ Dette kan være nyttig dersom du ønsker å kopiere bildedetaljene til andre bil
   <word key="mediaUploadedCount" js="1">{!# [1:En fil ble][?:# filer ble]} lagt til i mappen</word>
   <word key="field_upload_thumb" js="0">Miniatyrbilde</word>
   <word key="field_upload_thumb_none" js="0">Ikke opprett miniatyrbilder</word>
+  <word key="template_reserved_word" js="0">Malnavnet kan ikke være ett av disse: %s</word>
+  <word key="folder" js="0">Mappe</word>
+  <word key="copy_comments_assoc_desc" js="0">Å sette dette til &quot;Ja&quot; vil kople den nye %s med den eksisterende tråden, som gjør at eksisterende innlegg blir behandlet som kommentarer på %s</word>
  </app>
- <app key="blog" version="101114">
+ <app key="blog" version="102020">
   <word key="__app_blog" js="0">Blogger</word>
   <word key="frontnavigation_blogs" js="0">Blogger</word>
   <word key="__indefart_blog_entry_comment" js="0">en kommentar på blogginnlegg</word>
@@ -11364,7 +11389,7 @@ Dette kan være nyttig dersom du ønsker å kopiere bildedetaljene til andre bil
   <word key="blog_bm_filters" js="0">Blogg</word>
   <word key="mf_has_blog" js="0">Brukeren har en blogg?</word>
  </app>
- <app key="calendar" version="101114">
+ <app key="calendar" version="102020">
   <word key="__app_calendar" js="0">Kalender</word>
   <word key="frontnavigation_calendar" js="0">Kalender</word>
   <word key="__indefart_calendar_event_comment" js="0">en kommentar til en kalenderhendelse</word>
@@ -11835,8 +11860,9 @@ Dette kan være nyttig dersom du ønsker å kopiere bildedetaljene til andre bil
   <word key="select_time" js="1">(velg tid)</word>
   <word key="event_reminder_removed" js="1">Påminnelse fjernet</word>
   <word key="event_reminder_added" js="1">Påminnelse lagret</word>
+  <word key="event_venue_name" js="0">Arrangementssted</word>
  </app>
- <app key="convert" version="101114">
+ <app key="convert" version="102020">
   <word key="__app_convert" js="0">Migreringsverktøy</word>
   <word key="menu__convert_manage" js="0">Migreringer</word>
   <word key="menu__convert_manage_manage_start" js="0">Start ny migrering</word>
@@ -12151,5 +12177,16 @@ Hvis nei: svaret dems vil ikke bli konvertert.</word>
   <word key="r__convert_manage" js="0">Kan kjøre migreringer</word>
   <word key="r__create" js="0">Lage migreringer</word>
   <word key="r__create_manage" js="0">Kan lage migreringer</word>
+  <word key="removing_data" js="0">Fjerner konverterte data</word>
+  <word key="convert_reputation_levels" js="0">Omdømmenivåer</word>
+  <word key="convert_moderators" js="0">Moderatorer</word>
+  <word key="queue_recounting_club_members" js="0">Omtelling av klubbmedlemmer</word>
+  <word key="convert_invision_mismatch" js="0"><![CDATA[Begge Invision Community-installasjonene dine <strong>må</strong> bruke samme versjon, vennligst oppdater dem til nyeste versjon.]]></word>
+  <word key="convert_invision_upload_path" js="0">Dette er vanligvis: /sti/til/ips4/uploads</word>
+  <word key="convert_invision_upload_input" js="0">Opplastningssti</word>
+  <word key="convert_invision_upload_input_desc" js="0">Din kildeinstallasjon av Invision Community må ha alle filene lagret i den ordinære /uploads-mappen</word>
+  <word key="convert_reactions" js="0">Reaksjoner</word>
+  <word key="convert_forums_rss_imports" js="0">RSS-strømmer</word>
+  <word key="convert_forums_rss_imported" js="0">Importerte RSS-innhold</word>
  </app>
 </language>
