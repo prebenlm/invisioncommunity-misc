@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<language name="Norsk" rtl="0" author_name="Preben Liland Madsen / TSP" author_url="" version="1.5.4" long_version="15040" update_check="">
+<language name="Norsk" rtl="0" author_name="Preben Liland Madsen / TSP" author_url="" version="1.6.7" long_version="16070" update_check="">
  <app key="core" version="">
   <word key="__app_core" js="0">System</word>
   <word key="__indefart_personal_conversation" js="0">en personlig samtale</word>
@@ -613,11 +613,10 @@
   <word key="request_password" js="0">Be om nytt passord</word>
   <word key="forgotten_password" js="0">Glemt passord?</word>
   <word key="no_validation_key" js="0">Du har ingen aktive valideringsforespørsler om glemt passord</word>
-  <word key="lost_pass_confirm" js="0">Forespørselen om nullstilling av passord ble sendt. Du vil om kort tid motta en e-post med instrukser. Dobbelsjekk i din søppel- eller spammapper dersom du ikke har fått den etter en stund.</word>
+  <word key="lost_pass_confirm" js="0">Hvis vi finner en konto med den angitte e-postadressen vil du om kort tid motta en e-post med instrukser. Dobbelsjekk i din søppel- eller spammapper dersom du ikke har fått den i løpet av noen minutter. Hvis du etter en stund fremdeles ikke har fått noe må du dobbelsjekke at du har angitt riktig e-postadresse og at du har en konto hos oss med den e-postadressen før du prøver igjen.</word>
   <word key="lost_pass_too_soon" js="0">Du har nylig sendt inn en forespørsel om å nullstille passordet ditt. Vennligst sjekk e-posten din i løpet av de neste minuttene inkludert eventuelle søppelpost-mapper eller andre filtreringsmapper du eventuelt har.</word>
   <word key="reset_pass_instructions" js="0">Fyll inn ditt nye passord</word>
   <word key="password_reset" js="0">Nullstill passord</word>
-  <word key="lost_pass_no_email" js="0">Vi fant ikke noe medlem med den e-postadressen. Sjekk at du har fylt inn riktig, om du kan ha brukt en annen e-postadresse og om du forsøker logge inn på riktig side.</word>
   <word key="lost_pass_not_possible" js="0">Vi kan ikke tilbakestille passordet på din konto. Vennligst kontakt oss for assistanse.</word>
   <word key="offline" js="0">Stengt</word>
   <word key="offline_unavailable" js="0">%s er for øyeblikket utilgjengelig</word>
@@ -725,7 +724,7 @@
   <word key="switch_to_account" js="0">Bytt tilbake til %s</word>
   <word key="site" js="0">Side</word>
   <word key="acp_version_number" js="0">v%s</word>
-  <word key="acp_version_number_raw" js="0">v%s</word>
+  <word key="acp_version_number_raw" js="0">Versjon %s</word>
   <word key="redirecting" js="0">Videresender...</word>
   <word key="redirecting_wait" js="0">Vennligst vent mens vi videresender deg...</word>
   <word key="rebuilding" js="0">Bygger om...</word>
@@ -1051,7 +1050,7 @@ Hvis siden din sjelden har mange aktive gjester kan det ta flere ressurser å ha
   <word key="collapse" js="0">Fall sammen</word>
   <word key="ascending" js="0">Stigende (A-Å)</word>
   <word key="descending" js="0">Synkende (Å-A)</word>
-  <word key="add_ignore" js="0">Ignorer medlem</word>
+  <word key="add_ignore" js="0">Ignorer</word>
   <word key="find_content" js="0">Finn innhold</word>
   <word key="follow" js="0">Følg</word>
   <word key="update_follow" js="0">Oppdater preferanser</word>
@@ -1177,9 +1176,9 @@ Hvis siden din sjelden har mange aktive gjester kan det ta flere ressurser å ha
   <word key="invalid_guestgroup_admin" js="0">Innstillingen for gjestegrupper er ugyldig. Vennligst sjekk filen conf_global.php og kontroller at gruppe-id er riktig.</word>
   <word key="demo_mode_function_blocked" js="0">Funksjonen er ikke tilgjengelig i demo-modus.</word>
   <word key="app_cannot_be_default" js="0">Denne applikasjonen kan ikke bli satt som standard.</word>
-  <word key="login_err_no_account" js="0">Brukernavn eller passord var feil. Forsikre deg om at det er skrevet riktig (kontroller at caps lock er av).</word>
-  <word key="login_err_bad_password" js="0">Brukernavn eller passord var feil. Forsikre deg om at det er skrevet riktig (kontroller at caps lock er av).</word>
-  <word key="login_bad_username_or_password" js="0">Brukernavn eller passord var feil. Forsikre deg om at det er skrevet riktig (kontroller at caps lock er av).</word>
+  <word key="login_err_no_account" js="0">{!#[1:Brukernavn eller passord][2:E-postadresse eller passord][3:Visningsnavn, e-postadresse eller passord]} var feil. Vennligst prøv igjen (forsikre deg om at caps lock er av).</word>
+  <word key="login_err_bad_password" js="0">{!#[1:Brukernavn eller passord][2:E-postadresse eller passord][3:Visningsnavn, e-postadresse eller passord]} var feil. Vennligst prøv igjen (forsikre deg om at caps lock er av).</word>
+  <word key="login_bad_username_or_password" js="0">{!#[1:Brukernavn eller passord][2:E-postadresse eller passord][3:Visningsnavn, e-postadresse eller passord]} var feil. Vennligst prøv igjen (forsikre deg om at caps lock er av).</word>
   <word key="login_err_locked_unlock" js="0">Din konto har blitt låst. Prøv igjen om {# [1:minutt][?:minutter]}.</word>
   <word key="login_err_locked_nounlock" js="0">Din konto har blitt låst. Prøv igjen senere.</word>
   <word key="sign_in_with_these" js="0">Eller logg inn med en av disse tjenestene</word>
@@ -1590,8 +1589,8 @@ Hvis siden din sjelden har mange aktive gjester kan det ta flere ressurser å ha
   <word key="app_enabled" js="0">Applikasjonen er aktiv</word>
   <word key="app_enabled_desc" js="0">Du kan kontrollere hvilke grupper som har tilgang til ulike deler av applikasjonen ved å endre rettighetene i modulene.</word>
   <word key="app_enabled_desc_no_writes" js="0">Du kan ikke endre denne innstillingen, men du kan kontrollere hvem som har tilgang til applikasjonen ved å endre rettighetene på modulen i applikasjonen. Kontakt din systemadministrator for mer informasjon.</word>
-  <word key="app_hide_tab" js="0">Vis i meny?</word>
-  <word key="app_hide_tab_desc" js="0">De som har tilgang kan fortsatt besøke applikasjonen ved å gå til URL-en.</word>
+  <word key="app_hide_tab" js="0">Vis applikasjon?</word>
+  <word key="app_hide_tab_desc" js="0">Hvis deaktivert vil applikasjonen skjules i noen områder. Som f.eks. når man lager kunngjøringer.</word>
   <word key="app_website" js="0">Utvikler sin nettside</word>
   <word key="app_update_check" js="0">URL for å sjekke nyeste versjon</word>
   <word key="app_update_check_desc" js="0"><![CDATA[I ny og ne vil det gjøres en forespørsel til denne URL-en for å se etter ny versjon. <a href='{external.devdocs-updateurl}' target='_blank' rel='noopener'>Mer informasjon</a>.]]></word>
@@ -1951,18 +1950,18 @@ Navnet på kolonnen i medlemstabellen som inneholder et brukernavn. Dette kreves
   <word key="invision_grant_type_server_password_desc" js="0">Brukeren kommer til å legitimere seg på samme måte som de gjør for å logge inn på nettsamfunnet, direkte uten å bli omdirigert.</word>
   <word key="oauth_invision_endpoint" js="0">URL til annet nettsamfunn</word>
   <word key="oauth_invision_endpoint_internal" js="0">Skriv inn URL til det andre nettsamfunnet</word>
-  <word key="oauth_wordpress_endpoint" js="0">URL til Wordpress-side</word>
+  <word key="oauth_wordpress_endpoint" js="0">URL til WordPress-side</word>
   <word key="login_handler_custom_oauth_info" js="0"><![CDATA[Omdirigerings-URI som skal brukes er <code>{internal.interface.oauth/callback/}</code>]]></word>
   <word key="login_handler_show_in_ucp" js="0">Vis i kontoinnstillinger? </word>
   <word key="login_handler_show_in_ucp_always" js="0">Alltid</word>
   <word key="login_handler_show_in_ucp_always_desc" js="0">Medlem vil kunne assosiere sin konto hvis de ikke allerede har kunne det.</word>
   <word key="login_handler_show_in_ucp_loggedin" js="0">Kun hvis kontoene allerede er assosiert</word>
   <word key="login_handler_show_in_ucp_disabled" js="0">Aldri</word>
-  <word key="login_handler_wordpress" js="0">Wordpress</word>
-  <word key="login_handler_wordpress_settings" js="0">Wordpress-innstillinger</word>
-  <word key="login_handler_wordpress_oauth_info" js="0"><![CDATA[Følg guiden for <a href='{external.login_wordpress}' target='_blank' rel='noopener'>Wordpress-innlogging</a> for å få disse detaljene. Den autoriserte omdirigerings-URIen som bør brukes er <code>{internal.interface.oauth/callback/}</code>]]></word>
-  <word key="wordpress_url" js="0">Wordpress-URL</word>
-  <word key="oauth_wordpress_blurb" js="0"><![CDATA[Før inn desse detaljene til ditt Wordpress-kontrollpanel. For mer informasjon, se guiden for <a href='{external.login_wordpress}' target='_blank' rel='noopener'>Wordpress-innlogging</a>.]]></word>
+  <word key="login_handler_wordpress" js="0">WordPress</word>
+  <word key="login_handler_wordpress_settings" js="0">WordPress-innstillinger</word>
+  <word key="login_handler_wordpress_oauth_info" js="0"><![CDATA[Følg guiden for <a href='{external.login_wordpress}' target='_blank' rel='noopener'>WordPress-innlogging</a> for å få disse detaljene. Den autoriserte omdirigerings-URIen som bør brukes er <code>{internal.interface.oauth/callback/}</code>]]></word>
+  <word key="wordpress_url" js="0">WordPress-URL</word>
+  <word key="oauth_wordpress_blurb" js="0"><![CDATA[Før inn desse detaljene til ditt WordPress-kontrollpanel. For mer informasjon, se guiden for <a href='{external.login_wordpress}' target='_blank' rel='noopener'>WordPress-innlogging</a>.]]></word>
   <word key="oauth_wordpress_app_settings" js="0">Applikasjonsinnstillinger </word>
   <word key="oauth_wordpress_application" js="0">Velg applikasjon</word>
   <word key="oauth_wordpress_application_val" js="0">Andre</word>
@@ -1977,8 +1976,6 @@ Navnet på kolonnen i medlemstabellen som inneholder et brukernavn. Dette kreves
   <word key="ipb_bruteforce_period" js="0">Nullstill mislykkede innloggingsforsøk</word>
   <word key="ipb_bruteforce_unlock" js="0">Lås opp innloggingssperren automatisk når antall mislykkede innloggingsforsøk blir nullstilt?</word>
   <word key="ipb_bruteforce_unlock_desc" js="0">Du blir nødt til å manuelt fjerne innloggingssperren fra låste kontoer i adminpanelet hvis dette er slått av.</word>
-  <word key="disable_anonymous" js="0">Tillatt anonyme innlogginger?</word>
-  <word key="disable_anonymous_desc" js="0">Gjelder bare innloggingsmoduler hvor brukeren fører inn et brukernavn / e-postadresse og passord.</word>
   <word key="new_device_email" js="0">Send en e-post når en bruker logger inn fra en ny enhet?</word>
   <word key="members" js="0">Medlemmer</word>
   <word key="guests" js="0">Gjester</word>
@@ -1997,7 +1994,7 @@ Navnet på kolonnen i medlemstabellen som inneholder et brukernavn. Dette kreves
   <word key="members_member_last_post" js="0">Sist skrevet</word>
   <word key="members_last_visit" js="0">Besøkte siden sist</word>
   <word key="members_last_activity" js="0">Siste aktivitet</word>
-  <word key="members_member_posts" js="0">Innholdsteller</word>
+  <word key="members_member_posts" js="0">Innlegg</word>
   <word key="members_allow_admin_emails" js="0">Tillatt masseutsendte e-poster?</word>
   <word key="allow_admin_emails_any" js="0">Enten ja eller nei</word>
   <word key="member_search_unsub" js="0">Fant medlemmer som har meldt seg av e-postabonnement </word>
@@ -2013,13 +2010,12 @@ Navnet på kolonnen i medlemstabellen som inneholder et brukernavn. Dette kreves
   <word key="any_group" js="0">-Alle mulige grupper-</word>
   <word key="member_name_exists" js="0">Visningsnavnet brukes allerede av en annen konto.</word>
   <word key="member_name_exists_admin" js="0">Visningsnavnet er i bruk i %s-innloggingsmodulen.</word>
-  <word key="member_email_exists" js="0">E-postadressen er allerede i bruk.</word>
+  <word key="member_email_exists" js="0"><![CDATA[E-postadressen er allerede i bruk. <a href='%s'>Trenger du å nullstille passordet ditt</a>?]]></word>
   <word key="member_email_exists_admin" js="0">E-postadressen er allerede i bruk av %s-innloggingsmodulen.</word>
   <word key="members_pass_change" js="0">La feltet være blankt med mindre du vil endre passord</word>
   <word key="member__core_BasicInformation" js="0">Kontoinformasjon</word>
   <word key="member_basic_information" js="0">Informasjon</word>
   <word key="member_counts" js="0">Teller</word>
-  <word key="member_title" js="0">Medlemstittel</word>
   <word key="member_warnings" js="0">Advarselspoeng</word>
   <word key="member__core_Profile" js="0">Profil</word>
   <word key="pp_photo_type" js="0">Bildetype</word>
@@ -2226,7 +2222,6 @@ Navnet på kolonnen i medlemstabellen som inneholder et brukernavn. Dette kreves
   <word key="import_language_name" js="0">Valgt språkpakkenavn</word>
   <word key="import_member_reputation" js="0">Poeng-nivå</word>
   <word key="import_member_warn_level" js="0">Advarselspoeng</word>
-  <word key="import_member_title" js="0">Medlemstittel</word>
   <word key="import_members_import_settings" js="0">Importer innstillinger</word>
   <word key="import_members_fallback_group" js="0">Standardgruppe</word>
   <word key="import_members_fallback_group_desc" js="0">Hvis csv-filen ikke inneholder noen gruppedata, eller verdien er ugyldig, vil denne gruppen brukes.</word>
@@ -2505,7 +2500,6 @@ Navnet på kolonnen i medlemstabellen som inneholder et brukernavn. Dette kreves
   <word key="show_pm_popup" js="0">Sprett-opp-vindu</word>
   <word key="notification_preferences" js="0">Standardpreferanser for varsling</word>
   <word key="email_notifications_once" js="0">Bare send ett e-postvarsel for innhold jeg følger inntil jeg besøker nettsiden igjen</word>
-  <word key="enable_notification_sounds" js="0">Spill av en lyd når jeg mottar varsel</word>
   <word key="auto_track" js="0">Følg innhold automatisk</word>
   <word key="auto_track_comments" js="0">Følg automatisk innhold som jeg deltar i</word>
   <word key="auto_track_content" js="0">Følg automatisk innhold som jeg starter</word>
@@ -2525,7 +2519,7 @@ Navnet på kolonnen i medlemstabellen som inneholder et brukernavn. Dette kreves
   <word key="notification_options_blurb" js="0">Hva ønsker du å varsle oss om?</word>
   <word key="notifications_rss_desc" js="0">%s sine %s varsler</word>
   <word key="options" js="0">Valg</word>
-  <word key="notification__new_content" js="0">%s publiserte %s i %s: %s</word>
+  <word key="notification__new_content" js="0">%s publiserte %s %s: %s</word>
   <word key="notification__new_comment" js="0">{!#[?:%s kommenterte på]} %s</word>
   <word key="notification__new_review" js="0">{!#[?:%s skrev en omtale]} til %s</word>
   <word key="notification__new_mention" js="0">{!#[?:%s nevnte deg i]} %s: %s</word>
@@ -2536,8 +2530,8 @@ Navnet på kolonnen i medlemstabellen som inneholder et brukernavn. Dette kreves
   <word key="notification__new_rep" js="0">{!#[?:%s ga deg poeng for]} %s:</word>
   <word key="notification__member_follow" js="0">%s følger deg</word>
   <word key="notification__unapproved_content" js="0">%s har sendt inn %s som krever godkjenning: %s</word>
-  <word key="notification__new_content_bulk" js="0">%s har publisert nytt % i %s</word>
-  <word key="notification__unapproved_content_bulk" js="0">%s har sendt inn %s i %s som krever godkjenning: </word>
+  <word key="notification__new_content_bulk" js="0">%s har publisert nytt %s i %s</word>
+  <word key="notification__unapproved_content_bulk" js="0">%s har sendt inn ny %s som krever godkjenning: </word>
   <word key="notification__new_private_message" js="0">%s sendte deg en melding</word>
   <word key="notification__private_message_added" js="0">%s la deg til i en samtale</word>
   <word key="notifications_none" js="0">Du har ingen varslinger</word>
@@ -2560,8 +2554,8 @@ Navnet på kolonnen i medlemstabellen som inneholder et brukernavn. Dette kreves
   <word key="mailsub__core_notification_new_content_bulk" js="0"><![CDATA[{$member->name|raw} har sendt inn en ny {$email->language->addToStack( $contentClass::$title . "_pl" )} i {$container->_title}]]></word>
   <word key="mailsub__core_notification_new_private_message" js="0"><![CDATA[{$message->author()->name|raw} sendte deg en melding]]></word>
   <word key="mailsub__core_notification_new_review" js="0"><![CDATA[{$comment->author()->name|raw} la til en omtale om {$comment->item()->mapped("title")|raw}]]></word>
-  <word key="mailsub__core_notification_profile_comment" js="0"><![CDATA[{$comment->author()->name|raw} har skrevet en kommentar i statusmeldingene dine]]></word>
-  <word key="mailsub__core_notification_profile_reply" js="0"><![CDATA[{$comment->author()->name|raw} har svart på en kommentar blant statusmeldingene dine]]></word>
+  <word key="mailsub__core_notification_profile_comment" js="0"><![CDATA[{$comment->author()->name|raw} har skrevet en kommentar på en statusmelding]]></word>
+  <word key="mailsub__core_notification_profile_reply" js="0"><![CDATA[{$comment->author()->name|raw} har svart på en kommentar på en statusmelding]]></word>
   <word key="mailsub__core_notification_new_status" js="0"><![CDATA[{$comment->author()->name|raw} har skrevet en ny statusoppdatering]]></word>
   <word key="mailsub__core_notification_quote" js="0"><![CDATA[{$comment->author()->name|raw} siterte et av innleggene dine]]></word>
   <word key="mailsub__core_notification_warning_mods" js="0">Et medlem har fått en advarsel</word>
@@ -2753,10 +2747,7 @@ Det anbefales at du <strong>ikke</strong> aktiverer dette, eller at det kun gis 
   <word key="leader_custom_name" js="0">Visningsnavn</word>
   <word key="leader_custom_name_default" js="0">Vis medlemmets visningsnavn</word>
   <word key="leader_custom_name_custom" js="0">Jeg ønsker å skrive inn et eget navn som skal vises</word>
-  <word key="leader_use_custom_title" js="0">Bruk medlemmets tittel</word>
   <word key="leader_custom_title" js="0">Tittel</word>
-  <word key="leader_custom_title_default" js="0">Vis medlemmets medlemstittel</word>
-  <word key="leader_custom_title_custom" js="0">Jeg ønsker å skrive inn en egen tittel</word>
   <word key="leader_custom_bio" js="0">Biografi</word>
   <word key="leader_edit_mine" js="0">Endre din informasjon</word>
   <word key="staff" js="0">Medarbeidere</word>
@@ -2771,22 +2762,12 @@ Det anbefales at du <strong>ikke</strong> aktiverer dette, eller at det kun gis 
   <word key="only_one_leader" js="0">Du har allerede lagt til denne kontoen eller gruppen i medarbeideroversikten</word>
   <word key="ranks" js="0">Rangordning</word>
   <word key="member_ranks_word_custom" js="0">Tittel</word>
-  <word key="member_ranks_posts" js="0">Minimum antall innholdselementer</word>
-  <word key="member_ranks_posts_desc" js="0">Antallet innlegg, kommentarer osv. som brukeren har sendt inn til nettsamfunnet ditt.</word>
   <word key="member_ranks_pip_number" js="0">Bruk et antall prikker:</word>
-  <word key="member_ranks_pip_icon" js="0">Bruk et eget bilde</word>
-  <word key="member_ranks_num_pips" js="0">Antall prikker</word>
-  <word key="member_ranks_pips" js="0">Forhåndsvis</word>
   <word key="member_ranks_add" js="0">Legg til ny rang</word>
-  <word key="member_use_icon" js="0">Bildetype</word>
-  <word key="member_ranks_icon" js="0">Eget bilde</word>
+  <word key="member_ranks_icon" js="0">Bilde</word>
   <word key="acplogs__rank_created" js="0">Opprettet medlemsforfremmelse ved %s publiserte innholdselementer</word>
   <word key="acplogs__rank_edited" js="0">Endret medlemsforfremmelse ved %s publiserte innholdselementer</word>
   <word key="acplogs__rank_deleted" js="0">Fjernet medlemsforfremmelse ved %s publiserte innholdselementer</word>
-  <word key="rankown_none" js="0">Medlemmer kan ikke sette sine egne titler og vil alltid bruke rangtittelen som er angitt nedenfor.</word>
-  <word key="rankown_limit" js="0">Medlemmer kan lagre sin egen tittel etter  {# innholds[1:element][?:elementer]}.</word>
-  <word key="rankown_always" js="0">Rangtitlene angitt nedenfor blir brukt som standard, men medlemmer kan endre til sin egen tittel</word>
-  <word key="post_titlechange" js="0">Antall innholdselementer et medlem må ha for å kunne velge sin egen medlemstittel</word>
   <word key="r__bulkmail" js="0">Nyhetsbrev</word>
   <word key="r__bulkmail_manage" js="0">Håndtere nyhetsbrev</word>
   <word key="r__bulkmail_add" js="0">Send nytt nyhetsbrev</word>
@@ -2988,7 +2969,7 @@ Det anbefales at du <strong>ikke</strong> aktiverer dette, eller at det kun gis 
   <word key="email_member_following" js="0">%s følger deg! De blir varslet når du publiserer nytt innhold.</word>
   <word key="email_member_following_tip" js="0"><![CDATA[Du kan hindre <em>alle</em> medlemmer fra å følge deg ved å endre en innstilling på profilen din. I seksjonen for følgere.]]></word>
   <word key="email_go_to_x_profile" js="0">Gå til %s sin profil</word>
-  <word key="email_go_to_your_profile" js="0">Gå til din profil</word>
+  <word key="email_go_to_your_profile" js="0">Gå til profil</word>
   <word key="email_password_changed" js="0">Denne e-posten bekrefter at du nylig endret passordet ditt ved %s. Hvis du ikke gjorde denne endringen, vennligst svar på denne e-posten øyeblikkelig for å gjøre oss oppmerksom på det.</word>
   <word key="mailsub__core_password_changed" js="0">Passordet ble endret</word>
   <word key="email_email_address_changed" js="0">Denne e-posten bekrefter at du nylig endret din e-postadresse ved %s. Hvis du ikke gjorde denne endringen ber vi om at du øyeblikkelig svarer på denne e-posten for å gjøre oss oppmerksom på det.</word>
@@ -3426,7 +3407,7 @@ Det anbefales at du <strong>ikke</strong> aktiverer dette, eller at det kun gis 
   <word key="acplogs__poll_settings" js="0">Endret innstillinger for meningsmåling</word>
   <word key="poll_guest" js="0"><![CDATA[Vennligst <a href='%s'>logg inn</a> eller <a href='%s'>registrer deg</a> for å stemme i meningsmålingen.]]></word>
   <word key="poll_no_js" js="0">Aktiver JavaScript for å endre meningsmålingsdata.</word>
-  <word key="poll_is_public" js="0"><![CDATA[<strong>Merk:<strong> Meningsmålingen er offentlig. Andre brukere kan se hva du stemmer på.]]></word>
+  <word key="poll_is_public" js="0"><![CDATA[<strong>Merk:</strong> Meningsmålingen er offentlig. Andre brukere kan se hva du stemmer på.]]></word>
   <word key="no_permission_poll" js="0">Du har ikke tillatelse til å gi din stemme i denne avstemningen, eller se avstemningsresultatene.</word>
   <word key="profile_fields" js="0">Profilfelter</word>
   <word key="pfield_group_create" js="0">Opprett ny gruppe</word>
@@ -3598,7 +3579,6 @@ Det anbefales at du <strong>ikke</strong> aktiverer dette, eller at det kun gis 
   <word key="menu__core_staff_admin" js="0">Administratorer</word>
   <word key="menu__core_membersettings_profiles" js="0">Profiler</word>
   <word key="menu__core_membersettings_profilecompletion" js="0">Fullføring av profil</word>
-  <word key="menu__core_membersettings_ranks" js="0">Ranginndelinger</word>
   <word key="menu__core_settings_email" js="0">E-postinnstillinger</word>
   <word key="menu__core_settings_general" js="0">Generell konfigurasjon</word>
   <word key="menu__core_applications_enhancements" js="0">Nettsamfunnsforbedringer</word>
@@ -3689,10 +3669,10 @@ Det anbefales at du <strong>ikke</strong> aktiverer dette, eller at det kun gis 
   <word key="stats_devices_desktops" js="0">Stasjonære PC-er</word>
   <word key="stats_device_usage_prune" js="0">Logg over fjerning</word>
   <word key="stats_reactions_by_type" js="0">Flest reaksjoner</word>
-  <word key="stats_reactions_by_app" js="0">Reaksjon fordelt etter applikasjon</word>
+  <word key="stats_reactions_by_app" js="0">Reaksjoner fordelt etter applikasjon</word>
   <word key="stats_reactions_top_content" js="0">Høyest vurderte innhold</word>
   <word key="stats_reactions_top_givers" js="0">Flest givere</word>
-  <word key="stats_reactions_top_receivers" js="0">Flest mottagere av reaksjoner</word>
+  <word key="stats_reactions_top_receivers" js="0">Flest mottagere </word>
   <word key="menu__core_activitystats_reactions" js="0">Reaksjoner</word>
   <word key="reactstats_type_id" js="0">Innhold</word>
   <word key="reactstats_rep_date" js="0">Siste reaksjon</word>
@@ -3893,7 +3873,7 @@ Det anbefales at du <strong>ikke</strong> aktiverer dette, eller at det kun gis 
   <word key="email_color_desc" js="0">E-postmeldinger som er sendt fra siden vil bli tilpasset ved å bruke denne hovedfargen.</word>
   <word key="email_logo" js="0">Logo for e-post</word>
   <word key="email_log_do" js="0">Loggstatistikk</word>
-  <word key="email_log_do_desc" js="0">Det vil bli loggført antall e-poster sendt, e-poster sett og lenker som er trykket på. Vær obs på at dette kan øke størrelsen på databasen din betydelig hvis siden din sender mange e-poster.</word>
+  <word key="email_log_do_desc" js="0">Det vil bli loggført antall e-poster sendt og lenker som er trykket på. Vær obs på at dette kan øke størrelsen på databasen din betydelig hvis siden din sender mange e-poster.</word>
   <word key="prune_log_emailstats" js="0">Fjern e-poststatistikk etter</word>
   <word key="mail_method" js="0">Leveringsmetode for e-post</word>
   <word key="mail_method_php" js="0">PHP</word>
@@ -4270,7 +4250,7 @@ Det anbefales at du <strong>ikke</strong> aktiverer dette, eller at det kun gis 
   <word key="icons_sharer_logo" js="0">Del bilder som standard</word>
   <word key="icons_sharer_logo_desc" js="0">Bilder som er lastet opp her vil bli brukt når en side er delt gjennom et sosial media som støtter Open Graph-standarden (som f.eks. Facebook), og som ikke har mer spesifikke bilder som kan representere innholdet. </word>
   <word key="icons_homescreen" js="0">Applikasjonsikon</word>
-  <word key="icons_homescreen_desc" js="0">Bildet som lastes opp her vil bli brukt for å representere nettsiden. Det kan skje når en bruker lagrer nettsiden til deres hjemskjerm på ulike enheter, som iOS eller Android. Anbefalt minimumdimensjon for dette bildet er 512px x 512px. Andre bildestørrelser for spesifikke enheter vil bli opprettet automatisk.</word>
+  <word key="icons_homescreen_desc" js="0">Bildet som lastes opp her vil bli brukt for å representere nettsiden i push-varsler. Det kan også brukes når en bruker lagrer nettsiden til deres hjemskjerm på ulike enheter, som iOS eller Android. Anbefalt minimumdimensjon for dette bildet er 512px x 512px. Andre bildestørrelser for spesifikke enheter vil bli opprettet automatisk.</word>
   <word key="icons_mask_icon" js="0">Safarimaskeikon</word>
   <word key="icons_mask_icon_desc" js="0">Safari bruker et spesielt ikon for å representere festede nettsider, og snarveier til nettsider fra touchbaren. Bildet må være en SVG-fil med gjennomsiktig bakgrunn, og alle vektorer må være 100% svarte.</word>
   <word key="icons_mask_color" js="0">Farge når pusepeker svever over safarimaskeikon </word>
@@ -4430,7 +4410,7 @@ Det anbefales at du <strong>ikke</strong> aktiverer dette, eller at det kun gis 
   <word key="themesetting_normal_button_font" js="0">Normal tekstfarge for knapper</word>
   <word key="themesetting_page_background" js="0">Sidebakgrunn</word>
   <word key="themesetting_poll_bar" js="0">Meningsmålinglinje</word>
-  <word key="themesetting_tag" js="0">Nøkkelord</word>
+  <word key="themesetting_tag" js="0">Emneknagg-bakgrunn</word>
   <word key="themesetting_prefix" js="0">Prefiks</word>
   <word key="themesetting_primary_button" js="0">Hovedknapp</word>
   <word key="themesetting_primary_button_font" js="0">Tekstfarge for hovedknapp</word>
@@ -4644,7 +4624,6 @@ Det anbefales at du <strong>ikke</strong> aktiverer dette, eller at det kun gis 
   <word key="auto_follow_preferences" js="0">Automatisk følging</word>
   <word key="notification_prefs_popup" js="0">Vis popup-vindu når medlemmer mottar en ny personlig melding?</word>
   <word key="notification_prefs_one_per_view" js="0">Bare send ett e-postvarsel for fulgt innhold pr. besøk av medlem?</word>
-  <word key="notification_prefs_sound" js="0">Lag en lyd når nye varsler mottas</word>
   <word key="warning" js="0">Advarsel</word>
   <word key="warnings" js="0">Advarsler</word>
   <word key="warn_reasons" js="0">Årsaker</word>
@@ -4899,8 +4878,8 @@ Brukeren må aktivt fjerne markeringen for nyhetsbrev dersom de ikke ønsker mot
   <word key="imagesuite_gd" js="0">GD</word>
   <word key="imagesuite_gd_desc" js="0">GD er et bredt støttet bildemanipuleringsmetode som er tilgjengelig for bruk av servere. De fleste nettsteder vil kunne bruke GD-metoden.</word>
   <word key="imagesuite_imagemagick_desc" js="0"><![CDATA[ImageMagick er en avansert bildemanipuleringsmetode som er tilgjengelig på noen servere. Fordelene er blant at den er mer effektiv enn GD i å behandle store filer og muligheten til å ta vare på animasjonen i omskalerte animerte bilder. Denne metoden krever at <a href='{external.php_imagick}' target='_blank' rel='noopener'>PHP-utvidelsen for ImageMagick</a> er installert på serveren.]]></word>
-  <word key="image_jpg_quality" js="0">JPG-kvalitet</word>
-  <word key="image_jpg_quality_desc" js="0">Denne verdien påvirker den endelige kvaliteten til JPG-bilder som er generert av IPS Community Suite. En verdi på 0 vil føre til den verste kvaliteten, men gir små filer. En verdi på 100 gir den beste kvaliteten, men de største filene. Det er anbefalt at du setter en verdi mellom 80 og 90 med mindre du krever småversjoner i høykvalitet. </word>
+  <word key="image_jpg_quality" js="0">JPG- and WebP-kvalitet</word>
+  <word key="image_jpg_quality_desc" js="0">Denne verdien påvirker den endelige kvaliteten til JPG- eller WebP-bilder som er generert av IPS Community Suite. En verdi på 0 vil føre til den verste kvaliteten, men gir små filer. En verdi på 100 gir den beste kvaliteten, men de største filene. Det er anbefalt at du setter en verdi mellom 80 og 90 med mindre du krever småversjoner i høykvalitet. </word>
   <word key="image_png_quality_gd" js="0">PNG-komprimering</word>
   <word key="image_png_quality_gd_desc" js="0">Denne verdien påvirker filstørrelsen til PNG-bilder som blir generert av IPS Community Suite. En verdi på 0 vil føre til at filen blir ferdig raskt, men gir større filer. En verdi på 9 bruker lengst tid, men gir deg mindre filer.</word>
   <word key="imagick_strip_exif" js="0">Fjern EXIF-data</word>
@@ -5099,7 +5078,6 @@ Brukeren må aktivt fjerne markeringen for nyhetsbrev dersom de ikke ønsker mot
   <word key="menu__core_promotion_seo" js="0">Søkemotoroptimalisering</word>
   <word key="button_link_seo" js="0">Innstillinger for søkemotoroptimalisering</word>
   <word key="r__seo" js="0">Søkemotoroptimalisering</word>
-  <word key="r__seo_manage" js="0">Kan håndtere SEO-innstillinger</word>
   <word key="use_friendly_urls" js="0">Aktiver vennlige URL-er?</word>
   <word key="use_friendly_urls_desc" js="0"><![CDATA[Vennlige URL-er er URL-er som mennesker kan se på og forstå, i motsetning til det som kan fremstå som en obskur linje med tekst.<br>I tillegg til å være mer forståelig for brukere, så hjelper de søkemotorer med å forstå hva som er på hver side.]]></word>
   <word key="use_friendly_urls_warning" js="0">Vi anbefaler sterkt bruken av vennlige URL-er siden de er enklere å forstå for både mennesker og søkemotorer.</word>
@@ -5274,7 +5252,7 @@ For å støtte dette må du <a href='{internal.app=core&module=promotion&control
   <word key="automoderation_report_again_mins_desc" js="0">Definer antall minutter før et medlem igjen kan rapportere samme innhold.</word>
   <word key="automoderation_deleted" js="0">Rapporten er slettet</word>
   <word key="automoderation_cannot_find_report" js="0">Kunne ikke finne rapporten</word>
-  <word key="automoderation_report_points_flag" js="0">{# [1:Automatisk modereringspoeng][?:Automatiske modereringspoeng]}</word>
+  <word key="automoderation_report_points_flag" js="0">{# [1:automatisk modereringspoeng][?:automatiske modereringspoeng]}</word>
   <word key="reportedContent_types" js="0">Behandle typer av rapporter</word>
   <word key="automaticmod_types_title" js="0">Type-tittel</word>
   <word key="automaticmod_types" js="0">Rapporttyper</word>
@@ -5506,7 +5484,7 @@ For å støtte dette må du <a href='{internal.app=core&module=promotion&control
   <word key="attachment_image_size_desc" js="0"><![CDATA[Hvis et bilde er større enn den definerte størrelsen, blir det opprettet en mindre versjon som blir vist sammen med innholdet. Dersom man trykker på bildet vil man bli tatt til den originale versjonen av bildet. Det kan være en ide å bruke denne funksjonen dersom nettsamfunnet ditt laster opp mange bilder og du vil redusere båndbreddebruken. Innstillingen gjelder kun nye bilder, med mindre du <a data-confirm href='{internal.app=core&module=settings&controller=posting&do=rebuildThumbnails.csrf}'>bygger om eksisterende bilder</a>.]]></word>
   <word key="thumbnails_rebuilt" js="0">Småversjonene av bildevedleggene vil bli generert på nytt i bakgrunnen.</word>
   <word key="editor_embeds" js="0">Innebygg lenker automatisk?</word>
-  <word key="editor_embeds_desc" js="0"><![CDATA[Noe innhold kan bli automatisk "innebygget" i siden. For eksempel dersom en bruker poster en lenke til en video på Youtube eller Vimeo kan videoen inkluderes slik at den kan spilles av i innlegget den er inkludert. Det å endre denne innstillingen vil ikke berøre eksisterende innhold.<br>Lenker fra følgende sider støttes: College Humor, Coub, Dailymotion, Facebook, Flickr, Funny Or Die, Gfycat, Google Maps, Hulu, Instagram, ReverbNation, Screencast.com, SmugMug, SoundCloud, Spotify, TED, Twitch, Twitter, Ustream, Vimeo, Vine, Wistia, YouTube, og interne lenker til innhold i dette nettsamfunnet.]]></word>
+  <word key="editor_embeds_desc" js="0"><![CDATA[Noe innhold kan bli automatisk "innebygget" i siden. For eksempel dersom en bruker poster en lenke til en video på Youtube eller Vimeo kan videoen inkluderes slik at den kan spilles av i innlegget den er inkludert. Det å endre denne innstillingen vil ikke berøre eksisterende innhold.<br>Lenker fra følgende sider støttes: College Humor, Coub, Dailymotion, Facebook, Flickr, Funny Or Die, Gfycat, Google Maps, Hulu, Instagram, ReverbNation, Screencast.com, SmugMug, SoundCloud, Spotify, TED, Twitter, Ustream, Vimeo, Vine, Wistia, YouTube, og interne lenker til innhold i dette nettsamfunnet.]]></word>
   <word key="max_video_width" js="0">Maksimal videobredde</word>
   <word key="max_video_width_desc" js="0">Lenker til Youtube, Vimeo eller andre sider i innhold vil automatisk inkluderes som en videospiller eller lignende. Denne innstillingen gjør at man kan begrense hvor mye av bredden som disse skal kunne ta opp. Videospilleren vil aldri bli bredere enn det nettleseren din kan vise og en endring av innstillingen vil ikke endre eksisterende innhold.</word>
   <word key="max_internalembed_width" js="0">Maksimal bredde innebygde element kan brukes i innhold</word>
@@ -5633,10 +5611,6 @@ For å støtte dette må du <a href='{internal.app=core&module=promotion&control
   <word key="datastore_method_FileSystem" js="0">Filsystem</word>
   <word key="cache_method" js="0">Mellomlagringsmetode</word>
   <word key="cache_method_desc" js="0">Mellomlagringsmetoden er brukt av ulike systemer for midlertidig datalagring og data-caching.</word>
-  <word key="datastore_method_Apc" js="0">APC</word>
-  <word key="datastore_method_Memcache" js="0">Memcached</word>
-  <word key="datastore_method_Wincache" js="0">Wincache</word>
-  <word key="datastore_method_Xcache" js="0">XCache</word>
   <word key="datastore_method_Test" js="0">- Utviklertest -</word>
   <word key="datastore_test_path" js="0">Mappe</word>
   <word key="datastore_method_disableddesc" js="0">For å bruke metoden må utvidelsen %s være installert på serveren.</word>
@@ -5650,9 +5624,6 @@ For å støtte dette må du <a href='{internal.app=core&module=promotion&control
   <word key="server_password" js="0">Serverpassord for Redis</word>
   <word key="datastore_filesystem_path" js="0">Mappe</word>
   <word key="datastore_filesystem_path_err" js="0">Mappen må eksistere og være skrivbar</word>
-  <word key="datastore_memcache_servers" js="0">Servere</word>
-  <word key="datastore_memcache_servers_err" js="0">Du må fylle inn minst en server</word>
-  <word key="datastore_memcache_servers_err2" js="0">Serverne er ikke gyldige</word>
   <word key="datastore_change_blurb" js="0">For å lagre konfigurasjonen din, må du laste ned en ny constants.php-fil og laste den opp i rotmappen til siden din.</word>
   <word key="datastore_change_download" js="0">Last ned constants.php</word>
   <word key="datastore_change_error" js="0">Last opp constants.php-filen før du fortsetter</word>
@@ -5832,7 +5803,7 @@ For å støtte dette må du <a href='{internal.app=core&module=promotion&control
   <word key="memberStatsDashboard_optin" js="0">Påmelding av e-postmarkedsføring</word>
   <word key="memberStatsDashboard_optout" js="0">Avmelding av e-postmarkedsføring</word>
   <word key="chart_email_marketing_type" js="0">Hvilken type påmelding</word>
-  <word key="memberStatsDashboard_title" js="0">%s Totalt {!#[1:member][?:members]}</word>
+  <word key="memberStatsDashboard_title" js="0">%s Totalt {!#[1:medlem][?:medlemmer]}</word>
   <word key="onlineUsersDashboard_title" js="0">%s pålogget</word>
   <word key="change_details" js="0">Endre mine detaljer</word>
   <word key="change_email_button" js="0">Endre e-post</word>
@@ -5952,7 +5923,7 @@ For å støtte dette må du <a href='{internal.app=core&module=promotion&control
   <word key="messenger_deleted_member" js="0">Slettet medlem</word>
   <word key="messenger_message_count" js="0">{# [1:melding][?:meldinger]}</word>
   <word key="no_results_messages" js="0">Ingen meldinger</word>
-  <word key="participant_three_plus" js="0"><![CDATA[%s, %s og <a href='#' data-ipsTooltip title='%s'>{# [1:annen][?:andre]}</a>]]></word>
+  <word key="participant_three_plus" js="0"><![CDATA[%s, %s og <span data-ipsTooltip title='%s' class='ipsCursor_default'>{# [1:annen][?:andre]}</span>]]></word>
   <word key="participant_two" js="0">%s og %s</word>
   <word key="participant_you_upper" js="0">Deg</word>
   <word key="participant_you_lower" js="0">deg</word>
@@ -6689,7 +6660,7 @@ For å støtte dette må du <a href='{internal.app=core&module=promotion&control
   <word key="member_status_pl" js="0">Profilkommentarer</word>
   <word key="member_status_pl_lc" js="0">statusoppdateringer</word>
   <word key="member_status_container" js="0">medlem</word>
-  <word key="status_reply_pl" js="0">Profilsvar</word>
+  <word key="status_reply_pl" js="0">Statussvar</word>
   <word key="status_reply_pl_lc" js="0">statussvar</word>
   <word key="modcp_recent_warnings" js="0">Nylige advarsler</word>
   <word key="member_warned" js="0">Medlem ble advart</word>
@@ -6781,10 +6752,10 @@ For å støtte dette må du <a href='{internal.app=core&module=promotion&control
   <word key="warning_byline" js="0">Advarsel gitt av %s</word>
   <word key="warning_acknowledged" js="0">Erkjent</word>
   <word key="warning_not_acknowledged" js="0">Ikke erkjent ennå</word>
-  <word key="warn_action_points" js="0">Ga %d poeng</word>
-  <word key="warn_action_points_expire" js="0">Ga %d poeng som utløper %s</word>
-  <word key="warn_action_points_expired" js="0">Ga %d poeng som utløp %s</word>
-  <word key="warn_action_points_never_expire" js="0">Ga %d poeng som aldri vil utløpe</word>
+  <word key="warn_action_points" js="0">Ga {# [?:poeng]}</word>
+  <word key="warn_action_points_expire" js="0">Ga {# [?:poeng]} som utløper %s</word>
+  <word key="warn_action_points_expired" js="0">Ga {# [?:poeng]} poeng som utløp %s</word>
+  <word key="warn_action_points_never_expire" js="0">Ga {# [?:poeng]} som aldri vil utløpe</word>
   <word key="warn_user" js="0">Advar bruker</word>
   <word key="warn_user_title" js="0">Legg til advarsel til bruker</word>
   <word key="members_warnings" js="0">%s sine advarsler</word>
@@ -7298,7 +7269,7 @@ For å støtte dette må du <a href='{internal.app=core&module=promotion&control
   <word key="show_prev_comments" js="0">Vis tidligere kommentarer</word>
   <word key="show_next_comments" js="0">Vis de neste kommentarene</word>
   <word key="x_more" js="0">{# [?:andre]}</word>
-  <word key="status_reply" js="0">Svar</word>
+  <word key="status_reply" js="0">Statussvar</word>
   <word key="status_new" js="0">Send inn statusoppdatering</word>
   <word key="status_save" js="0">Lagre status</word>
   <word key="global_feed" js="0">Global strøm</word>
@@ -7569,7 +7540,6 @@ For å støtte dette må du <a href='{internal.app=core&module=promotion&control
   <word key="type_of_problem_advice" js="0">Jeg trenger tips eller informasjon om hvordan jeg bruker Invision Community</word>
   <word key="type_of_problem_issue" js="0">Noe virker ikke som det skal</word>
   <word key="support_advice_search" js="0">Hva leter du etter?</word>
-  <word key="support_advice_search_desc" js="0">Skriv inn et kort nøkkelord for det området du trenger hjelp med. For eksempel 'facebook', 'spam', 'themes'</word>
   <word key="support_advice_results" js="0">Dette er alle områdene som kan relateres til det du leter etter. I fremtiden kan du finne disse ved å bruke søkefeltet i adminpanelet i toppen av høyre hjørne.</word>
   <word key="still_need_help" js="0">Trenger du fortsatt hjelp?</word>
   <word key="support_request_title" js="0">Tittel</word>
@@ -7581,29 +7551,19 @@ For å støtte dette må du <a href='{internal.app=core&module=promotion&control
   <word key="support_caches_cleared" js="0">Noen ganger kan en feil i mellomlagringen føre til midlertidige feil. Vi har nullstilt alle mellomlagrede data. </word>
   <word key="support_database_check_ok" js="0">Databasestrukturen er ok</word>
   <word key="support_database_check_fail" js="0">Det er noen problemer med databasen din</word>
-  <word key="md5_check_ok" js="0">Kjernefilene har ikke blitt endret på</word>
-  <word key="md5_check_fail" js="0">Noen av kjernefilene har blitt endret på</word>
+  <word key="md5_check_fail" js="0">Modifiserte filer</word>
   <word key="md5_fail_help_1" js="0">Noen av kjernefilene til Invision Community har blitt endret på.</word>
   <word key="md5_fail_help_2" js="0">Du burde laste ned en umodifisert kopi av filene</word>
   <word key="md5_build_fail" js="0"><![CDATA[Forespørselen kunne ikke behandles. <a href='{external.client_area}' target='_blank' rel='noopener'>Gå til ditt klientområde for å laste ned den fullstendige pakken</a>, og last opp hele pakken til din server, slik at du overskriver de eksisterende filene for Invision Community-installasjonen din (dette vil ikke overskrive noen innleggsdata el.). Når opplastingen har blitt fullført lukker du dette vinduet og forsøker kjøre diagnostikksjekken på nytt.]]></word>
   <word key="md5_fail_download" js="0">Last ned umodifiserte filer</word>
   <word key="md5_fail_download_1" js="0">Klikk knappen nedenfor for å laste ned zip-fil som inneholder de umodifiserte versjonene av kjernefilene som har blitt endret på. Last opp samlingen med filer til serveren din slik at de overskriver de modifiserte filene (dette vil ikke overskrive noen innleggsdata el.)</word>
   <word key="md5_fail_download_2" js="0">Når du har fullført opplastingen trykker du på knappen nedenfor for å kjøre diagnostikk-sjekken på nytt.</word>
-  <word key="requirements_check_ok" js="0">Systemsjekken gjennomført</word>
-  <word key="requirements_check_fail" js="0">Det er et problem med serveren din</word>
-  <word key="recommendations_check_ok" js="0">Kom ikke frem til noen anbefalte endringer</word>
-  <word key="recommendations_check_fail" js="0">Det er noen endringer vi anbefaler som ikke er påkrevd</word>
-  <word key="recommendations_check_link" js="0">Se anbefalte endringer</word>
-  <word key="requirements_check_link" js="0">Se absolutt nødvendige endringer</word>
-  <word key="requirements_check_link_rec" js="0">Se absolutt nødvendigee og anbefalte endringer</word>
-  <word key="connection_check_ok" js="0">Eksterne tilkoplinger virker</word>
   <word key="connection_check_fail" js="0">Eksterne tilkoplinger virker ikke</word>
-  <word key="server_time_ok" js="0">Servertiden er nøyaktig</word>
   <word key="server_time_fail" js="0">Servertiden kan være unøyaktig</word>
   <word key="sever_time_fail_desc" js="0">Serveren din rapporterer at tiden akkurat nå er %s UTC, noe som virker å være feil. Dette kan skape problemer for noen tjenester og sikkerhetsfunksjonalitet. Du bør kontakte din serverleverandør for å be om at problemet blir løst.</word>
   <word key="help_me_fix_this" js="0">Løs dette problemet</word>
   <word key="upgrade_check_ok" js="0">Kjører nyeste versjon</word>
-  <word key="upgrade_check_fail" js="0">Du kjører ikke den nyeste versjonen</word>
+  <word key="upgrade_check_fail" js="0">Oppdatering tilgjengelig</word>
   <word key="upgrade_check_patches" js="0">Du har den nyeste versjonen, men en valgfri oppdatering er tilgjengelig for disse problemene:</word>
   <word key="upgrade_apply_patch" js="0">Last inn hurtigfikser</word>
   <word key="support_diagnostics" js="0">Diagnoseverktøy</word>
@@ -7658,9 +7618,6 @@ For å støtte dette må du <a href='{internal.app=core&module=promotion&control
   <word key="bad_datastore_configuration" js="0"><![CDATA[Du har satt opp lagring av data til å skrive filer til %s, men denne mappen er ikke skrivbar. Gjør den skrivbar, eller <a href='{internal.app=core&module=settings&controller=advanced&tab=datastore}' target='_blank' rel='noopener'>oppdater dine innstillinger</a> og se om problemet løser seg.]]></word>
   <word key="upgrade_now" js="0">Oppgrader nå</word>
   <word key="upgrade_more_information" js="0">Mer informasjon</word>
-  <word key="support_search" js="0">AdminCP-sider</word>
-  <word key="support_guides" js="0">Dokumentasjon</word>
-  <word key="support_guides_blurb" js="0">Dette er dokumentasjon som er relatert til det du det leter etter.</word>
   <word key="server_path" js="0">Serversti</word>
   <word key="server_ip" js="0">Server-IP</word>
   <word key="sql_toolbox_warning" js="0">Dette er kun for avanserte brukere og verktøyene har potensiale til å forårsake store skader til nettsamfunnet ditt som ikke kan angres. Aldri kjør en spørring før du er sikker på hva effekten blir.</word>
@@ -7683,10 +7640,10 @@ For å støtte dette må du <a href='{internal.app=core&module=promotion&control
   <word key="requirements_php_version_success" js="0">PHP-versjon %s.</word>
   <word key="requirements_php_version_fail" js="0">Du kjører PHP-versjonen %s. Du trenger PHP %s eller nyere (%s eller nyere anbefales). Du bør kontakte din serverleverandør eller systemadministrator for en oppgradering.</word>
   <word key="requirements_php_version_fail_no_recommended" js="0">Du kjører PHP-versjon %s. Du trenger %s eller nyere. Du bør kontakte din serverleverandør eller systemadministrator be om en oppgradering.</word>
-  <word key="requirements_php_version_advice" js="0">Du kjører PHP-versjonen %s. Denne versjonen er kompatibel. Fremtidige utgivelser av programvaren vil kreve versjon %s eller nyere.</word>
+  <word key="requirements_php_version_advice" js="0">Du kjører PHP-versjonen %s. Denne versjonen er kompatibel. Fremtidige utgivelser av programvaren vil kreve versjon %s eller nyere. Du bør kontakte din serverleverandør eller systemadministrator og spørre om en oppgradering av PHP.</word>
   <word key="requirements_curl_success" js="0">cURL-utvidelsen ble lastet</word>
   <word key="requirements_curl_fopen" js="0">allow_url_fopen aktivert</word>
-  <word key="requirements_curl_advice" js="0">Du har enten ikke installert PHP-utvidelsen for cURL eller kjører en versjon eldre enn 7.36. Aktivering av cURL gir et mer effektivt og pålitelig bibliotek for å gjøre tilkoplinger fra din side til andre sider.</word>
+  <word key="requirements_curl_advice" js="0">Du har enten ikke installert PHP-utvidelsen for cURL eller kjører en versjon eldre enn 7.36. Aktivering av cURL gir et mer effektivt og pålitelig bibliotek for å gjøre tilkoplinger fra din side til andre sider. Du bør kontakte din serverleverandør eller systemadministrator for å forsikre deg om at cURL PHP-tillegget er aktivert og oppdatert. </word>
   <word key="requirements_curl_fail" js="0">Du har ikke PHP-utvidelsen cURL aktiv (eller kjører en versjon eldre enn 7.36) og PHP-instillingen allow_url_fopen er slått av. Du bør ta kontakt med din serverleverandør eller systemadministrator for å spørre om enten cURL versjon 7.36 eller høyere kan installeres eller la allow_url_fopen bli aktivert. cURL er anbefalt.</word>
   <word key="requirements_mb_success" js="0">Multibyte String-utvidelsen lastet</word>
   <word key="requirements_mb_regex" js="0">PHP-utvidelsen Multibyte String har blitt konfigurert med bruk av valget --disable-mbregex. Du bør kontakte din serverleverandør eller systemadministrator og be om at det skal konfigureres på nytt, uten det valget.</word>
@@ -7694,7 +7651,7 @@ For å støtte dette må du <a href='{internal.app=core&module=promotion&control
   <word key="requirements_mb_fail" js="0"><![CDATA[Du har ikke PHP-utvidelsen Multibyte String aktiv, en utvidelse som er nødvendig. Du bør kontakte din serverleverandør eller systemadministrator og be om at det skal bli aktivert. Det må bli konfigurert <em>uten</em> bruk av valget --disable-mbregex.]]></word>
   <word key="requirements_extension_success" js="0">%s-utvidelsen lastet</word>
   <word key="requirements_extension_fail" js="0">Det ser ikke ut som du har PHP-utvidelsen %s tilgjengelig, en utvidelse som er nødvendig. Du bør kontakte din serverleverandør eller systemadministrator og be om at det skal bli aktivert. </word>
-  <word key="requirements_extension_advice" js="0">Det ser ikke ut som du har PHP-utvidelsen %s tilgjengelig. Dette anbefales, men kreves ikke.</word>
+  <word key="requirements_extension_advice" js="0">Det ser ikke ut som du har PHP-utvidelsen %s tilgjengelig. Dette anbefales, men kreves ikke. Du bør kontakte din serverleverandør eller systemadministrator og spørre om å få det aktivert.</word>
   <word key="requirements_extension_dom" js="0">DOM</word>
   <word key="requirements_extension_gd" js="0">GD</word>
   <word key="requirements_extension_exif" js="0">Exif</word>
@@ -7781,8 +7738,6 @@ For å støtte dette må du <a href='{internal.app=core&module=promotion&control
   <word key="ctags_predefined_desc" js="0">Hvis du bruker et lukket system vil brukere måtte velge fra disse nøkkelordene. Har du et åpent system vil disse komme opp som forslag.</word>
   <word key="block_members" js="0">Medlemmer</word>
   <word key="block_members_desc" js="0">Kan vise lister over medlemmer som f.eks. er pålogget, dagens bursdager osv. </word>
-  <word key="widget_member_title" js="0">Tittel</word>
-  <word key="widget_member_title_default" js="0">Medlemmer</word>
   <word key="widget_member_groups" js="0">Grupper</word>
   <word key="widget_member_posts" js="0">Minimum antall innlegg</word>
   <word key="widget_member_rep" js="0">Minst antall omdømmepoeng</word>
@@ -7930,8 +7885,8 @@ For å støtte dette må du <a href='{internal.app=core&module=promotion&control
   <word key="oauth_client_type" js="0">Klienttype</word>
   <word key="client_type_invision" js="0">Et annet Invision-nettsamfunn</word>
   <word key="client_type_invision_desc" js="0"><![CDATA[For mer informasjon, se guiden for <a href='{external.login_invision}' target='_blank' rel='noopener'>sammenkobling av to Invision Communities</a>.]]></word>
-  <word key="client_type_wordpress" js="0">Wordpress</word>
-  <word key="client_type_wordpress_desc" js="0"><![CDATA[For mer informasjon, se guiden for <a href='{external.login_wordpress}' target='_blank' rel='noopener'>Wordpress-innlogging</a>.]]></word>
+  <word key="client_type_wordpress" js="0">WordPress</word>
+  <word key="client_type_wordpress_desc" js="0"><![CDATA[For mer informasjon, se guiden for <a href='{external.login_wordpress}' target='_blank' rel='noopener'>WordPress-innlogging</a>.]]></word>
   <word key="client_type_confidential" js="0"><![CDATA[Egendefinert <strong>konfidensiell</strong> Oauth-klient]]></word>
   <word key="client_type_confidential_desc" js="0">En serverside-app, som en webside, hvor koden blir skrevet på et serverside-språk og lagret på en server der ingen sluttbruker har tilgang. En klienthemmelighet blir opprettet.</word>
   <word key="client_type_public" js="0"><![CDATA[Egendefinert <strong>offentlig</strong> Oauth-klient]]></word>
@@ -8738,7 +8693,7 @@ For å støtte dette må du <a href='{internal.app=core&module=promotion&control
   <word key="club_renew_now" js="0">Forny nå</word>
   <word key="club_renew_membership" js="0">Forny medlemskap</word>
   <word key="club_closed_title" js="0">Lukket gruppe</word>
-  <word key="club_closed_desc" js="0">Dette er en lukket gruppe, noe som betyr at kun medlemmer kan se innhold som postes i den.</word>
+  <word key="club_closed_desc" js="0">Dette er en lukket gruppe, innhold kan derfor være skjult for brukere som ikke er medlem i gruppen.</word>
   <word key="club_awaiting_payment_title" js="0">Forespørsel godkjent</word>
   <word key="club_awaiting_payment_desc" js="0">Forespørselen din om å bli med i gruppen har blitt godkjent. Du kan nå betale medlemskapsavgiften, hvor du etter det kan se gruppeinnholdet.</word>
   <word key="club_pay_membership_fee" js="0">Betal nå</word>
@@ -8887,7 +8842,7 @@ For å støtte dette må du <a href='{internal.app=core&module=promotion&control
   <word key="history_name_changed_profilesync" js="0"><![CDATA[Visningsnavn endret til <strong>%s</strong> (tidligere <strong>%s</strong>) av %s-synkronisering.]]></word>
   <word key="log_type_title_email_change" js="0">Endringer av e-postadresse</word>
   <word key="history_email_changed" js="0"><![CDATA[E-postadresse endret til <strong>%s</strong> (tidligere <strong>%s</strong>)]]></word>
-  <word key="history_email_changed_manual" js="0"><![CDATA[E-postadresse endret til <strong>%s</strong> (tidligere <strong>%s</strong>)%s.]]></word>
+  <word key="history_email_changed_manual" js="0"><![CDATA[E-postadresse endret til <strong>%s</strong> (tidligere <strong>%s</strong>) %s.]]></word>
   <word key="history_email_changed_api" js="0"><![CDATA[E-postadresse endret til <strong>%s</strong> (tidligere <strong>%s</strong>) av REST-API.]]></word>
   <word key="history_email_changed_profilesync" js="0"><![CDATA[E-postadresse endret til <strong>%s</strong> (tidligere <strong>%s</strong>) av %s-synkronisering.]]></word>
   <word key="log_type_title_social_account" js="0">Aktiverte/deaktiverte innloggingsmoduler</word>
@@ -9534,15 +9489,15 @@ For å støtte dette må du <a href='{internal.app=core&module=promotion&control
   <word key="notificationNewPostSingleBody" js="1">{{name}} har nettopp svart i {{title}}</word>
   <word key="notificationNewPostMultipleTitle" js="1">{# [1:nytt svar][?:nye svar]}</word>
   <word key="notificationNewPostMultipleBody" js="1">Det er {!# [1:ett nytt svar][?:# nye svar]} i {{title}}</word>
-  <word key="notificationsAccepted" js="1">Nettleservarslinger er aktivert</word>
+  <word key="notificationsAccepted" js="1">Push-varsler aktivert</word>
   <word key="notificationsAcceptedBlurb" js="1">Nettleseren din støtter varslinger, noe som lar oss varsle deg om nytt innhold selv om du ikke er aktiv i vinduet med nettsiden.</word>
   <word key="notificationsCallout" js="1">Hold deg oppdatert</word>
-  <word key="notificationsDisabled" js="1">Nettleser-varsler er deaktivert</word>
+  <word key="notificationsDisabled" js="1">Push-varsler er deaktivert</word>
   <word key="notificationsDisabledBlurb" js="1">Ved å aktivere nettleser-varsler vil vi kunne varsle deg om nytt innhold selv om du ikke er aktiv i nettleservinduet. Sjekk hjelpe-dokumentasjonen til nettleseren for å finne ut hvordan du aktiverer varsler for denne siden.</word>
   <word key="notificationsNotSure" js="1">Nettleser-varsling er ikke aktivert</word>
-  <word key="notificationsDefaultBlurb" js="1">Ved å aktivere nettleser-varsler vil vi kunne varsle deg om nytt innhold selv om du ikke er aktiv i nettleservinduet.</word>
-  <word key="notificationsAllow" js="1">Aktiver nettleser-varsling</word>
-  <word key="notificationsAllowPrompt" js="1">Nettleseren din vil snart spørre deg om å få sende deg varsler fra oss. Last inn siden på nytt når du har akseptert det.</word>
+  <word key="notificationsDefaultBlurb" js="1">Push-varsler lar oss holde deg oppdatert om hva som skjer selv om du ikke er aktiv i nettleservinduet.</word>
+  <word key="notificationsAllow" js="1">Aktiver push-varsler</word>
+  <word key="notificationsAllowPrompt" js="1">Nettleseren din vil snart spørre deg om å få sende varsler fra oss.</word>
   <word key="month_0" js="1">Januar</word>
   <word key="month_1" js="1">Februar</word>
   <word key="month_2" js="1">Mars</word>
@@ -9828,7 +9783,7 @@ For å støtte dette må du <a href='{internal.app=core&module=promotion&control
   <word key="emoji-reminder_ribbon" js="1">Påminnelsesbånd</word>
   <word key="emoji-admission_tickets" js="1">Inngangsbilletter</word>
   <word key="emoji-ticket" js="1">Billett</word>
-  <word key="emoji-medal" js="1">Medalje</word>
+  <word key="emoji-medal" js="1">Millitærmedalje</word>
   <word key="emoji-trophy" js="1">Trofé</word>
   <word key="emoji-sports_medal" js="1">Sportsmedalje</word>
   <word key="emoji-first_place_medal" js="1">Medalje for førsteplass</word>
@@ -9984,10 +9939,10 @@ For å støtte dette må du <a href='{internal.app=core&module=promotion&control
   <word key="emoji-ballot_box_with_ballot" js="1">Urne med stemmeseddel</word>
   <word key="emoji-pencil2" js="1">Blyant</word>
   <word key="emoji-black_nib" js="1">Fyllepenn</word>
-  <word key="emoji-lower_left_fountain_pen" js="1">Fyllepenn vridd mot venstre</word>
-  <word key="emoji-lower_left_ballpoint_pen" js="1">Kulepenn vridd mot venstre</word>
-  <word key="emoji-lower_left_paintbrush" js="1">Malekost vridd mot venstre</word>
-  <word key="emoji-lower_left_crayon" js="1">Blyant vridd mot venstre</word>
+  <word key="emoji-lower_left_fountain_pen" js="1">Fyllepenn</word>
+  <word key="emoji-lower_left_ballpoint_pen" js="1">Kulepenn</word>
+  <word key="emoji-lower_left_paintbrush" js="1">Malekost</word>
+  <word key="emoji-lower_left_crayon" js="1">Blyant</word>
   <word key="emoji-memo" js="1">Memo</word>
   <word key="emoji-briefcase" js="1">Koffert</word>
   <word key="emoji-file_folder" js="1">Filmappe</word>
@@ -10022,7 +9977,7 @@ For å støtte dette må du <a href='{internal.app=core&module=promotion&control
   <word key="emoji-pick" js="1">Hakke</word>
   <word key="emoji-hammer_and_pick" js="1">Hammer og hakke</word>
   <word key="emoji-hammer_and_wrench" js="1">Hammer og fastnøkkel</word>
-  <word key="emoji-dagger_knife" js="1">Dolkkniv</word>
+  <word key="emoji-dagger_knife" js="1">Dolk</word>
   <word key="emoji-crossed_swords" js="1">Kryssende sverd</word>
   <word key="emoji-gun" js="1">Pistol</word>
   <word key="emoji-bow_and_arrow" js="1">Pil og bue </word>
@@ -10031,7 +9986,7 @@ For å støtte dette må du <a href='{internal.app=core&module=promotion&control
   <word key="emoji-nut_and_bolt" js="1">Mutter og bolt</word>
   <word key="emoji-gear" js="1">Gir</word>
   <word key="emoji-compression" js="1">Skrutvinge</word>
-  <word key="emoji-scales" js="1">Skålvekt</word>
+  <word key="emoji-scales" js="1">Balansevekt</word>
   <word key="emoji-link" js="1">Lenke</word>
   <word key="emoji-chains" js="1">Kjeder</word>
   <word key="emoji-toolbox" js="1">Verktøykasse</word>
@@ -10088,7 +10043,7 @@ For å støtte dette må du <a href='{internal.app=core&module=promotion&control
   <word key="emoji-no_pedestrians" js="1">Ingen fotgjengere</word>
   <word key="emoji-no_mobile_phones" js="1">Ingen mobiltelefon</word>
   <word key="emoji-underage" js="1">Ingen under 18</word>
-  <word key="emoji-radioactive_sign" js="1">Radioaktivitet</word>
+  <word key="emoji-radioactive_sign" js="1">Skilt for radioaktivitet</word>
   <word key="emoji-biohazard_sign" js="1">Biologisk fareskilt</word>
   <word key="emoji-arrow_up" js="1">Oppover pil</word>
   <word key="emoji-arrow_upper_right" js="1">Nordøst pil</word>
@@ -10153,7 +10108,7 @@ For å støtte dette må du <a href='{internal.app=core&module=promotion&control
   <word key="emoji-double_vertical_bar" js="1">Pausesymbol</word>
   <word key="emoji-black_square_for_stop" js="1">Stopp symbol</word>
   <word key="emoji-black_circle_for_record" js="1">Opptakssymbol </word>
-  <word key="emoji-eject" js="1">Skyv ut</word>
+  <word key="emoji-eject" js="1">Skyv ut-knapp</word>
   <word key="emoji-cinema" js="1">Kino</word>
   <word key="emoji-low_brightness" js="1">Lite lys-knapp</word>
   <word key="emoji-high_brightness" js="1">Mye lys-knapp</word>
@@ -10161,7 +10116,7 @@ For å støtte dette må du <a href='{internal.app=core&module=promotion&control
   <word key="emoji-vibration_mode" js="1">Vibreringsmodus</word>
   <word key="emoji-mobile_phone_off" js="1">Mobiltelefon av</word>
   <word key="emoji-female_sign" js="1">Kvinnelig kjønnssymbol</word>
-  <word key="emoji-male_sign" js="1">Mannlig tegn</word>
+  <word key="emoji-male_sign" js="1">Tegn for mann</word>
   <word key="emoji-medical_symbol" js="1">Medisinsymbol</word>
   <word key="emoji-infinity" js="1">Uendelig</word>
   <word key="emoji-recycle" js="1">Gjenvinningssymbol</word>
@@ -10196,7 +10151,7 @@ For å støtte dette må du <a href='{internal.app=core&module=promotion&control
   <word key="emoji-registered" js="1">Registrert-tegn</word>
   <word key="emoji-tm" js="1">Varemarke</word>
   <word key="emoji-hash" js="1">Emneknagg</word>
-  <word key="emoji-keycap_star" js="1">Tast: Stjerne</word>
+  <word key="emoji-keycap_star" js="1">Tast: *</word>
   <word key="emoji-zero" js="1">Tast: 0</word>
   <word key="emoji-one" js="1">Tastaturknapp 1</word>
   <word key="emoji-two" js="1">Tast: 2</word>
@@ -10273,7 +10228,7 @@ For å støtte dette må du <a href='{internal.app=core&module=promotion&control
   <word key="emoji-checkered_flag" js="1">Rutete flagg</word>
   <word key="emoji-triangular_flag_on_post" js="1">Vimpel</word>
   <word key="emoji-waving_black_flag" js="1">Viftende svart flagg</word>
-  <word key="emoji-waving_white_flag" js="1">Viftende hvitt flagg</word>
+  <word key="emoji-waving_white_flag" js="1">Hvitt flagg</word>
   <word key="emoji-rainbow-flag" js="1">Reinbueflagg</word>
   <word key="emoji-flag-af" js="1">Afghanistans flagg</word>
   <word key="emoji-pirate_flag" js="1">Piratflagg</word>
@@ -10562,15 +10517,15 @@ For å støtte dette må du <a href='{internal.app=core&module=promotion&control
   <word key="emoji-star2" js="1">Lysende stjerne</word>
   <word key="emoji-stars" js="1">Stjerneskudd</word>
   <word key="emoji-thermometer" js="1">Termometer</word>
-  <word key="emoji-mostly_sunny" js="1">Overskyet med litt sol</word>
-  <word key="emoji-barely_sunny" js="1">Delvis skyet</word>
-  <word key="emoji-partly_sunny_rain" js="1">Delvis sol med regn</word>
+  <word key="emoji-mostly_sunny" js="1">Sol bak liten sky</word>
+  <word key="emoji-barely_sunny" js="1">Sol bak stor sky</word>
+  <word key="emoji-partly_sunny_rain" js="1">Sol bak regnsky</word>
   <word key="emoji-rain_cloud" js="1">Regnsky</word>
   <word key="emoji-snow_cloud" js="1">Snøsky</word>
-  <word key="emoji-lightning" js="1">Lyn</word>
+  <word key="emoji-lightning" js="1">Sky med lyn</word>
   <word key="emoji-tornado" js="1">Tornado</word>
   <word key="emoji-fog" js="1">Tåke</word>
-  <word key="emoji-wind_blowing_face" js="1">Vindansikt som blåser</word>
+  <word key="emoji-wind_blowing_face" js="1">Vindansikt</word>
   <word key="emoji-carousel_horse" js="1">Karusellhest</word>
   <word key="emoji-ferris_wheel" js="1">Pariserhjul</word>
   <word key="emoji-roller_coaster" js="1">Berg-og-dal-bane</word>
@@ -10579,7 +10534,7 @@ For å støtte dette må du <a href='{internal.app=core&module=promotion&control
   <word key="emoji-camping" js="1">Kamping</word>
   <word key="emoji-beach_with_umbrella" js="1">Strand med parasoll</word>
   <word key="emoji-building_construction" js="1">Bygningskonstruksjon </word>
-  <word key="emoji-house_buildings" js="1">Husbygninger</word>
+  <word key="emoji-house_buildings" js="1">Hus</word>
   <word key="emoji-cityscape" js="1">Bylandskap</word>
   <word key="emoji-derelict_house_building" js="1">Falleferdig hus</word>
   <word key="emoji-classical_building" js="1">Klassisk bygning</word>
@@ -10717,7 +10672,7 @@ For å støtte dette må du <a href='{internal.app=core&module=promotion&control
   <word key="emoji-zap" js="1">Høyspenning</word>
   <word key="emoji-snowman_without_snow" js="1">Snømann uten snø</word>
   <word key="emoji-partly_sunny" js="1">Sol bak sky</word>
-  <word key="emoji-thunder_cloud_and_rain" js="1">Tordensky og regn</word>
+  <word key="emoji-thunder_cloud_and_rain" js="1">Tordensky med lyn og regn</word>
   <word key="emoji-shinto_shrine" js="1">Jinja</word>
   <word key="emoji-church" js="1">Kirke</word>
   <word key="emoji-mountain" js="1">Fjell</word>
@@ -10793,7 +10748,7 @@ For å støtte dette må du <a href='{internal.app=core&module=promotion&control
   <word key="emoji-beer" js="1">Ølmugge </word>
   <word key="emoji-beers" js="1">Skåle med ølkrus</word>
   <word key="emoji-baby_bottle" js="1">Tåteflaske</word>
-  <word key="emoji-knife_fork_plate" js="1">Kniv, gaffel og tallerken</word>
+  <word key="emoji-knife_fork_plate" js="1">Gaffel og kniv med tallerken</word>
   <word key="emoji-champagne" js="1">Flaske med sprettkork</word>
   <word key="emoji-popcorn" js="1">Popcorn</word>
   <word key="emoji-birthday" js="1">Bursdagskake</word>
@@ -10922,7 +10877,7 @@ For å støtte dette må du <a href='{internal.app=core&module=promotion&control
   <word key="emoji-chipmunk" js="1">Stripeekorn</word>
   <word key="emoji-bouquet" js="1">Blomsterbukett</word>
   <word key="emoji-white_flower" js="1">Kirsebærblomst</word>
-  <word key="emoji-dove_of_peace" js="1">Fredsdue</word>
+  <word key="emoji-dove_of_peace" js="1">Due</word>
   <word key="emoji-spider" js="1">Edderkopp</word>
   <word key="emoji-spider_web" js="1">Spindelvev</word>
   <word key="emoji-wilted_flower" js="1">Visnet blomst</word>
@@ -11028,21 +10983,21 @@ For å støtte dette må du <a href='{internal.app=core&module=promotion&control
   <word key="emoji-male-artist" js="1">Mannlig artist</word>
   <word key="emoji-male-teacher" js="1">Mannlig lærer</word>
   <word key="emoji-male-factory-worker" js="1">Mannlig fabrikkarbeider</word>
-  <word key="emoji-man-boy-boy" js="1">Mann-gutt-gutt</word>
-  <word key="emoji-man-boy" js="1">Mann-gutt</word>
-  <word key="emoji-man-girl-boy" js="1">Mann-jente-gutt</word>
-  <word key="emoji-man-girl-girl" js="1">Mann-jente-jente</word>
-  <word key="emoji-man-girl" js="1">Mann-jente</word>
-  <word key="emoji-man-man-boy" js="1">Mann-mann-gutt</word>
-  <word key="emoji-man-man-boy-boy" js="1">Mann-mann-gutt-gutt</word>
-  <word key="emoji-man-man-girl" js="1">Mann-Mann-Jente</word>
-  <word key="emoji-man-man-girl-boy" js="1">Mann-Mann-Jente-Gutt</word>
-  <word key="emoji-man-man-girl-girl" js="1">Mann-Mann-Jente-Jente</word>
-  <word key="emoji-man-woman-boy" js="1">Mann-Kvinne-Gutt</word>
-  <word key="emoji-man-woman-boy-boy" js="1">Mann-Kvinne-Gutt-Gutt</word>
-  <word key="emoji-man-woman-girl" js="1">Mann-Kvinne-Jente</word>
-  <word key="emoji-man-woman-girl-boy" js="1">Mann-Kvinne-Jente-Gutt</word>
-  <word key="emoji-man-woman-girl-girl" js="1">Mann-Kvinne-Jente-Jente</word>
+  <word key="emoji-man-boy-boy" js="1">Familie: Mann, gutt, gutt</word>
+  <word key="emoji-man-boy" js="1">Familie: Mann, gutt</word>
+  <word key="emoji-man-girl-boy" js="1">Familie: Mann, jente, gutt</word>
+  <word key="emoji-man-girl-girl" js="1">Familie: Mann, jente, jente</word>
+  <word key="emoji-man-girl" js="1">Familie: Mann, jente</word>
+  <word key="emoji-man-man-boy" js="1">Familie: Mann, mann, gutt</word>
+  <word key="emoji-man-man-boy-boy" js="1">Familie: Mann, mann, gutt, gutt</word>
+  <word key="emoji-man-man-girl" js="1">Familie: Mann, mann, jente</word>
+  <word key="emoji-man-man-girl-boy" js="1">Familie: Mann, mann, jente, gutt</word>
+  <word key="emoji-man-man-girl-girl" js="1">Familie: Mann, mann, jente, jente</word>
+  <word key="emoji-man-woman-boy" js="1">Familie: Mann, kvinne, gutt</word>
+  <word key="emoji-man-woman-boy-boy" js="1">Familie: Mann, kvinne, gutt, gutt</word>
+  <word key="emoji-man-woman-girl" js="1">Familie: Mann, kvinne, jente</word>
+  <word key="emoji-man-woman-girl-boy" js="1">Familie: Mann, kvinne, jente, gutt</word>
+  <word key="emoji-man-woman-girl-girl" js="1">Familie: Mann, kvinne, jente, jente</word>
   <word key="emoji-male-technologist" js="1">Mannlig teknolog</word>
   <word key="emoji-male-office-worker" js="1">Mannlig kontorarbeider</word>
   <word key="emoji-male-mechanic" js="1">Mannlig mekaniker</word>
@@ -11056,32 +11011,32 @@ For å støtte dette må du <a href='{internal.app=core&module=promotion&control
   <word key="emoji-male-doctor" js="1">Mannlig doktor</word>
   <word key="emoji-male-judge" js="1">Mannlig dommer</word>
   <word key="emoji-male-pilot" js="1">Mannlig pilot</word>
-  <word key="emoji-man-heart-man" js="1">Mann hjerter mann</word>
+  <word key="emoji-man-heart-man" js="1">Par med hjerte: Mann, mann</word>
   <word key="emoji-man-kiss-man" js="1">Mann kysser mann</word>
   <word key="emoji-man" js="1">Mann</word>
-  <word key="emoji-female-farmer" js="1">Kvinnelig brannkonstabel</word>
+  <word key="emoji-female-farmer" js="1">Kvinnelig bonde</word>
   <word key="emoji-female-cook" js="1">Kvinnelig kokk</word>
   <word key="emoji-female-student" js="1">Kvinnelig student</word>
-  <word key="emoji-female-singer" js="1">Kvinnelig sangerinner </word>
+  <word key="emoji-female-singer" js="1">Kvinnelig sangerinne</word>
   <word key="emoji-female-artist" js="1">Kvinnelig artist</word>
   <word key="emoji-female-teacher" js="1">Kvinnelig lærer</word>
   <word key="emoji-female-factory-worker" js="1">Kvinnelig fabrikkarbeider</word>
-  <word key="emoji-woman-boy-boy" js="1">Kvinne-Gutt-Gutt</word>
-  <word key="emoji-woman-boy" js="1">Kvinne-Gutt</word>
-  <word key="emoji-woman-girl-boy" js="1">Kvinne-jente-gutt</word>
-  <word key="emoji-woman-girl-girl" js="1">Kvinne-jente-jente</word>
-  <word key="emoji-woman-girl" js="1">Kvinne-jente</word>
-  <word key="emoji-woman-woman-boy" js="1">Kvinne-Kvinne-Gutt</word>
-  <word key="emoji-woman-woman-boy-boy" js="1">Kvinne-Kvinne-Gutt-Gutt</word>
-  <word key="emoji-woman-woman-girl" js="1">Kvinne-Kvinne-Jente</word>
-  <word key="emoji-woman-woman-girl-boy" js="1">Kvinne-Kvinne-Jente-Gutt</word>
-  <word key="emoji-woman-woman-girl-girl" js="1">Kvinne-Kvinne-Jente-Jente</word>
+  <word key="emoji-woman-boy-boy" js="1">Familie: Kvinne, gutt, gutt</word>
+  <word key="emoji-woman-boy" js="1">Familie: Kvinne, gutt</word>
+  <word key="emoji-woman-girl-boy" js="1">Familie: Kvinne, jente, gutt</word>
+  <word key="emoji-woman-girl-girl" js="1">Familie: Kvinne, jente, jente</word>
+  <word key="emoji-woman-girl" js="1">Familie: Kvinne, jente</word>
+  <word key="emoji-woman-woman-boy" js="1">Familie: Kvinne, kvinne, gutt</word>
+  <word key="emoji-woman-woman-boy-boy" js="1">Familie: Kvinne, kvinne, gutt, gutt</word>
+  <word key="emoji-woman-woman-girl" js="1">Familie: Kvinne, kvinne, jente</word>
+  <word key="emoji-woman-woman-girl-boy" js="1">Familie: Kvinne, kvinne, jente, gutt</word>
+  <word key="emoji-woman-woman-girl-girl" js="1">Familie: Kvinne, kvinne, jente, jente</word>
   <word key="emoji-female-technologist" js="1">Kvinnelig teknolog</word>
   <word key="emoji-female-office-worker" js="1">Kvinnelig kontorarbeider</word>
   <word key="emoji-female-mechanic" js="1">Kvinnelig mekaniker</word>
   <word key="emoji-female-scientist" js="1">Kvinnelig forsker</word>
   <word key="emoji-female-astronaut" js="1">Kvinnelig astronaut</word>
-  <word key="emoji-female-firefighter" js="1">Brannkvinne</word>
+  <word key="emoji-female-firefighter" js="1">Kvinnelig brannkonstabel</word>
   <word key="emoji-female_red_haired" js="1">Rødhåret kvinne</word>
   <word key="emoji-female_curly_haired" js="1">Kvinne med krusete hår</word>
   <word key="emoji-female_bald" js="1">Skallet kvinne</word>
@@ -11089,12 +11044,11 @@ For å støtte dette må du <a href='{internal.app=core&module=promotion&control
   <word key="emoji-female-doctor" js="1">Kvinnelig doktor</word>
   <word key="emoji-female-judge" js="1">Kvinnelig dommer</word>
   <word key="emoji-female-pilot" js="1">Kvinnelig pilot</word>
-  <word key="emoji-woman-heart-man" js="1">Kvinne-hjerte-mann</word>
-  <word key="emoji-woman-heart-woman" js="1">Kvinne-hjerte-kvinne</word>
+  <word key="emoji-woman-heart-man" js="1">Par med hjerte: Kvinne, mann</word>
+  <word key="emoji-woman-heart-woman" js="1">Par med hjerte: Kvinne, kvinne</word>
   <word key="emoji-woman-kiss-man" js="1">Kvinne kysser mann</word>
   <word key="emoji-woman-kiss-woman" js="1">Kvinne kysser kvinne</word>
   <word key="emoji-woman" js="1">Kvinne</word>
-  <word key="emoji-couple" js="1">Mann og kvinne holder hender</word>
   <word key="emoji-two_men_holding_hands" js="1">To menn holder hender</word>
   <word key="emoji-two_women_holding_hands" js="1">To kvinner holder hender</word>
   <word key="emoji-female-police-officer" js="1">Politikvinne</word>
@@ -11162,17 +11116,16 @@ For å støtte dette må du <a href='{internal.app=core&module=promotion&control
   <word key="emoji-thought_balloon" js="1">Tenkeboble</word>
   <word key="emoji-prayer_beads" js="1">Bedekrans</word>
   <word key="emoji-hole" js="1">Hull</word>
-  <word key="emoji-man_in_business_suit_levitating" js="1">Mann som svever i dress</word>
+  <word key="emoji-man_in_business_suit_levitating" js="1">Person som svever i dress</word>
   <word key="emoji-female-detective" js="1">Kvinnelig detektiv</word>
   <word key="emoji-male-detective" js="1">Mannlig detektiv</word>
-  <word key="emoji-dark_sunglasses" js="1">Mørke solbriller</word>
+  <word key="emoji-dark_sunglasses" js="1">Solbriller</word>
   <word key="emoji-man_dancing" js="1">Mann som danser</word>
-  <word key="emoji-raised_hand_with_fingers_splayed" js="1">Hevet hånd med sprikende fingrer</word>
+  <word key="emoji-raised_hand_with_fingers_splayed" js="1">Hånd med sprikende fingrer</word>
   <word key="emoji-middle_finger" js="1">Langfinger</word>
   <word key="emoji-spock-hand" js="1">Vulcan-hilsen</word>
   <word key="emoji-black_heart" js="1">Svart hjerte</word>
   <word key="emoji-speaking_head_in_silhouette" js="1">Snakkende hode</word>
-  <word key="emoji-left_speech_bubble" js="1">Snakkeboble mot venstre</word>
   <word key="emoji-right_anger_bubble" js="1">Ropende snakkeboble</word>
   <word key="emoji-grinning" js="1">Glisefjes</word>
   <word key="emoji-grin" js="1">Glisefjes med smilende øyne</word>
@@ -11319,7 +11272,7 @@ For å støtte dette må du <a href='{internal.app=core&module=promotion&control
   <word key="emoji-man-juggling" js="1">Mann sjonglerer</word>
   <word key="emoji-fencer" js="1">Fekter</word>
   <word key="emoji-woman-wrestling" js="1">Kvinner som wrestler</word>
-  <word key="emoji-man-wrestling" js="1">Mann som wrestler</word>
+  <word key="emoji-man-wrestling" js="1">Menn som wrestler</word>
   <word key="emoji-woman-playing-water-polo" js="1">Kvinne som spiller vannpolo</word>
   <word key="emoji-man-playing-water-polo" js="1">Mann spiller vannpolo</word>
   <word key="emoji-woman-playing-handball" js="1">Kvinne som spiller håndball</word>
@@ -11379,10 +11332,10 @@ For å støtte dette må du <a href='{internal.app=core&module=promotion&control
   <word key="emoji-skull_and_crossbones" js="1">Dødningshode</word>
   <word key="emoji-white_frowning_face" js="1">Litt surmulende fjes</word>
   <word key="emoji-relaxed" js="1">Smilefjes</word>
-  <word key="emoji-helmet_with_white_cross" js="1">Hjelm med hvitt kors</word>
+  <word key="emoji-helmet_with_white_cross" js="1">Hjelpearbeiders hjelm</word>
   <word key="emoji-skier" js="1">Skigåer</word>
   <word key="emoji-woman-bouncing-ball" js="1">Kvinne som pakker ball</word>
-  <word key="emoji-man-bouncing-ball" js="1">Mann som pakker ball</word>
+  <word key="emoji-man-bouncing-ball" js="1">Mann som spretter ball</word>
   <word key="emoji-fist" js="1">Hevet knyttneve</word>
   <word key="emoji-hand" js="1">Hevet hånd</word>
   <word key="emoji-v" js="1">Seiershånd</word>
@@ -11521,7 +11474,7 @@ For å støtte dette må du <a href='{internal.app=core&module=promotion&control
   <word key="more_about_ip_address" js="0">Mer om denne IP-adressen</word>
   <word key="notifications__core_Messenger_desc" js="0">Disse varslene sendes når du mottar personlige meldinger.</word>
   <word key="show_pm_popup_lc" js="0">sprett-opp-vindu</word>
-  <word key="notifications_list_and_app" js="0">Varslingsliste + mobilapp</word>
+  <word key="notifications_list_and_app" js="0">Varslingsliste + mobilvarsel</word>
   <word key="notifications_list_only" js="0">Kun varslingsliste</word>
   <word key="notifications_no_list" js="0">Ingen varslingsliste</word>
   <word key="notifications__core_MyStuff" js="0">@Omtaler og mitt innhold</word>
@@ -11554,17 +11507,10 @@ For å støtte dette må du <a href='{internal.app=core&module=promotion&control
   <word key="notifications__core_BulkMails_desc" js="0">Disse varslene sendes periodisk for å varsle deg om nyheter og oppdateringer.</word>
   <word key="your_inline_notifications" js="0">Din varslingsliste</word>
   <word key="your_email_notifications" js="0">Dine epost-varsler</word>
-  <word key="notification_sounds" js="0">Lyder aktivert</word>
-  <word key="notification_sounds_off" js="0">Lyder deaktivert</word>
   <word key="notificationsettings_title" js="0">Varslingstyper</word>
   <word key="notificationsettings_method" js="0">Varslingsmetoder</word>
   <word key="notifications_browser" js="0">La nettleseren varsle meg når jeg mottar et varsel</word>
   <word key="notifications_browser_disabled" js="0">Tilgangen ble nektet. Sjekk hjelpedokumentasjonen for din nettleser for å finne ut hvordan du kan aktivere varsler for denne siden.</word>
-  <word key="notification__best_answer" js="0">Innlegget ditt ble markert som det beste svaret: %s</word>
-  <word key="mailsub__core_notification_best_answer" js="0">Innlegget ditt ble markert som det beste svaret</word>
-  <word key="email_best_answer" js="0">Svaret ditt har blitt markert som beste svar:</word>
-  <word key="emailstats__notification_best_answer" js="0">Beste svar</word>
-  <word key="emailtpl__notification_best_answer" js="0">Beste svar</word>
   <word key="group_allow_anon_logins" js="0">Tillatte</word>
   <word key="group_force_anon_logins" js="0">Påtvunget</word>
   <word key="group_disallow_anon_logins" js="0">Ikke tillatt</word>
@@ -11689,20 +11635,11 @@ For å støtte dette må du <a href='{internal.app=core&module=promotion&control
   <word key="theme_custom_tab_typescale" js="0">Fontskalering</word>
   <word key="themesetting_header_text" js="0">Topptekst</word>
   <word key="themesetting_selected_border" js="0">Valgt ramme</word>
-  <word key="themesetting_tag_font" js="0">Emneknagger</word>
+  <word key="themesetting_tag_font" js="0">Emneknagg-tekst</word>
   <word key="themesetting_font_size" js="0">Skaler skriftstørrelser</word>
   <word key="themesetting_font_size_desc" js="0">Skalerer automatisk alle standard skriftstørrelser ved visning.</word>
   <word key="themesetting_active_input_border" js="0">Aktiv input-ramme</word>
   <word key="themesetting_brand_primary" js="0">Merkevarefarge</word>
-  <word key="themesetting_font_x_small" js="0">X liten (px)</word>
-  <word key="themesetting_font_small" js="0">Liten (px)</word>
-  <word key="themesetting_font_medium" js="0">Middels (px)</word>
-  <word key="themesetting_font_base" js="0">Base (px)</word>
-  <word key="themesetting_font_large" js="0">Stor (px)</word>
-  <word key="themesetting_font_x_large" js="0">X stor (px)</word>
-  <word key="themesetting_font_2x_large" js="0">2X stor (px)</word>
-  <word key="themesetting_font_3x_large" js="0">3X stor (px)</word>
-  <word key="themesetting_font_4x_large" js="0">4X stor (px)</word>
   <word key="themesetting_mobile_back" js="0">Tilbakeknapp for mobil</word>
   <word key="themesetting_mobile_back_font" js="0">Skriftstørrelse på tilbakeknapp for mobil</word>
   <word key="themesetting_trophy_first" js="0">Trofe for 1. plass</word>
@@ -11790,7 +11727,6 @@ For å støtte dette må du <a href='{internal.app=core&module=promotion&control
   <word key="edit_log_prune_notice" js="0">Vennligst merk at revisjoner som er eldre enn {# [1:dag][?:dager]} vil fjernes og ikke lenger være synlig her.</word>
   <word key="task__chunkcleanup" js="0">Fjerner ikke-fullførte midlertidige opplastinger</word>
   <word key="task__webhooks" js="0">Sender API webhooks</word>
-  <word key="datastore_method_deprecated" js="0"><![CDATA[<div class='ipsMessage ipsMessage_warning'>Bruk av %s som en caching-metode er utfaset og blir helt fjernet i en fremtidig versjon. Vennligst bytt til 'Ingen caching' eller 'Redis' så snart som mulig.</div>]]></word>
   <word key="languages_create_blurb" js="0"><![CDATA[Oppretting av et nytt språk vil lage en kopi av standard språkpakke som du kan tilpasse. Du kan også legge til ferdige språkpakker fra <a href='{internal.app=core&module=marketplace&controller=marketplace}'>markedsplassen</a> eller med en <a href='{internal.app=core&module=languages&controller=languages&do=upload}'>manuell opplasting</a>.]]></word>
   <word key="languages_manual_install_warning" js="0">Det beste stedet å hente språkpakker fra er markedsplassen hvor alle ressurser gjennomgås av utviklerne bak Invision Community. Hvis du har en tilpasset språkpakke som ikke er tilgjengelig i markedsplassen kan du installere den her.</word>
   <word key="lang_filter_admin_custom" js="0">Tilpasset</word>
@@ -11853,7 +11789,8 @@ For å støtte dette må du <a href='{internal.app=core&module=promotion&control
   <word key="onboard_takeme_packages" js="0">Administrer produkter</word>
   <word key="onboard_tab_identity" js="0">Sideidentitet</word>
   <word key="onboard_msg_identity" js="0"><![CDATA[Denne seksjonen lar deg konfigurere grunnleggende detaljer om siden din som navnet, adressen og profiler på sosiale medier som kan knyttes til siden.<br><br>Hvis du legger til en adresse vil den automatisk bli lagt til i personvernsvilkårene og alle utgående eposter som siden sender ut. Dette er noe som ofte kreves av lokale lover.]]></word>
-  <word key="onboard_location_identity" js="0"><![CDATA[System ( <i class='fa fa-cogs'></i> ) > Innstillinger > Generell konfigurasjon]]></word>
+  <word key="onboard_location_identity" js="0"><![CDATA[<strong>Sidenavn, adresse og sosiale profiler:</strong><br>System ( <i class='fa fa-cogs'></i> ) > Innstillinger > Generell konfigurasjon<br><br>
+<strong>E-postadresser:</strong><br>System ( <i class='fa fa-cogs'></i> ) > Innstillinger > E-postinnstillinger]]></word>
   <word key="onboard_tab_appearance" js="0">Logoer og utseende</word>
   <word key="onboard_msg_appearance" js="0">Å tilpasse hvordan siden din ser ut og laste opp en logo er en enkel måte å få siden din til å skille seg ut og gjøre den til din egen. Hvert enkelt utseende kan bruke sin helt egen logo, som kan endres når du redigerer hvert enkelt utseende, mens eposter bruker en enkelt logo for alle eposter som sendes ut fra siden.</word>
   <word key="onboard_location_appearance" js="0"><![CDATA[<strong>Favicon og applikasjonsikoner:</strong><br>Tilpassing ( <i class='fa fa-paint-brush'></i> ) > Utseende > Ikoner og logoer<br><br><strong>Utseendelogoer:</strong><br>Tilpassing ( <i class='fa fa-paint-brush'></i> ) > Utseende > Utseender<br><br><strong>Epost-logo og hovedfarge for epost:</strong><br>System ( <i class='fa fa-cogs'></i> ) > Innstillinger > Epost-innstillinger]]></word>
@@ -11943,7 +11880,7 @@ For å støtte dette må du <a href='{internal.app=core&module=promotion&control
   <word key="twitter_dark" js="0">Mørk</word>
   <word key="twitter_color" js="0">Aksentfarge</word>
   <word key="last_three_months" js="0">Siste tre måneder</word>
-  <word key="menu__core_support_support" js="0">Brukerstøtte</word>
+  <word key="menu__core_support_support" js="0">Få brukerstøtte</word>
   <word key="support_third_party_apps_count" js="0">{0# [1:applikasjon][?:applikasjoner]} ({1#} fra markedsplassen og {2#} tilpassede)</word>
   <word key="support_third_party_plugins_count" js="0">{0# [1:tillegg][?:tillegg]} ({1#} fra markedsplassen og {2#} tilpassede)</word>
   <word key="support_third_party_theme_count" js="0">Ikke-standard utseende</word>
@@ -12082,7 +12019,7 @@ For å støtte dette må du <a href='{internal.app=core&module=promotion&control
   <word key="rb_upload_no" js="0">Jeg vil oppgi en URL for bannerbildet</word>
   <word key="rb_url_upload" js="0">Bilde</word>
   <word key="rb_url_url" js="0">BildeURL</word>
-  <word key="solved_badge_tooltip" js="0">Brukerens antall løste saker</word>
+  <word key="solved_badge_tooltip" js="0">{# [1:løsning][?:løsninger]}</word>
   <word key="solved_badge_tooltip_time" js="0">Brukerens antall løste saker for denne tidsperioden</word>
   <word key="block_mostSolved" js="0">Mest løst</word>
   <word key="block_mostSolved_desc" js="0">Vis medlemmer som har løst flest saker</word>
@@ -12350,10 +12287,10 @@ For å støtte dette må du <a href='{internal.app=core&module=promotion&control
   <word key="app_email_notification" js="0">Epostvarsel</word>
   <word key="app_email_notification_desc" js="0">Epostvarsler blir sendt til {{email}}</word>
   <word key="app_notification_types" js="0">Varslingstyper</word>
-  <word key="app_notification_both" js="0">Mobilapp og varslingsliste</word>
+  <word key="app_notification_both" js="0">Push-varsel og varslingsliste</word>
   <word key="app_notification_inline" js="0">Kun varslingsliste</word>
   <word key="app_notification_none" js="0">Ingen app eller list varsler</word>
-  <word key="app_notification_type_push" js="0">Mobilapp</word>
+  <word key="app_notification_type_push" js="0">Push-varsel</word>
   <word key="app_notification_type_email" js="0">Epost</word>
   <word key="app_notification_type_inline" js="0">Varslingsliste</word>
   <word key="app_notification_type_none" js="0">Ingen</word>
@@ -12511,10 +12448,10 @@ For å støtte dette må du <a href='{internal.app=core&module=promotion&control
   <word key="acplogs__mobile_app_updated" js="0">Oppdaterte informasjonen i mobilapp-mappen</word>
   <word key="acplogs__mobile_app_unregistered" js="0">Fjernet mobilapp-funksjonalitet</word>
   <word key="acplogs__mobile_app_activated" js="0">Aktiverte mobilapp</word>
-  <word key="member_notifications_push" js="0">Mobilapp</word>
+  <word key="member_notifications_push" js="0">Push-varsel</word>
   <word key="mobile_app_user_agent" js="0">Invision Community %s (%s)</word>
-  <word key="member_notifications_push_desc" js="0">Varsler blir sendt til Invision Community-appen på alle dine enheter. </word>
-  <word key="member_notifications_push_stop" js="0">Stopp alle varsler til mobilapp</word>
+  <word key="member_notifications_push_desc" js="0">Varsler blir sendt til enhetene dine selv om du ikke er aktiv på siden da</word>
+  <word key="member_notifications_push_stop" js="0">Stopp alle push-varsler</word>
   <word key="mobilenavigation_CustomItem" js="0">Tilpasset URL</word>
   <word key="module__core_marketplace" js="0">Markedsplass</word>
   <word key="menutab__marketplace_icon" js="0">shopping-basket</word>
@@ -12722,6 +12659,856 @@ For å støtte dette må du <a href='{internal.app=core&module=promotion&control
   <word key="marketplace_search" js="1">Søk i markedsplassen</word>
   <word key="marketplace_installing" js="1">Installerer…</word>
   <word key="marketplace_updating" js="1">Oppdaterer…</word>
+  <word key="form_interval_min_w" js="0">Verdien må være større enn {# [1:uke][?:uker]}.</word>
+  <word key="form_interval_max_w" js="0">Verdien må være mindre enn {# [1:uke][?:uker]}.</word>
+  <word key="applications_blurb_no_upload" js="0">All funksjonaliteten i nettsamfunnet ditt er bygget opp av applikasjoner, noen av dem består av flere moduler. Du kan endre tilgangen til enhver applikasjon eller modul som kontrollerer hvilke grupper som har tilgang til det området av nettsamfunnet ditt.</word>
+  <word key="dev_plugin_not_writable" js="0">dev-mappen til pluginen og alle dens undermapper og filer må være skrivbare for at du kan fortsette.</word>
+  <word key="can_toggle_item_moderation_content" js="0">Kan aktivere/deaktivere moderering på alt innhold?</word>
+  <word key="can_toggle_item_moderation_content_desc" js="0">Dette vil la deg bestemme at individuelle innholdselementer skal skreve godkjenning av nye kommentarer.</word>
+  <word key="rebuilding_urlrefs_stuff" js="0">Bygger om URL-data for %s</word>
+  <word key="refurls_rebuilt" js="0">Lenkedataene vil bli bygget om i bakgrunnen</word>
+  <word key="chart_customfilters_title" js="0">Tilpass data</word>
+  <word key="chart_customfilters_save" js="0">Oppdater diagram</word>
+  <word key="requirements_mysql_format_advice" js="0">Du har en eller flere InnoDB-tabeller som bruker formatet for 'Compact'-rader. Dette kan begrense mengden data som kan lagres i tabellen. Vi anbefaler at det endres til 'Dynamic'. %s Hvis du ikke er sikker på hvordan du gjør dette bør du ta kontakt med din serverleverandør eller systemadministrator for assistanse.</word>
+  <word key="requirements_mysql_ifpt_advice" js="0"><![CDATA[Vennligst forsikre deg om at `<a href='https://dev.mysql.com/doc/refman/5.7/en/innodb-parameters.html#sysvar_innodb_file_per_table' target='_blank'>innodb_file_per_table</a>` er aktivert.]]></word>
+  <word key="mobile_app_hide_stats" js="0">Skjul nettsamfunnstatistikk i mappen?</word>
+  <word key="mobile_app_hide_stats_desc" js="0">Appen viser omtrentlige tellere for innhold og medlemmer i hvert samfunn for å hjelpe brukere med å bestemme om de skal besøke. Du kan velge å skjule denne statistikken fra ditt nettsamfunn, men det betyr at siden ikke vil listes opp når app-brukerne sorterer mappen etter innhold- eller medlemstall.</word>
+  <word key="__defart_personal_conversation_plural" js="0">{!#[1:personlig samtale][?:personlige samtaler]}</word>
+  <word key="__defart_personal_conversation_message_plural" js="0">{!#[1:melding][?:meldinger]} i en personlig samtale</word>
+  <word key="__defart_report_plural" js="0">{!#[1:rapport][?:rapporter]}</word>
+  <word key="__defart_report_comment_plural" js="0">{!#[1:kommentar][?:kommentarer]} på en rapport</word>
+  <word key="__defart_status_reply_plural" js="0">{!#[1:svar][?:svar]} til en statusoppdatering</word>
+  <word key="__defart_member_status_plural" js="0">status{!#[1:oppdatering][?:oppdateringer]}</word>
+  <word key="__defart_comment_plural" js="0">{!#[1:kommentar][?:kommentarer]}</word>
+  <word key="first_unread_post" js="0">Gå til første uleste innlegg</word>
+  <word key="get_last_post" js="0">Gå til siste innlegg</word>
+  <word key="editor_insert" js="0">Sett inn</word>
+  <word key="you_are_offline" js="0">Du er frakoblet</word>
+  <word key="user_offline_title" js="0">Det ser ut som du er frakoblet</word>
+  <word key="user_offline_1" js="0">Vi kunne ikke laste inn siden fordi det ser ut som enheten din er frakoblet internett akkurat nå.</word>
+  <word key="user_offline_2" js="0">Sjekk tilkoblingen din før du så forsøker å laste inn siden på nytt ved å trykke på knappen.</word>
+  <word key="offline_try_again" js="0">Prøv igjen</word>
+  <word key="privacy_link_not_set_acp" js="0">Lenken til personvernsvilkårene er ikke fylt inn i adminpanelet</word>
+  <word key="something_went_wrong_404" js="0">Sorry!</word>
+  <word key="something_went_wrong_403" js="0">Obs!</word>
+  <word key="dtdiff_years" js="0">{# [1:år][?:år]}+</word>
+  <word key="dtdiff_months_days" js="0">{# [1:måned][?:måneder]}, {# [1:dag][?:dager]}</word>
+  <word key="dtdiff_months" js="0">{# [1:måned][?:måneder]}</word>
+  <word key="dtdiff_days_hours" js="0">{# [1:dag][?:dager]}, {# [1:time][?:timer]}</word>
+  <word key="dtdiff_days" js="0">{# [1:dag][?:dager]}</word>
+  <word key="dtdiff_hours_minutes" js="0">{# [1:time][?:timer]}, {# [1:minutt][?:minutter]}</word>
+  <word key="dtdiff_hours" js="0">{# [1:time][?:timer]}</word>
+  <word key="dtdiff_minutes" js="0">{# [1:minutt][?:minutter]}</word>
+  <word key="dtdiff_seconds" js="0">{# [1:sekund][?:sekunder]}</word>
+  <word key="dtdiff_none" js="0">Ingen</word>
+  <word key="_date_last_year_long_full" js="0">{!1#[1:Januar][2:Februar][3:Mars][4:April][5:Mai][6:Juni][7:Juli][8:August][9:September][10:Oktober][11:November][12:Desember]} {0#}, %s, %s</word>
+  <word key="_date_month_year_short" js="0">{!0#[1:Jan][2:Feb][3:Mar][4:Apr][5:Mai][6:Jun][7:Jul][8:Aug][9:Sep][10:Okt][11:Nov][12:Des]} %s</word>
+  <word key="byline_merge" js="0"><![CDATA[<span class='ipsPos_middle'>Av %s, %s</span>]]></word>
+  <word key="form_poll_no_question_title" js="0">Spørsmålet må ha en tittel.</word>
+  <word key="application_cannot_build_marketplace" js="0">Denne applikasjonen kunne ikke lastes ned.</word>
+  <word key="plugin_cannot_build_marketplace" js="0">Tillegget kunne ikke lastes ned. </word>
+  <word key="versions_human_bad" js="0">Versjonsnummeret må starte i formatet X.X.X, du kan inkludere annen versjonsinformasjon etter dette.</word>
+  <word key="login_auth_types_warning" js="0">Å la brukere logge inn med visningsnavn kan utgjøre en sikkerhetsrisiko fordi visningsnavn er offentlig versjon og ondsinnede brukere kan forsøke å logge inn på flere kontoer med ofte brukte passord til de finner en konto som det virker på. Det anbefales derfor at du kun lar brukere logge inn med e-postadresse.</word>
+  <word key="members_online_now" js="0">Pålogget nå</word>
+  <word key="acplog__members_deleted_id" js="0">Slettet bruker: %s #%s</word>
+  <word key="members_achievements_points" js="0">Rang</word>
+  <word key="default_notification_title" js="0">Du har et nytt varsel</word>
+  <word key="default_notification_body" js="0">Du må besøke siden for å lese. Trykk her for å logge inn.</word>
+  <word key="notification__container" js="0">i %s</word>
+  <word key="notifications__core_Likes" js="0">Reaksjoner</word>
+  <word key="notifications__core_Likes_desc" js="0">Disse varslene sendes når noen reagerer på innhold du har postet.</word>
+  <word key="notification__new_content_grouped" js="0">{count} nye %s postet %s</word>
+  <word key="notification__new_content_title" js="0">Nye %s postet</word>
+  <word key="notification__new_content_grouped_title" js="0">Nye %s postet</word>
+  <word key="notification__new_comment_title" js="0">{!#[1:Ny kommentar][?:Nye kommentarer]} postet</word>
+  <word key="notification__new_comment_grouped" js="0">{count} nye {!#[1:kommentarer][?:kommentarer]} på %s</word>
+  <word key="notification__new_review_title" js="0">{!#[1:Ny omtale][?:Nye omtaler]} postet</word>
+  <word key="notification__new_review_grouped" js="0">{count} ny {!#[1:omtale][?:omtaler]} på %s</word>
+  <word key="notification__new_mention_title" js="0">{!#[1:Ny omtale][?:Nye omtaler]} i %s</word>
+  <word key="notification__new_mention_grouped" js="0">{count} {!#[1:ny omtale][?:nye omtaler]} i %s: %s</word>
+  <word key="notification__new_quote_title" js="0">Du ble sitert i %s</word>
+  <word key="notification__new_quote_grouped" js="0">Du ble sitert {!#[1:en gang][?:# ganger]} i %s: %s</word>
+  <word key="notification__new_embed_title" js="0">Innholdet ditt ble lenket</word>
+  <word key="notification__new_embed_grouped" js="0">Innholdet ditt ble lenket til {!#[1:en gang][?:# ganger]} i %s: %s</word>
+  <word key="notification__new_likes_title" js="0">{!#[1:Ny like][?:Nye likes]} i %s</word>
+  <word key="notification__new_likes_grouped" js="0">{count} {!#[1:ny like][?:nye likes]} i %s</word>
+  <word key="notification__new_react_title" js="0">{!#[1:Ny reaksjon][?:Nye reaksjoner]} i %s</word>
+  <word key="notification__new_react_grouped" js="0">{count} {!#[1:ny reaksjon][?:nye reaksjoner]} i %s</word>
+  <word key="notification__member_follow_title" js="0">Ny følger</word>
+  <word key="notification__unapproved_content_title" js="0">⚠️ Nye %s venter godkjenning</word>
+  <word key="notification__unapproved_content_grouped" js="0">{count} nye %s venter godkjenning %s</word>
+  <word key="notification__new_content_bulk_title" js="0">Ny %s postet</word>
+  <word key="notification__unapproved_content_bulk_title" js="0">⚠️ Nye %s venter godkjenning</word>
+  <word key="notification__new_private_message_title" js="0">{!#[1:Ny melding][?:Nye meldinger]}</word>
+  <word key="notification__new_private_message_grouped" js="0">Du har {count} {!#[1:ny melding][?:nye meldinger]}</word>
+  <word key="notification__private_message_added_title" js="0">{!#[1:Ny melding][?:Nye meldinger]}</word>
+  <word key="notification__approved_content" js="0">Din %s ble godkjent: %s</word>
+  <word key="notification__approved_content_title" js="0">Godkjent!</word>
+  <word key="notification__new_club_unapproved_title" js="0">⚠️ Klubben krever godkjenning</word>
+  <word key="notifications_none_selected" js="0">Ingen valgte reaksjoner</word>
+  <word key="no_guest_push" js="0">Gjester kan ikke abonnere på push-varsler fra denne siden.</word>
+  <word key="invalid_push_subscription" js="0">Nettleseren sendte melding om ugyldig push-abonnement</word>
+  <word key="notification__minesolved" js="0">%s postet en løsning til ditt %s: %s</word>
+  <word key="notification__minesolved_title" js="0">Ditt %s ble løst!</word>
+  <word key="notification__mysolution" js="0">Ditt innlegg ble markert som løsningen: %s</word>
+  <word key="notification__mysolution_title" js="0">Du løste %s!</word>
+  <word key="mailsub__core_notification_mine_solved" js="0"><![CDATA[Din {$content->definiteArticle()} ble løst: {$content->mapped("title")|raw}	
+]]></word>
+  <word key="mailsub__core_notification_my_solution" js="0"><![CDATA[Du løste {$content->definiteArticle()}: {$content->mapped("title")|raw}]]></word>
+  <word key="mail_your_content_is_solved" js="0"><![CDATA[God nyhet! <a href='%s'>Et svar</a> ble markert som løsningen til ditt %s]]></word>
+  <word key="mail_your_post_is_solution" js="0"><![CDATA[God nyhet! <a href='%s'>Ditt innlegg</a> i <a href='%s'>%s</a> ble markert som løsningen.]]></word>
+  <word key="emailstats__notification_minesolved" js="0">Trådløsninger</word>
+  <word key="emailtpl__notification_minesolved" js="0">Trådløsninger</word>
+  <word key="emailstats__notification_my_solution" js="0">Brukerløsninger</word>
+  <word key="emailtpl__notification_my_solution" js="0">Brukerløsninger</word>
+  <word key="mailsub__core_notification_approved_content" js="0">Innholdet ditt har blitt godkjent</word>
+  <word key="gbw_hide_inline_modevents" js="0">Vis modereringshandlinger i flyten</word>
+  <word key="gbw_hide_inline_modevents_desc" js="0">Der hvor det støttes vil modereringshandlinger vises mellom kommentarer til brukere i denne gruppen. </word>
+  <word key="gbw_posted_in" js="0">Fremhev elementer med svar</word>
+  <word key="gbw_posted_in_primary" js="0">Brukere som har denne gruppen i sin hovedgruppe. </word>
+  <word key="gbw_posted_in_secondary" js="0">Brukere som har denne gruppen som sin primære eller sekundære gruppe</word>
+  <word key="gbw_posted_in_disabled" js="0">Deaktivert</word>
+  <word key="gbw_posted_in_desc" js="0">Der hvor det støttes vil innhold som er startet eller svart på av medlemmer i denne gruppen bli fremhevet. </word>
+  <word key="member_ranks_points" js="0">Antall poeng</word>
+  <word key="member_ranks_icon_desc" js="0">Rangikoner må ha like dimensjoner</word>
+  <word key="email_approved_content" js="0">Din %s ble godkjent</word>
+  <word key="profile_solutions" js="0">Hjelpsomme svar</word>
+  <word key="solutionlog_show_activity" js="0">Se svar</word>
+  <word key="member_solutions" js="0">Svar fra %s</word>
+  <word key="solution_headline" js="0"><![CDATA[%s's <a href='%s'>%s</a> in <a href='%s'>%s</a> ble markert som svaret]]></word>
+  <word key="relative_dates_enable" js="0">Bruk relative datoer</word>
+  <word key="menu__core_membersettings_ranks" js="0">Ranger</word>
+  <word key="menu__core_achievements_ranks" js="0">Ranger</word>
+  <word key="r__stats" js="0">Statistikk</word>
+  <word key="r__ranks_add" js="0">Kan opprette ranger</word>
+  <word key="r__ranks_edit" js="0">Kan endre eksisterende ranger</word>
+  <word key="r__ranks_delete" js="0">Kan slette eksisterende ranger</word>
+  <word key="r__notifications_prune" js="0">Kan justere innstillinger for fjerning av gamle varsler</word>
+  <word key="emailtpl_notification_approved_content" js="0">Brukerinnhold ble godkjent</word>
+  <word key="template_variables_save_warning_msg" js="0">Lagre malen for å permanent lagre endringer som gjøres her.</word>
+  <word key="icons_apple_startup" js="0">Startopp-bilde for iOS</word>
+  <word key="icons_apple_startup_desc" js="0">Bildet lastet opp her vil bli brukt til å generere et bilde som vil brukes av iOS når en bruker lagrer nettsiden til sin hjemskjerm. Hvis en manifest-bakgrunnsfarge oppgis, så vil den brukes til å bestemme bakgrunnsfargfen, ellers vil bakgrunnen være hvit.</word>
+  <word key="build_start_images_title" js="0">Bygger bilder</word>
+  <word key="themesetting_text_very_light" js="0">Veldig lys tekst</word>
+  <word key="font_x_small" js="0">X liten tekst (px)</word>
+  <word key="font_small" js="0">Liten tekst (px)</word>
+  <word key="font_medium" js="0">Middels tekst (px)</word>
+  <word key="font_base" js="0">Basetekst (px)</word>
+  <word key="font_large" js="0">Stor tekst (px)</word>
+  <word key="font_x_large" js="0">X stor tekst (px)</word>
+  <word key="font_2x_large" js="0">2X stor tekst (px)</word>
+  <word key="font_3x_large" js="0">3X stor tekst (px)</word>
+  <word key="font_4x_large" js="0">4X stor tekst (px)</word>
+  <word key="header_height" js="0">Headerhøyde for skrivebordsversjon (px)</word>
+  <word key="header_height_mobile" js="0">Headerhøyde for mobil (px)</word>
+  <word key="spam_service_act_5" js="0">Tillat registrering, men krev moderatorgodkjenning av alle innlegg.</word>
+  <word key="spam_service_action_1_num" js="0">Krev godkjenning for</word>
+  <word key="spam_service_action_2_num" js="0">Krev godkjenning for</word>
+  <word key="spam_service_action_3_num" js="0">Krev godkjenning for</word>
+  <word key="spam_service_action_4_num" js="0">Krev godkjenning for</word>
+  <word key="spam_service_action_unlimited_days" js="0">alltid krev godkjenning (medlemmer kan bli endret for å fjerne moderatorgodkjenning)</word>
+  <word key="notification__warning_mods_title" js="0">⚠️ {!#[1:Ny advarsel][?:Nye advarsler]} issued</word>
+  <word key="notification__warning_mods_grouped" js="0">{count} {!#[1:ny advarsel][?:nye advarsler]} har blitt utstedt</word>
+  <word key="filestorage__core_Badges" js="0">Merker</word>
+  <word key="file_storage_cic_filesystem" js="0">Filer kan ikke lagres på filsystemet for &quot;Community In The Cloud&quot;-klienter. Denne lagringsmetoden bør fjernes om den ikke er i bruk. Hvis eksisterende lagringsområder bruker denne lagringsmetoden bør det endres til å bruke en annen metode. </word>
+  <word key="rebuilding_featured_stuff" js="0">Oppdaterer fremhevet innhold i %s</word>
+  <word key="deleting_files_generic" js="0">Sletter filer</word>
+  <word key="profanity_filter_action_moderate_min_posts" js="0">Hold igjen innhold for moderatorgodkjenning når forfatter har mindre enn {# [1:innlegg][?:innlegg]}</word>
+  <word key="profanity_min_posts" js="0">Hold igjen når</word>
+  <word key="profanity_min_posts_prefix" js="0">Forfatter har mindre enn</word>
+  <word key="profanity_min_posts_suffix" js="0">innlegg</word>
+  <word key="profanity_min_posts_unlimited" js="0">alltid hold igjen for moderering</word>
+  <word key="r__seo_furls" js="0">Kan håndtere vennlige URL-innstillinger</word>
+  <word key="r__seo_sitemap" js="0">Kan håndtere sidekart-innstillinger?</word>
+  <word key="r__seo_meta" js="0">Kan håndtere metakoder?</word>
+  <word key="menu__core_moderation_reportedContentTypes" js="0">Rapporttyper</word>
+  <word key="more_share_options" js="0">Flere delingsvalg…</word>
+  <word key="backgroundQueue_pwaNotifications" js="0">Sender et parti med PWA-varsler</word>
+  <word key="username_login_enabled" js="0">Innlogging med visningsnavn er aktivert</word>
+  <word key="username_login_enabled_desc" js="0">Å la brukere logge inn med visningsnavn kan utgjøre en sikkerhetsrisiko for nettsamfunnet ditt siden visningsnavn er offentlig informasjon og ondsinnede brukere kan forsøke å logge inn på flere kontoer med ofte brukte passord frem til de finner en konto som det virker på. Det anbefales at du kun lar brukere logge inn med sin e-postadresse.</word>
+  <word key="username_login_enabled_button" js="0">Endre innloggingsmetoder</word>
+  <word key="referrer_policy_header" js="0">Retningslinjer for henvisninger</word>
+  <word key="referrer_policy_header_desc" js="0"><![CDATA[Når aktivert vil en <code>Referrer-Policy: strict-when-cross-origin</code>-header bli sendt for å begrense overflødig henvisningsinformasjon fra å være tilgjengelig for eksterne parter. Dette kan hjelpe til å beskytte mot CSRF-angrep i moderne nettlesere, men vil også begrense mengden henvisningsinformasjon som kan brukes av tredjeparter til statistiske formål.]]></word>
+  <word key="referrerpolicy_disabled" js="0">Ikke send header</word>
+  <word key="referrerpolicy_acp_only" js="0">Kun send header for adminpanel-forespørsler</word>
+  <word key="referrerpolicy_enabled" js="0">Alltid send header</word>
+  <word key="moderation_cheev_point_reduction" js="0">Trukket fra %s prestasjonspoeng</word>
+  <word key="report_message_fallback" js="0">Din rapport</word>
+  <word key="notification__report_center_grouped" js="0">{count} {!#[1:ny rapport][?:nye rapporter]} er mottatt</word>
+  <word key="notification__report_center_title" js="0">⚠️ Rapportert innhold</word>
+  <word key="notification__automatic_moderation_title" js="0">⚠️ Automatisk moderering</word>
+  <word key="warning_no_longer_active" js="0">Poeng er ikke lenger aktive</word>
+  <word key="warning_expired_on" js="0">(utløp %s)</word>
+  <word key="warn_deduct_cheev_points" js="0">Trakk fra {# [1: prestasjonspoeng][?: prestasjonspoeng]}.</word>
+  <word key="members_solutions" js="0">%s sine løsninger</word>
+  <word key="members_badges" js="0">%s sine merker</word>
+  <word key="notification__profile_comment_title" js="0">Ny profilkommentar</word>
+  <word key="notification__profile_reply_title" js="0">Ny statuskommentar</word>
+  <word key="notification__new_status_title" js="0">Ny statusoppdatering</word>
+  <word key="categories_sg_lc" js="0">kategori</word>
+  <word key="upgrade_check_security" js="0">Sikkerhetsoppdatering tilgjengelig</word>
+  <word key="upgrade_check_patchavail" js="0">Valgfri fiks er tilgjengelig</word>
+  <word key="r__categories_sg_lc" js="0">kategori</word>
+  <word key="post_settings_embed" js="0">Innbygginger</word>
+  <word key="fb_ig_oembed_appid" js="0">Facebook ApplikasjonsID</word>
+  <word key="fb_ig_oembed_appid_desc" js="0"><![CDATA[Invision Community kan automatisk "bygge inn" innhold til enkelte sider hos Facebook og Instagram. Følg <a href='{external.oembed_facebook}' target='_blank' rel='noopener'>Facebook sin Oembed-guide</a> for å få tak i disse detaljene. ]]></word>
+  <word key="fb_ig_oembed_appsecret" js="0">Facebook applikasjonshemmelighet </word>
+  <word key="rss_import_enclosures" js="0">Bildehåndtering</word>
+  <word key="rss_import_enclosures_desc" js="0">Noen RSS-strømmer har lenker til bilder som relateres til individuelle oppføringer i RSS-strømmen.</word>
+  <word key="rss_import_enclosures_import" js="0">Importer</word>
+  <word key="rss_import_enclosures_import_desc" js="0">Bilder vil bli importert som vedlegg</word>
+  <word key="rss_import_enclosures_hotlink" js="0">Lenke</word>
+  <word key="rss_import_enclosures_hotlink_desc" js="0">Bilder vil bli lenket til eksternt.  Vær oppmerksom på at den eksterne siden du bygger inn bilder fra vil kunne være i stand til å monitorere dine besøkendes IP-adresser, sette nettleserkapsler på enheten dems, og at bilder kan fjernes eller endres av den eksterne siden når som helst.</word>
+  <word key="rss_import_enclosures_ignore" js="0">Ignorer</word>
+  <word key="rss_import_enclosures_ignore_desc" js="0">Bilder vil ikke importeres eller bli eksternt lenket til. Dette kan være nyttig hvis bildene allerede er inkludert i RSS-oppføringene av kilden.</word>
+  <word key="notification__club_invitation_by_title" js="0">Ny klubbinvitasjon</word>
+  <word key="notification__club_request_title" js="0">Bruker venter på godkjenning</word>
+  <word key="notification__club_join_title" js="0">En bruker ble med i en klubb</word>
+  <word key="notification__club_response_title" js="0">Oppdatering på klubbforespørsel</word>
+  <word key="history_warning_revoke_cheev_point_reduction" js="0">fratrekk av prestasjonspoeng</word>
+  <word key="history_recognize_points_adjustment" js="0"><![CDATA[Gitt %s prestasjonspoeng for <a href='%s'>%s</a>]]></word>
+  <word key="history_recognize_points_adjustment_deleted" js="0">Gitt prestasjonspoeng for innhold</word>
+  <word key="history_removed_from_club" js="0"><![CDATA[Fjernet fra <strong>%s</strong> %s.]]></word>
+  <word key="history_added_to_club" js="0"><![CDATA[invitert til <strong>%s</strong> %s]]></word>
+  <word key="log_type_title_club_membership" js="0">Klubbmedlemsskap</word>
+  <word key="emailstats__notification_approved_content" js="0">Varsling om godkjenning av innhold</word>
+  <word key="solutions" js="0">Løsninger</word>
+  <word key="comment_meta_moderation_anon_modlog__item_edit" js="0"><![CDATA[Tittelen ble endret til <em>%s</em>]]></word>
+  <word key="comment_meta_moderation_anon_modlog__comment_edit_title" js="0"><![CDATA[Tittelen ble endret til <em>%s</em>]]></word>
+  <word key="comment_meta_moderation_anon_modlog__action_pin" js="0">%s ble klistret</word>
+  <word key="comment_meta_moderation_anon_modlog__action_unpin" js="0">Klistringen av %s ble fjernet</word>
+  <word key="comment_meta_moderation_anon_modlog__action_feature" js="0">%s ble fremhevet</word>
+  <word key="comment_meta_moderation_anon_modlog__action_unfeature" js="0">Fremheving av %s ble fjernet</word>
+  <word key="comment_meta_moderation_anon_modlog__action_lock" js="0">%s ble stengt</word>
+  <word key="comment_meta_moderation_anon_modlog__action_unlock" js="0">%s ble åpnet</word>
+  <word key="comment_meta_moderation_anon_modlog__action_group" js="0">Dette %1$s var %3$s</word>
+  <word key="member_notifications_push_desc_with_app" js="0">Varsles som sendes til dine enheter eller mobilappen Invision Community.</word>
+  <word key="member_notifications_push_stop_title" js="0">Stopp varsler?</word>
+  <word key="member_notifications_push_stop_desc" js="0">Stopp alle push-varsler</word>
+  <word key="member_notifications_push_stop_desc_sub_with_app" js="0">Dette vil stoppe nettleser- og mobilapp-varsler fra denne siden på ALLE enhetene dine. Hvis du kun ønsker å stoppe levering av varsler i denne nettleseren, så må du sjekke denne nettleserens innstillinger for varslingstilgang.</word>
+  <word key="member_notifications_push_stop_desc_sub" js="0">Dette vil stoppe nettleservarsler fra denne siden på ALLE enhetene dine. Hvis du kun ønsker å stoppe levering av varsler i denne nettleseren, så må du sjekke denne nettleserens innstillinger for varslingstilgang.</word>
+  <word key="member_notifications_push_enable" js="0">Aktiver i denne nettleseren</word>
+  <word key="task__pwaprune" js="0">Fjerner gamle push-varsler</word>
+  <word key="can_post_anonymously" js="0">Kan skrive anonymt?</word>
+  <word key="can_post_anonymously_desc" js="0">Dette lar medlemmer i denne gruppen poste anonymt hvor kategorien tillater det.</word>
+  <word key="post_anonymously_suffix" js="0">Post anonymt</word>
+  <word key="post_anonymously_placename" js="0">Anonym</word>
+  <word key="can_view_anonymous_posters" js="0">Kan se hvem som skrev anonymt?</word>
+  <word key="post_anonymously_reveal" js="0">Klikk for å avsløre forfatter</word>
+  <word key="allow_anonymous" js="0">Tillat anonymt innhold?</word>
+  <word key="allow_anonymous_desc" js="0"><![CDATA[Medlemmer i <a href='{internal.app=core&module=members&controller=groups}'>grupper</a> som tillater anonym posting kan velge å poste anonymt her.]]></word>
+  <word key="allow_anonymous_comments" js="0">Tillat anonyme kommentarer?</word>
+  <word key="allow_anonymous_comments_desc" js="0"><![CDATA[Medlemmer i <a href='{internal.app=core&module=members&controller=groups}'>grupper</a> som tillater anonym posting kan velge å poste anonyme kommentarer her.]]></word>
+  <word key="marketplace_renew_now" js="0">Forny nå</word>
+  <word key="marketplace_renew_now_invoice" js="0">Forny nå - %s</word>
+  <word key="marketplace_renew_now_invoice_id" js="0">Forny nå - #%s - %s</word>
+  <word key="marketplace_resource_not_purchased" js="0">Du kan ikke installere eller oppdatere en inaktiv ressurs, du må kjøpe eller fornye den først.</word>
+  <word key="marketplace_onboard_already_complete" js="0">Markedsplass-oppsettet har allerede blitt fullført.</word>
+  <word key="managed_upgrade_block_head" js="0">La oss ta hånd om oppgraderingen!</word>
+  <word key="managed_upgrade_block_msg" js="0"><![CDATA[Din brukerstøtte-plan inkluderer oppgraderinger. Bare kontakt oss på <a href='mailto:%s'>%s</a> og vi vil planlegge en oppgradering for deg. ]]></word>
+  <word key="managed_upgrade_allow_head" js="0"><![CDATA[Oppgraderingen er enkel! Du kan gjennomføre oppgraderingen selv nedenfor eller <a href='mailto:%s' class='ipsType_linkInherit'>kontakt oss</a> for assistanse. Estimert nedetid er mindre enn 5 minutter]]></word>
+  <word key="health__version_title" js="0">Invision Community</word>
+  <word key="health__php_title" js="0">PHP</word>
+  <word key="health__mysql_title" js="0">MySQL-database</word>
+  <word key="health__mysql_title_cic" js="0">Database</word>
+  <word key="health__thirdparty_title" js="0">Tredjepart</word>
+  <word key="health__thirdparty_count" js="0">{# [1:tredjepart-tilpasning][?:tredjepart-tilpasninger]}</word>
+  <word key="health__caching_title" js="0">Caching</word>
+  <word key="health__server_title" js="0">Server</word>
+  <word key="health__logs_title" js="0">Logger</word>
+  <word key="health__logs_table" js="0">%s loggtabell</word>
+  <word key="health__client_area_link" js="0">Gå til klientområdet</word>
+  <word key="health_support_intro1" js="0">Hvis du trenger mer hjelp bør du kontakte vårt kundestøttesenter gjennom ticket-systemet.</word>
+  <word key="health_support_intro2" js="0">Før du sender inn en support-ticket anbefaler vi at du adresserer alle problemene som er markert på denne siden. Vår support-stab kan muligens ikke assistere deg om systemet ditt ikke er ordentlig satt opp.</word>
+  <word key="health__support_button" js="0">Ny brukerstøtteforespørsel</word>
+  <word key="health__tools_title" js="0">Verktøy og diagnostikk</word>
+  <word key="health__support_title" js="0">Få hjelp</word>
+  <word key="health__search_title" js="0">Dokumentasjon</word>
+  <word key="health__guides_link" js="0">Se alle guider</word>
+  <word key="health_tools_intro" js="0">Disse verktøyene kan assistere deg i å diagnostisere problemer med nettsamfunnet ditt. </word>
+  <word key="health_check_again_button" js="0">Sjekk om igjen</word>
+  <word key="health_clear_caches_button" js="0">Tøm systemcacher</word>
+  <word key="health__known_issues" js="0">Kjente feil</word>
+  <word key="health__system_log_chart" js="0">System og feil-logger</word>
+  <word key="health_system_log_intro" js="0">Plutselig økning i loggede feil kan indikere et problem du bør etterforske. </word>
+  <word key="health_chart_title" js="0">Loggede feil</word>
+  <word key="health_system_log_title" js="0">Systemlogg</word>
+  <word key="health_error_log_title" js="0">Feilmeldingslogg</word>
+  <word key="health_email_error_log_title" js="0">Feilmeldingslogg for epost</word>
+  <word key="health_disable_customizations" js="0">Deaktiver tilpasninger</word>
+  <word key="health_no_issues" js="0">Vi identifiserte ikke noen problemer</word>
+  <word key="health_phpinfo" js="0">phpinfo</word>
+  <word key="health_database_check_fail" js="0">Databaseproblemer</word>
+  <word key="health_database_compact_fail" js="0">Tabelltype 'Compact'</word>
+  <word key="health_check_update_recommended" js="0">Oppdatering anbefalt</word>
+  <word key="health_check_update_required" js="0">Oppdatering påkrevd</word>
+  <word key="health__php_memory" js="0">Lav minnegrense</word>
+  <word key="health__php_extension" js="0">Manglende tillegg: %s</word>
+  <word key="health__php_mb" js="0">Manglende tillegg: mbstring</word>
+  <word key="health__php_mboverload" js="0">Ugyldig mbstring-konfigurasjon</word>
+  <word key="health__php_curl" js="0">Manglende tillegg: curl</word>
+  <word key="health__php_fileuploads" js="0">Filopplastninger deaktivert</word>
+  <word key="health_check_curlupdate_recommended" js="0">curl-oppdatering anbefalt</word>
+  <word key="health__server_windows" js="0">Vi ser at din servers operativsystem er Windows-basert, men Invision Community fungerer best på Linux og Unix-miljøer. Invision Community kan fremdeles fungere, men du kan oppleve feil som faller utenfor vår support-dekning.</word>
+  <word key="health__server_windows_title" js="0">Windows-server oppdaget</word>
+  <word key="health__server_tmp" js="0">Feil med /tmp-mappe</word>
+  <word key="health__server_suhosin" js="0">Feil med Suhosin-konfigurasjon</word>
+  <word key="health__server_filesystem" js="0">Feil med filsystemet: %s</word>
+  <word key="health__server_filestorage" js="0">Feil med fillagring: %s</word>
+  <word key="health__mysql_utf8mb4" js="0">Bruker ikke UTF8MB4</word>
+  <word key="health__server_path" js="0">Serversti: %s</word>
+  <word key="health__server_ip" js="0">Server-IP: %s</word>
+  <word key="health__mysql_innodb" js="0">Tabeller som ikke er InnoDB</word>
+  <word key="health_innodb_details" js="0">Databasetabeller av typen InnoDB fungerer vanligvis mer effektivt og stabilt enn andre databasemotorer som MyISAM hos de fleste moderne serverleverandører når miljøpet er riktig konfigurert. Vi anbefaler på det sterkeste at du forsikrer deg om at alle databasetabellene bruker lagringsmotoren InnoDB, og at serverleverandøren din har konfigurert MySQL til å fungere godt med InnoDB.</word>
+  <word key="health__logs_large" js="0">Stor loggtabell: %s</word>
+  <word key="health__logs_large_desc" js="0">Loggtabellen %s i databasen er %s i størrelse. Det kan være en ide å justere på innstillingene for fjerning av gamle loggoppføringer for å redusere tabellstørrelsen.</word>
+  <word key="health__logs_repeats" js="0">Gjentatte loggoppføringer</word>
+  <word key="health__logs_repeats_info" js="0">Oppføringer i systemloggen som gjentar seg kan indikere et problem som bør løses. Et sammendrag av de mest gjentatte nylige feilmeldingene vises nedenfor. Gå gjennom systemloggen for flere detaljer.</word>
+  <word key="health_view_system_log" js="0">Vis systemlogg</word>
+  <word key="health__repeat_logs_message" js="0">Melding</word>
+  <word key="health__repeat_logs_count" js="0">Antall</word>
+  <word key="health__cache_cloudflare" js="0">Cloudflare oppdaget</word>
+  <word key="health__cache_cloudflare_details" js="0">Vi har oppdaget at Cloudflare prosesserer forespørsler til din Invision Community-installasjon. Noen klienter opplever problemer med å bruke Cloudflare, inkludert spesifikke funksjoner som Rocket Loader. Det anbefales at du deaktiverer Cloudflare om du møter på problemer som ikke løses av å bruke disse support-verktøyene for å finne ut om Cloudflare kan være kilden til problemene.</word>
+  <word key="health__cache_varnish" js="0">Varnish oppdaget</word>
+  <word key="health__cache_akamai" js="0">Akamai oppdaget</word>
+  <word key="health__cache_redis" js="0">Redis %s i bruk (%s av %s minne brukt)</word>
+  <word key="health__cache_redis_nototal" js="0">Redis %s i bruk (%s minne brukt)</word>
+  <word key="health__cache_redisfail" js="0">Redis-feil</word>
+  <word key="health__cache_redisfail_detail" js="0">Invision Community er satt opp til å bruke Redis, men et forsøk på tilkobling mislyktes. Du bør verifisere at din Redis-konfigurasjon er riktig, eller deaktivere Redis hvis det ikke lenger brukes.</word>
+  <word key="health_view_redis_config" js="0">Vis Redis-konfigurasjon</word>
+  <word key="health__thirdparty_hooks" js="0">Se {# [1:tredjepart-hook][?:tredjepart-hooks]}</word>
+  <word key="health__thirdparty_appupdates" js="0">%s applikasjonsoppdateringer er tilgjengelig</word>
+  <word key="health__thirdparty_pluginupdates" js="0">%s plugin-oppdateringer tilgjengelig</word>
+  <word key="health__guides_intro" js="0">Få hjelp med funksjoner eller problemer ved å søke i dokumentasjonen vår.</word>
+  <word key="health__guides_form" js="0">Nøkkelord, f.eks. &quot;facebook&quot; eller &quot;spam&quot;</word>
+  <word key="health__guides_featured" js="0">Fremhevede guider</word>
+  <word key="health__no_known_issues" js="0">Det er ingen kjente problemer for øyeblikket.</word>
+  <word key="health__ticket_thirdparty" js="0">Du har {# [1:tredjepart-tilpasning][?:tredjepart-tilpasninger]} på siden din. Hvis du ikke allerede har prøvd bør du prøve å deaktivere alle tredjepart-tilpasninger for å verifisere at problemet ikke skyldes noe fra en tredjepart. Hvis problemet ikke ser ut til å skyldes en tredjepart kan du fortsette med å ta kontakt med oss. Hvis problemet ser ut til å skyldes en tredjepart bør du prøve å identifisere hvilken av tilpasningene som skaper problemet og deretter ta kontakt med tredjeparten som har laget det for hjelp. </word>
+  <word key="health__more_information" js="0">Mer informasjon</word>
+  <word key="health__caching_enabled" js="0">Cache-motor: %s</word>
+  <word key="health__server_subtitle" js="0"><![CDATA[Sti: %s<br>IP: %s]]></word>
+  <word key="health__no_featured" js="0">Det oppsto et problem med å hente fremhevede guider</word>
+  <word key="health__patch_before_proceed" js="0">Vi anbefaler på det sterkeste at du installerer den tilgjengelige fiksen før du fortsetter</word>
+  <word key="health_thirdparty_disabled" js="0">Tredjepartstilpasninger</word>
+  <word key="health__vapid_title" js="0">Push-varsler</word>
+  <word key="health_vapid_gmp_check_fail" js="0">PHP-tillegget GMP ikke installert</word>
+  <word key="health_vapid_key_check_fail" js="0">Nøkler for push-varsler mangler</word>
+  <word key="health_vapid_key_check_fail_fixed" js="0">Nøkler for Push-varsler opprettet</word>
+  <word key="ext__AchievementAction" js="0">Definer en handling som gir medlemmer poeng og/eller merker.</word>
+  <word key="notifications__core_Achievements" js="0">Prestasjoner</word>
+  <word key="notifications__core_Achievements_desc" js="0">Disse varslene sendes når du får en ny rang eller nytt merke</word>
+  <word key="notification__new_rank" js="0">Gratulerer! Du klatret opp på rangstigen til %s!</word>
+  <word key="mailsub__core_notification_new_rank" js="0">Gratulerer! Du klatret nettopp opp i rangstigen!</word>
+  <word key="notification__new_badge" js="0">Hoi! Du ble nettopp tildelt '%s'-merket!</word>
+  <word key="mailsub__core_notification_new_badge" js="0">Hoi! Du fikk nettopp et nytt merke!</word>
+  <word key="notification_email_check_it_out" js="0">Se her!</word>
+  <word key="notification__new_badge_content" js="0">Du er den stolte eier av %s-merket</word>
+  <word key="profile_achievements_overview" js="0">%s sine prestasjoner</word>
+  <word key="profile_achievements_overview_self" js="0">Dine prestasjoner</word>
+  <word key="profile_see_all_achievements" js="0">Se alle prestasjoner</word>
+  <word key="profile_recent_badges" js="0">Nylige merker</word>
+  <word key="profile_badges_earned" js="0">{# [1:merke tjent][?:merker tjent]}</word>
+  <word key="profile_no_badges" js="0">Har ikke tjent noen merker ennå</word>
+  <word key="profile_no_rank" js="0">Ingen rang ennå</word>
+  <word key="badge_earned_date" js="0">Tjent %s</word>
+  <word key="menu__core_achievements" js="0">Prestasjoner</word>
+  <word key="menu__core_achievements_badges" js="0">Merker</word>
+  <word key="r__badges" js="0">Merker</word>
+  <word key="r__badges_manage" js="0">Kan håndtere merker</word>
+  <word key="badges" js="0">Merker</word>
+  <word key="menu__core_membersettings_badges" js="0">Merker
+</word>
+  <word key="badge_name" js="0">Navn</word>
+  <word key="badge_image" js="0">Bilde</word>
+  <word key="badge_image_desc" js="0">Merkebilder må ha like dimensjoner</word>
+  <word key="badge_manually_awarded" js="0">Kan manuelt tildeles</word>
+  <word key="badge_manually_awarded_desc" js="0">Dette merket kan manuelt tildeles gjennom å belønne innhold eller håndtere brukeren i adminpanelet</word>
+  <word key="menu__core_achievements_rules" js="0">Regler</word>
+  <word key="achievements_rules" js="0">Prestasjonsregler</word>
+  <word key="new_achievement_rule" js="0">Ny prestasjonsregel</word>
+  <word key="edit_achievement_rule" js="0">Endre prestasjonsregel</word>
+  <word key="achievement_desc" js="0">Regler utløses hver gang den angitte handlingen skjer og kan tildele poeng og/eller merker.</word>
+  <word key="save_rule" js="0">Lagre regel</word>
+  <word key="remove_condition" js="0">Fjern denne betingelsen</word>
+  <word key="r__rules" js="0">Regler</word>
+  <word key="r__rules_manage" js="0">Kan håndtere regler</word>
+  <word key="r__rules_add" js="0">Kan lage regler</word>
+  <word key="r__rules_edit" js="0">Kan endre eksisterende regler</word>
+  <word key="r__rules_delete" js="0">Kan slette regler</word>
+  <word key="achievement_rules_filters" js="0">Vis regler som:</word>
+  <word key="achievement_rules_filters_points" js="0">Tildel poeng</word>
+  <word key="achievement_rules_filters_badges" js="0">Tildel merker</word>
+  <word key="achievement_rules_filters_milestone" js="0">Inkluder en milepæl</word>
+  <word key="achievement_rule_action" js="0">Når</word>
+  <word key="achievement_rule_award" js="0">Så</word>
+  <word key="achievements_award" js="0">Tildele</word>
+  <word key="achievements_awards" js="0">Priser</word>
+  <word key="achievements_awards_points" js="0">{# [1:poeng][?:poeng]}</word>
+  <word key="achievements_awards_points_short" js="0">{# [1:pt][?:pts]}</word>
+  <word key="achievements_awards_badge" js="0">%s-merke</word>
+  <word key="achievements_awards_points_and_badge" js="0">{# [1:poeng][?:poeng]} og %s-merke</word>
+  <word key="achievement_filter" js="0">Og</word>
+  <word key="achievement_filter_unlimited" js="0">Hver gang</word>
+  <word key="achievement_filter_nth_their" js="0">Det er deres</word>
+  <word key="achievements_points" js="0">poeng</word>
+  <word key="achievements_points_awarded" js="0">poeng tildeles</word>
+  <word key="achievements_badge" js="0">merke</word>
+  <word key="achievements_badge_none" js="0">(Ikke noe merke)</word>
+  <word key="achievements_title_filter_milestone" js="0">er brukerens %2$s %1$s</word>
+  <word key="achievements_title_filter_milestone_nth" js="0">{#[?:.]}</word>
+  <word key="achievements_title_filter_location" js="0">i %s</word>
+  <word key="achievements_title_filter_location_val" js="0">%s %s</word>
+  <word key="achievements_title_filter_type" js="0">av typen %s</word>
+  <word key="AchievementAction__NewContentItem" js="0">Nytt innholdselement postet</word>
+  <word key="achievement_filter_NewContentItem_type" js="0">Legg til en stedsbetingelse</word>
+  <word key="achievement_filter_NewContentItem_type_prefix" js="0">Det er en</word>
+  <word key="achievement_filter_NewContentItem_node" js="0">Legg til %s-filter</word>
+  <word key="achievement_filter_NewContentItem_node_prefix" js="0">%s er i %s</word>
+  <word key="achievement_filter_NewContentItem_nth" js="0">Legg til milepælsbetingelse</word>
+  <word key="achievement_filter_NewContentItem_nth_suffix" js="0"><![CDATA[<span data-role='th'>.</span> slikt innlegg]]></word>
+  <word key="AchievementAction__NewContentItem_title" js="0">Innholdselement postet</word>
+  <word key="AchievementAction__Comment_title" js="0">Kommentar/svar postet</word>
+  <word key="AchievementAction__Review_title" js="0">Omtale postet</word>
+  <word key="AchievementAction__NewContentItem_title_t" js="0">%s postet</word>
+  <word key="AchievementAction__NewContentItem_title_generic" js="0">innholdselement</word>
+  <word key="AchievementAction__Comment_title_generic" js="0">kommentar/svar</word>
+  <word key="AchievementAction__Review_title_generic" js="0">omtale</word>
+  <word key="AchievementAction__NewContentItem_log" js="0">Postet %s</word>
+  <word key="AchievementAction__Comment_log" js="0">Svarte på %s</word>
+  <word key="AchievementAction__Review_log" js="0">Omtalte %s</word>
+  <word key="AchievementAction__SessionStartDaily" js="0">Brukeren logger inn for første gang den dagen</word>
+  <word key="AchievementAction__SessionStartDaily_title" js="0">Brukeren logger inn</word>
+  <word key="AchievementAction__SessionStartDaily_milestone" js="0">og de har vært registrert i minst %s</word>
+  <word key="achievement_filter_SessionStartDaily" js="0">Legg til en milepælsbetingelse for tid siden registrering</word>
+  <word key="achievement_filter_SessionStartDaily_concurrent" js="0">Legg til en samtidig daglig påloggingsmilepælsbetingelse</word>
+  <word key="achievement_filter_SessionStartDaily_concurrent_prefix" js="0">De har logget inn daglig i</word>
+  <word key="achievement_filter_SessionStartDaily_prefix" js="0">De har vært registrert i minst</word>
+  <word key="achievement_filter_SessionStartDaily_concurrent_suffix" js="0">dager</word>
+  <word key="AchievementAction__SessionStartDaily_concurrent_milestone" js="0">og de har logget inn samtidig for %s</word>
+  <word key="Achievement_reason_badge_awarded" js="0">Valgfri offentlig forklaring som forteller hvorfor merket ble tildelt</word>
+  <word key="AchievementAction__SessionStartDaily_log" js="0">Logget inn på %s</word>
+  <word key="AchievementAction__Reaction" js="0">Reaksjon gis</word>
+  <word key="achievement_filter_Reaction_reaction" js="0">Legg til en type-betingelse</word>
+  <word key="achievement_subfilter_Reaction_reaction_prefix" js="0">Reaksjonen som ble gitt var</word>
+  <word key="achievement_filter_Reaction_receiver" js="0">Til brukeren som skrev innholdet</word>
+  <word key="achievement_filter_Reaction_giver" js="0">Til brukeren som gir reaksjon</word>
+  <word key="AchievementAction__Reaction_log_subject" js="0">Fikk %s-reaksjon for %s</word>
+  <word key="AchievementAction__Reaction_log_other" js="0">Ga %s-reaksjon til %s</word>
+  <word key="AchievementAction__Reaction_title" js="0">Reaksjon gitt</word>
+  <word key="AchievementAction__Reaction_title_received" js="0">Reaksjon mottatt</word>
+  <word key="AchievementAction__Reaction_title_generic" js="0">reaksjon</word>
+  <word key="AchievementAction__Reaction_types" js="0">%s-typer</word>
+  <word key="achievement_filter_Reaction_nth" js="0">Legg til en milepæl-betingelse</word>
+  <word key="achievement_filter_Reaction_nth_suffix" js="0">. reaksjon</word>
+  <word key="AchievementAction__NewClub" js="0">Ny klubb er opprettet</word>
+  <word key="achievement_filter_NewClub_nth" js="0">Legg til milepælsbetingelse</word>
+  <word key="achievement_filter_NewClub_nth_suffix" js="0"><![CDATA[<span data-role='th'>.</span> klubb]]></word>
+  <word key="AchievementAction__NewClub_title" js="0">Opprettet klubb</word>
+  <word key="AchievementAction__NewClub_title_generic" js="0">klubb</word>
+  <word key="AchievementAction__NewClub_log" js="0">Opprettet ny klubb: %s</word>
+  <word key="AchievementAction__FollowMember_title" js="0">Brukeren følges</word>
+  <word key="AchievementAction__FollowMember" js="0">Brukeren blir fulgt</word>
+  <word key="achievement_filter_FollowMember_nth" js="0">Legg til milepælsbetingelse</word>
+  <word key="achievement_filter_FollowMember_nth_suffix" js="0"><![CDATA[<span data-role='th'>.</span> følging]]></word>
+  <word key="achievement_filter_FollowMember_receiver" js="0">Til brukeren som fulgte</word>
+  <word key="achievement_filter_FollowMember_giver" js="0">Til brukeren som følger en annen bruker</word>
+  <word key="AchievementAction__FollowMember_log_subject" js="0">Ble fulgt av %s</word>
+  <word key="AchievementAction__FollowMember_log_other" js="0">Fulgte %s</word>
+  <word key="AchievementAction__FollowMember_title_generic" js="0">fulgt bruker</word>
+  <word key="AchievementAction__JoinClub" js="0">Brukeren blir med i en klubb</word>
+  <word key="achievement_filter_JoinClub_joiner" js="0">Til brukeren som ble med i klubben</word>
+  <word key="achievement_filter_JoinClub_owner" js="0">Til eier av klubben</word>
+  <word key="achievement_filter_JoinClub_nth_suffix" js="0"><![CDATA[<span data-role='th'>.</span> klubb de blir med i]]></word>
+  <word key="achievement_filter_JoinClub_nth" js="0">Legg til milepæl-betingelse</word>
+  <word key="AchievementAction__JoinClub_title" js="0">Innmeldt i klubb</word>
+  <word key="AchievementAction__JoinClub_title_generic" js="0">medlemsskap</word>
+  <word key="AchievementAction__JoinClub_log" js="0">Ble med i klubb: %s</word>
+  <word key="AchievementAction__FollowNode" js="0">Brukeren følger en node (forumkategori, blogg, gallerikategori, osv.)</word>
+  <word key="achievement_filter_Node_node" js="0">Legg til et %s-filter</word>
+  <word key="achievement_filter_Node_nth" js="0">Legg til en milepæl-betingelse</word>
+  <word key="achievement_filter_Node_node_prefix" js="0">Det er i</word>
+  <word key="achievement_filter_Node_nth_suffix" js="0"><![CDATA[<span data-role='th'>.</span> kategorifølging]]></word>
+  <word key="AchievementAction__FollowNode_title_t" js="0">Fulgt en %s</word>
+  <word key="AchievementAction__FollowNode_title_generic" js="0">Fulgte en node</word>
+  <word key="AchievementAction__FollowNode_log" js="0">Fulgte %s</word>
+  <word key="AchievementAction__FollowNode_title" js="0">Node (forumkategori, album, osv.) følges</word>
+  <word key="AchievementAction__FollowContentItem" js="0">Brukeren følger et innholdselement</word>
+  <word key="achievement_filter_FollowContentItem_type" js="0">Legg til stedsbetingelse</word>
+  <word key="achievement_filter_FollowContentItem_follower" js="0">Bruker følger</word>
+  <word key="achievement_filter_FollowContentItem_author" js="0">Innholdsforfatter</word>
+  <word key="AchievementAction__FollowContentItem_title" js="0">Innholdselement fulgt</word>
+  <word key="AchievementAction__FollowContentItem_title_t" js="0">%s fulgte</word>
+  <word key="AchievementAction__FollowContentItem_log" js="0">Fulgte %s</word>
+  <word key="achievement_filter_FollowContentItem_nth" js="0">Legg til milepælsbetingelse</word>
+  <word key="achievement_filter_FollowContentItem_nth_suffix" js="0"><![CDATA[<span data-role='th'>.</span> slik følging]]></word>
+  <word key="AchievementAction__NewPoll" js="0">Avstemming opprettes</word>
+  <word key="achievement_filter_NewPoll_nth" js="0">Legg til en milepælbetingelse</word>
+  <word key="achievement_filter_NewPoll_nth_suffix" js="0">avstemming</word>
+  <word key="AchievementAction__NewPoll_title" js="0">Avstemming opprettet</word>
+  <word key="AchievementAction__NewPoll_title_generic" js="0">avstemming</word>
+  <word key="AchievementAction__NewPoll_log" js="0">Opprettet ny avstemming</word>
+  <word key="AchievementAction__VotePoll" js="0">Brukeren stemmer i en avstemming</word>
+  <word key="achievement_filter_VotePoll_nth" js="0">Legg til milepælsbetingelse</word>
+  <word key="achievement_filter_VotePoll_nth_suffix" js="0">stem</word>
+  <word key="AchievementAction__VotePoll_title" js="0">Stemme</word>
+  <word key="AchievementAction__VotePoll_title_generic" js="0">stemme</word>
+  <word key="AchievementAction__VotePoll_log" js="0">Stemte i en avstemming</word>
+  <word key="achievement_filter_VotePoll_voter" js="0">Til personen som stemmer</word>
+  <word key="achievement_filter_VotePoll_author" js="0">Til den som oppretta avstemmingen</word>
+  <word key="AchievementAction__ContentPromotion" js="0">Innholdselement (innhold/svar) er promotert</word>
+  <word key="achievement_filter_ContentPromotion_promotype" js="0">Legg til en type-betingelse</word>
+  <word key="achievement_subfilter_ContentPromotion_promotype_prefix" js="0">Promoteringsmetoden var</word>
+  <word key="achievement_filter_ContentPromotion_promotype_promote" js="0">Våre valg</word>
+  <word key="achievement_filter_ContentPromotion_promotype_feature" js="0">Fremhevet</word>
+  <word key="achievement_filter_ContentPromotion_promotype_recommend" js="0">Anbefalt</word>
+  <word key="AchievementAction__ContentPromotion_title" js="0">Innhold promotert</word>
+  <word key="AchievementAction__ContentPromotion_types" js="0">%s-typer</word>
+  <word key="AchievementAction__ContentPromotion_title_generic" js="0">innhold promotert</word>
+  <word key="achievement_filter_ContentPromotion_nth_suffix" js="0"><![CDATA[<span data-role='th'>.</span> promotert element]]></word>
+  <word key="AchievementAction__ContentPromotion_log_subject" js="0">%2$s ble promotert via &quot;%1$s&quot;</word>
+  <word key="acplog__achievement_settings" js="0">Justerte prestasjonsinnstillinger</word>
+  <word key="acp_rank_points_for_next" js="0">Poeng for neste rang</word>
+  <word key="acp_profile_points" js="0">%s-poeng</word>
+  <word key="acp_profile_points_manage" js="0">Håndter poeng</word>
+  <word key="acp_edit_points" js="0">Endre poeng</word>
+  <word key="member_achievements_points_o" js="0">%s sine totale poeng</word>
+  <word key="acplog__members_edited_points" js="0">Endre brukerens poeng</word>
+  <word key="points" js="0">Poeng</word>
+  <word key="acp_points_log_manual" js="0">Manuell justering</word>
+  <word key="acp_points_rule_deleted" js="0">Regelen har siden blitt slettet</word>
+  <word key="acp_points_log_table_action_log" js="0">Handling</word>
+  <word key="acp_points_log_table_points" js="0">Tildelte poeng</word>
+  <word key="acp_points_log_table_balance" js="0">Poengbalanse</word>
+  <word key="acp_points_log_table_datetime" js="0">Dato</word>
+  <word key="acp_points_log_title" js="0"><![CDATA[Poeng tjent fra <a href='%s'>%s</a>]]></word>
+  <word key="acp_profile_ranks_title" js="0">Ranger</word>
+  <word key="acp_profile_points_manage_title" js="0">Håndter poeng</word>
+  <word key="acp_profile_badges_title" js="0">Merker</word>
+  <word key="acp_profile_edit_points" js="0">Endre %s sine poeng</word>
+  <word key="menu__core_achievements_settings" js="0">Innstillinger</word>
+  <word key="achievements_settings" js="0">Prestasjonsinnstillinger</word>
+  <word key="prune_points_log" js="0">Tøm aktivitetslogg</word>
+  <word key="prune_points_log_desc" js="0"><![CDATA[Når en bruker gjør noe som tjener poeng eller merker, så vil det lagres en loggmelding for den handlingen, for å kunne la deg se brukerens poenghistorikk. Loggen brukes også for å hindre at brukere tjener belønninger for den samme handlingen flere ganger. <br>For eksempel: hvis en bruker liker en post, angrer det, for så å like den på nytt.<br>Loggen av den første handlingen vil hindre at poeng kan tildeles enda en gang for å like posten en andre gang. Derfor er det nyttig å beholde loggmeldingene en stund for å hindre misbruk, men hvis man beholder loggene for lenge kan det gjøre at databasen tar mye lagringsplass.]]></word>
+  <word key="achievements_current_rank" js="0">Din nåværende rang</word>
+  <word key="achievements_next_rank" js="0">{# [1:poeng][?:poeng]} til din neste rang</word>
+  <word key="badge_log_member" js="0">Medlem</word>
+  <word key="badge_log_action_log" js="0">Fortjent av</word>
+  <word key="badge_log_rule" js="0">Triggende regel</word>
+  <word key="badge_log_datetime" js="0">Dato</word>
+  <word key="AchievementAction__Comment" js="0">Kommentar/svar er postet</word>
+  <word key="AchievementAction__Review" js="0">Omtale postes</word>
+  <word key="achievement_filter_Comment_author" js="0">Til brukeren som skrev svaret</word>
+  <word key="achievement_filter_Comment_item_author" js="0">Til brukeren som postet innholdet som blir besvart</word>
+  <word key="achievement_filter_Comment_nth_suffix" js="0"><![CDATA[<span data-role='th'>.</span> slikt innlegg]]></word>
+  <word key="achievement_filter_Review_author" js="0">Til brukeren som skrev omtalen</word>
+  <word key="achievement_filter_Review_item_author" js="0">Til brukeren som skrev innholdselementet som ble vurdert</word>
+  <word key="achievement_filter_Review_nth_suffix" js="0"><![CDATA[<span data-role='th'>.</span> slik omtale]]></word>
+  <word key="history_manual_points_adjustment" js="0">Poeng manuelt justert fra %s til %s %s</word>
+  <word key="block_achievements" js="0">Nylige prestasjoner</word>
+  <word key="block_achievements_desc" js="0">Viser nylig tildelte merker, og medlemmer som nylig har klatret på rangstigen.</word>
+  <word key="achievements_to_show" js="0">Prestasjoner å vise</word>
+  <word key="block_achievements_badges" js="0">Nylige tjente merker</word>
+  <word key="block_achievements_rank" js="0">Nylige rang-forfremmelser</word>
+  <word key="block_achievements_earned_badge" js="0">%s tjente et merke</word>
+  <word key="block_achievements_earned_rank" js="0">%s gikk opp en rang</word>
+  <word key="rare_badge_percent" js="0">Vis merke som sjeldent</word>
+  <word key="rare_badge_percent_prefix" js="0">Hvis det har blitt tildelt færre enn</word>
+  <word key="rare_badge_percent_suffix" js="0">% av medlemmer</word>
+  <word key="rare_badge" js="0">Sjeldent</word>
+  <word key="member_badge_count" js="0">{# [1:merke][?:merker]}</word>
+  <word key="block_achievements_more" js="0">Se flere prestasjoner</word>
+  <word key="acp_profile_manage_badges" js="0">Håndter</word>
+  <word key="acp_profile_badges_manage_title" js="0">Håndter merker</word>
+  <word key="acp_badges_log_title" js="0"><![CDATA[Merker tjent av <a href='%s'>%s</a> ]]></word>
+  <word key="acp_profile_badge_add" js="0">Legg til merke</word>
+  <word key="acp_badges_log_table_badge" js="0">Merke tjent</word>
+  <word key="acp_badges_log_table_datetime" js="0">Dato tjent</word>
+  <word key="acp_badges_log_table_action_log" js="0">Fortjent for</word>
+  <word key="acp_manual_badge" js="0">Merke å legge til</word>
+  <word key="acp_badge_manual" js="0">Manuelt belønnet</word>
+  <word key="acp_badge_cannot_delete" js="0">Kan ikke slette merker som er tildelt av regler</word>
+  <word key="history_manual_badge_addition" js="0">La til merke: %s %s</word>
+  <word key="history_manual_badge_deletion" js="0">Fjernet merke: %s %s</word>
+  <word key="menu__core_stats_points" js="0">Poeng</word>
+  <word key="stats_member_points" js="0">Poeng</word>
+  <word key="stats_points_title" js="0">Poeng tjent etter tidsperiode</word>
+  <word key="menu__core_stats_badges" js="0">Merker</word>
+  <word key="stats_member_badges" js="0">Merker</word>
+  <word key="stats_member_badges_overview" js="0">Merker tjent</word>
+  <word key="stats_badges_title" js="0">Merker tjent etter tidsperiode</word>
+  <word key="stats_member_points_overview" js="0">Poeng tjent</word>
+  <word key="profile_core_Achievements" js="0">Prestasjoner</word>
+  <word key="achievements_image_not_square" js="0">Det opplastede bildet er ikke kvadratisk</word>
+  <word key="achievements_bad_image" js="0">Klarte ikke opprette bilde</word>
+  <word key="achievements_profile_title" js="0">{# [1:merke][?:merker]} tjent</word>
+  <word key="achievements_self_none" js="0">Du har ikke fått noen merker ennå. Fortsett å delta for å bli tildelt din første!</word>
+  <word key="achievements_member_none" js="0">%s har ikke blitt tildelt noen merker ennå</word>
+  <word key="acp_manage_points_manual" js="0">Via manuell justering</word>
+  <word key="acp_manage_points_rule" js="0">Via regler</word>
+  <word key="acp_manage_points_promote" js="0">Rangendringer</word>
+  <word key="acp_points_log_table_new_rank" js="0">Ny rang</word>
+  <word key="rebuilding_achievements" js="0">Bygg om prestasjonsregel %s</word>
+  <word key="acp_rebuild_achievements" js="0">Bygg om brukeres prestasjoner</word>
+  <word key="acp_rebuild_achievements_checkbox" js="0">Bekreft ombygging</word>
+  <word key="acp_rebuild_achievements_checkbox_desc" js="0">Ombyggingen vil nullstille alle merker og prestasjonspoeng tilbake til null.</word>
+  <word key="acp_rebuild_achievements_rebuild" js="0">Bygg om nå</word>
+  <word key="acp_rebuild_achievements_blurb" js="0">Dette verktøyet vil bygge om alle poeng og merker som brukere har fått. Prosessen vil kjøres i bakgrunnen og kan ta opptil flere dager å fullføre. Merker, ranger og poeng vil ikke vises i nettsamfunnet mens ombyggingen holder på.</word>
+  <word key="acp_rebuild_achievements_time_unlimited" js="0">bygg om prestasjoner fra alt innhold i nettsamfunnet</word>
+  <word key="acp_rebuild_achievements_time" js="0">Tildel for innhold siden</word>
+  <word key="acp_rebuild_achievements_time_desc" js="0">Du kan velge å kun tildele prestasjoner basert på innhold siden en gitt dato til nå.</word>
+  <word key="acp_rules_rebuilding_title" js="0">Prestasjonsombygging holder på</word>
+  <word key="acp_rules_rebuilding_blurb" js="0">Prestasjonspoeng, ranger og merker blir kalkulert på nytt. Poeng, ranger og merker vil ikke vises før prosessen fullføres.</word>
+  <word key="acp_disable_rule" js="0">Sett regel på pause</word>
+  <word key="acp_enable_rule" js="0">Aktiver regel</word>
+  <word key="acp_rule_paused" js="0">(Satt på pause)</word>
+  <word key="acp_rule_is_paused" js="0">Denne regelen er satt på pause og vil ikke belønnes fra brukeraktivitet.</word>
+  <word key="ranks_are_being_recalculated" js="0">Ranger rekalkuleres. Vi vil vise din nåværende rang igjen snart.</word>
+  <word key="rules_exclude_groups" js="0">Ekskluder grupper</word>
+  <word key="rules_exclude_groups_desc" js="0">Medlemmer i en primær eller sekundærgruppe som stemmer overens med de ovenfor vil ikke ha ranker, poeng eller merker tildelt seg.</word>
+  <word key="recognize_author" js="0">Belønn %s</word>
+  <word key="recognize_badge" js="0">Tildel merke</word>
+  <word key="recognize_points" js="0">Tildel poeng</word>
+  <word key="recognize_form_empty" js="0">Du må tildele enten poeng, et merke eller begge deler.</word>
+  <word key="recognize_submit_success" js="0">Prestasjoner tildelt!</word>
+  <word key="recognize_points_awarded" js="0">Du har blitt tildelt %s poeng</word>
+  <word key="notification__new_recognized" js="0">Innholdet ditt har nettopp tildelt prestasjoner!</word>
+  <word key="mailsub__core_notification_new_recognize" js="0">Innholdet ditt har blitt belønnet!</word>
+  <word key="recognize_badge_awarded" js="0">Du ble tildelt '%s'-merket</word>
+  <word key="notification_new_recognized_mail" js="0"><![CDATA[Ditt <a href='%s'>innhold</a> har blitt belønnet!]]></word>
+  <word key="recognize_message" js="0">Melding</word>
+  <word key="recognize_message__desc" js="0">Valgfritt del en melding med %s.</word>
+  <word key="recognize_blurb_main" js="0">%s ble belønnet av %s!</word>
+  <word key="recognize_blurb_awarded_points_and_badge" js="0">Du ble tildelt merket '%s' og %s poeng</word>
+  <word key="recognize_blurb_awarded_points" js="0">Du ble tildelt %s poeng.</word>
+  <word key="recognize_blurb_awarded_badge" js="0">Du ble tildelt merket '%s'</word>
+  <word key="recognize_blurb_awarded_points_and_badge_third" js="0">%s ble tildelt merket '%s' og %s poeng.</word>
+  <word key="recognize_blurb_awarded_points_third" js="0">%s ble tildelt %s poeng.</word>
+  <word key="recognize_blurb_awarded_badge_third" js="0">%s ble tildelt merket '%s'</word>
+  <word key="can_recognize_content" js="0">Kan belønne brukers innhold?</word>
+  <word key="can_recognize_content_options" js="0">Belønn med</word>
+  <word key="can_recognize_content_points" js="0">Poeng</word>
+  <word key="can_recognize_content_badges" js="0">Merker</word>
+  <word key="recognize_public" js="0">Vis offentlig?</word>
+  <word key="recognize_public_desc" js="0">Hvis du velger nei vil kun moderatorer og trådstarter se denne belønningen.</word>
+  <word key="recognize_points_pluralize" js="0">%s poeng</word>
+  <word key="recognize_badges_pluralize" js="0">%s {!#[1:merke][?:merker]}</word>
+  <word key="recognize_points_so_far_single" js="0">%s har blitt manuelt tildelt %s så langt i dag.</word>
+  <word key="recognize_points_so_far_both" js="0">%s har blitt manuelt tildelt %s og %s så langt i dag. </word>
+  <word key="achievements_recognize_max_per_user_day" js="0">Begrens manuelle poeng</word>
+  <word key="achievements_recognize_max_per_user_day_prefix" js="0">for belønnet innhold til</word>
+  <word key="achievements_recognize_max_per_user_day_suffix" js="0">per bruker, per dag</word>
+  <word key="recognize_points_so_far_limit" js="0"><![CDATA[<p>%s har maksimalt %s poeng igjen å bli belønnet med i dag.</p>]]></word>
+  <word key="can_recognize_content_no_point_limit" js="0">Kan omgå begrensning for daglige poeng</word>
+  <word key="recognize_points_so_far_limit_but_none" js="0">Du har tillatelse til å forbigå den daglige poenggrensen</word>
+  <word key="recognize_points_so_far_limit_none" js="0"><![CDATA[<p>%s har ingen flere poeng som kan tildeles i dag.</p>]]></word>
+  <word key="recognize_author_remove" js="0">Fjern belønninger</word>
+  <word key="recognize_author_remove_desc" js="0">Fjern ethvert merke- eller poeng-belønning for dette innholdet.</word>
+  <word key="recognize_removed_success" js="0">Belønninger fjernet</word>
+  <word key="badge_from_recognize" js="0"><![CDATA[%s for <a href="%s">%s</a>]]></word>
+  <word key="wr_cheev_point_reduction" js="0">Trekk fra prestasjonspoeng</word>
+  <word key="warn_cheeve_point_reduction" js="0">Trekk fra prestasjonspoeng</word>
+  <word key="warn_cheeve_point_reduction__desc" js="0">%s har %s poeng. Å trekke fra poeng kan flytte %s ned et eller flere trinn på rangstigen.</word>
+  <word key="wr_cheev_override" js="0">Moderatorer kan overstyre fjerning av prestasjonspoeng</word>
+  <word key="wr_cheev_point_reduction_desc" js="0">Når denne advarselen brukes kan du valgfritt fjerne prestasjonspoeng som brukeren har fått. Dette kan flytte vedkommende nedover på rangstigen.</word>
+  <word key="acp_badge_from_recognize" js="0"><![CDATA[Belønnet for <a href="%s">%s</a>]]></word>
+  <word key="acp_rule_disabled" js="0">(Deaktivert)</word>
+  <word key="acp_rule_disabled_reason" js="0">En applikasjon eller innstilling som regelen trenger er deaktivert. </word>
+  <word key="acp_achievements_export" js="0">Eksporter</word>
+  <word key="acp_achievements_import" js="0">Importer</word>
+  <word key="acp_achievements_import_error" js="0">Du må bekrefte at du ønsker å fjerne alle eksisterende ranger før du importerer. </word>
+  <word key="acp_achievements_import_xml" js="0">XML-fil</word>
+  <word key="acp_achievements_import_option" js="0">Importeringstype</word>
+  <word key="acp_achievements_import_option_wipe" js="0">Fjern alle ranger først</word>
+  <word key="acp_achievements_import_option_wipe_sure" js="0">Er du sikker?</word>
+  <word key="acp_achievements_import_option_replace" js="0">Erstatt eller legg til ranger</word>
+  <word key="acp_achievements_import_option_wipe_desc" js="0">Fjern alle eksisterende ranger og legg til rangene som importeres.</word>
+  <word key="acp_achievements_import_option_replace_desc" js="0">Hvis en rang allerede eksisterer med den samme poengverdien vil den erstattes. Andre ranger i importen legges til.</word>
+  <word key="acp_achievements_import_option_rule_wipe" js="0">Fjern alle eksisterende regler først</word>
+  <word key="acp_achievements_import_option_rule_wipe_desc" js="0">Dette valget innebærer at eksisterende regler ikke lenger vil vises når man ser på en brukers poenglogg. </word>
+  <word key="acp_achievements_import_rules_message" js="0">Importer alle regler og merker tildelt av en regels milepæl.</word>
+  <word key="acp_achievements_export_badges_blurb" js="0"><![CDATA[Eksporter %s {!#[1:merke][?:merker]} som ikke er tildelt noen regler. Du kan eksportere regler med tildelte merker <a href='{internal.app=core&module=achievements&controller=rules}'>fra regel-listen.</a>]]></word>
+  <word key="acp_achievements_export_badges_blurb_error" js="0"><![CDATA[Det er ingen merker å eksportere som ikke har blitt tildelt. Du kan eksportere regler som har blitt tildelt merker <a href='{internal.app=core&module=achievements&controller=rules}'>fra regel-listen.</a>]]></word>
+  <word key="acp_achievements_import_option_badge_wipe" js="0">Fjern eksisterende merker uten tildeling</word>
+  <word key="acp_achievements_import_option_badge_wipe_desc" js="0">Fjern alle merker som ikke er tildelt en regel før importering.</word>
+  <word key="acp_achievements_rebuild_not_checked" js="0">Vennligst marker bekreftelsesboksen før du sender inn denne ombyggingen.</word>
+  <word key="acp_notifications_cannot_use_web_push" js="0"><![CDATA[<strong>Web Push er utilgjengelig</strong>
+<br>Din server har dessverre ikke <a href='http://php.net/manual/en/book.gmp.php'>PHP-tillegget GMP</a> installert. Vennligst kontakt din serverleverandør eller vurder å bytt til <a href='https://invisioncommunity.com/buy'>Invision Cloud Community</a> som har Web Push-varsler aktivert.]]></word>
+  <word key="achievements_profile_rank_progress" js="0">Rangstigefremgang</word>
+  <word key="profile_rank_progress_blurb_percentage" js="0"><![CDATA[%s har oppnådd <strong>%s av %s</strong> ranger og er i <strong>topp %s&percnt;</strong> av alle medlemmer!]]></word>
+  <word key="profile_rank_progress_blurb" js="0"><![CDATA[%s har oppnådd <strong>%s av %s</strong> ranger.]]></word>
+  <word key="profile_rank_progress_blurb_percentage_info" js="0">Prosenten kalkuleres opp mot medlemmer som har ett poeng eller mer.</word>
+  <word key="badge_earned_date_while_rebuilding" js="0">Tjent før %s</word>
+  <word key="badge_earned_but_not_really" js="0">Ikke tjent ennå</word>
+  <word key="redis_advert_impressions" js="0">Annonsevisninger</word>
+  <word key="widget_member_title" js="0">Tittel</word>
+  <word key="widget_member_title_default" js="0">Medlemmer</word>
+  <word key="achievements_widget_title" js="0">Nylige prestasjoner</word>
+  <word key="achievements_enabled" js="0">Aktivert</word>
+  <word key="achievements_enabled_desc" js="0">Merker og ranker vil ikke vises, og regler vil ikke prosesseres, når dette er deaktivert.</word>
+  <word key="achievements_not_enabled" js="0">Prestasjoner er for øyeblikket deaktivert </word>
+  <word key="health_vapid_key_check_fail_exception" js="0">Kunne ikke opprette nøkler for push-varsler. Feil returnert: %s</word>
+  <word key="achievement_who_suffix" js="0">reaksjoner</word>
+  <word key="achievement_who_reciever" js="0">Innholdsforfatteren får en total av</word>
+  <word key="achievement_who_giver" js="0">Brukeren har gitt en total av</word>
+  <word key="numberSuffix" js="1">{!#[1:te][2:re][3:rd][*1:te][*2:dre][*3:dje][*11:te][*12:te][?:ende]}</word>
+  <word key="insert" js="1">Sett inn</word>
+  <word key="notificationsCalloutPush" js="1">Aktiver push-varsler</word>
+  <word key="notificationsUpgradeBlurb" js="1">Før sendte vi kun varsler når du hadde nettsamfunnet åpent i nettleseren din.</word>
+  <word key="notificationsEnabling" js="1">Aktiverer…</word>
+  <word key="notificationsEnabled" js="1">Aktivert i denne nettleseren</word>
+  <word key="notificationsFailed" js="1">Tilgangen ble nektet i denne nettleseren</word>
+  <word key="notificationsSubscribed" js="1">Aktivert</word>
+  <word key="notificationsNotSupported" js="1">Push er ikke støttet i denne nettleseren</word>
+  <word key="notificationsChecking" js="1">Validerer abonnement…</word>
+  <word key="notificationsSubscribeFailed" js="1">En feil oppsto når vi prøvde aktivere varsler. Vennligst last inn siden på nytt og prøv igjen.</word>
+  <word key="notificationsSubscribeSuccess" js="1">Suksess! Du vil motta varsler fra denne siden. Du kan håndtere dine varslingspreferanser ved å trykke lenken for varslingsinnstillinger ovenfor. </word>
+  <word key="notificationsNoThanks" js="1">Nei takk</word>
+  <word key="emoji-magic_wand" js="1">Tryllestav</word>
+  <word key="emoji-pinata" js="1">Pinata</word>
+  <word key="emoji-nesting_dolls" js="1">Hekkende dukker</word>
+  <word key="emoji-sewing_needle" js="1">Synål</word>
+  <word key="emoji-knot" js="1">Knute</word>
+  <word key="emoji-thong_sandal" js="1">String-sandal</word>
+  <word key="emoji-military_helmet" js="1">Millitærhjelm</word>
+  <word key="emoji-accordion" js="1">Trekkspill</word>
+  <word key="emoji-long_drum" js="1">Lang tromme</word>
+  <word key="emoji-coin" js="1">Mynt</word>
+  <word key="emoji-boomerang" js="1">Boomerang</word>
+  <word key="emoji-carpentry_saw" js="1">Snekkersag</word>
+  <word key="emoji-screwdriver" js="1">Skrutrekker</word>
+  <word key="emoji-hook" js="1">Krok</word>
+  <word key="emoji-ladder" js="1">Stige</word>
+  <word key="emoji-elevator" js="1">Heis</word>
+  <word key="emoji-mirror" js="1">Speil</word>
+  <word key="emoji-window" js="1">Vindu</word>
+  <word key="emoji-plunger" js="1">Vaskestempel</word>
+  <word key="emoji-mouse_trap" js="1">Musefelle</word>
+  <word key="emoji-bucket" js="1">Bøtte</word>
+  <word key="emoji-toothbrush" js="1">Tannbørste</word>
+  <word key="emoji-headstone" js="1">Gravstein</word>
+  <word key="emoji-placard" js="1">Plakat</word>
+  <word key="emoji-transgender_symbol" js="1">Symbol for transkjønn</word>
+  <word key="emoji-transgender_flag" js="1">Flagg for transkjønn</word>
+  <word key="emoji-hut" js="1">Hytte</word>
+  <word key="emoji-pickup_truck" js="1">Pickup-lastebil</word>
+  <word key="emoji-roller_skate" js="1">Rulleskøyter</word>
+  <word key="emoji-rock" js="1">Stein</word>
+  <word key="emoji-wood" js="1">Tre</word>
+  <word key="emoji-bubble_tea" js="1">Boblete</word>
+  <word key="emoji-blueberries" js="1">Blåbær</word>
+  <word key="emoji-bell_pepper" js="1">Paprika</word>
+  <word key="emoji-olive" js="1">Oliven</word>
+  <word key="emoji-flatbread" js="1">Flattbrød</word>
+  <word key="emoji-tamale" js="1">Tamale</word>
+  <word key="emoji-fondue" js="1">Fondue</word>
+  <word key="emoji-teapot" js="1">Tekanne</word>
+  <word key="emoji-black_cat" js="1">Katt</word>
+  <word key="emoji-ladybug" js="1">Damebille</word>
+  <word key="emoji-polar_bear" js="1">Isbjørn</word>
+  <word key="emoji-mammoth" js="1">Mammut</word>
+  <word key="emoji-dodo" js="1">Dodo</word>
+  <word key="emoji-beaver" js="1">Bever</word>
+  <word key="emoji-bison" js="1">Bison</word>
+  <word key="emoji-seal" js="1">Sel</word>
+  <word key="emoji-fly" js="1">Fly</word>
+  <word key="emoji-worm" js="1">Mark</word>
+  <word key="emoji-cockroach" js="1">Kakerlakk</word>
+  <word key="emoji-potted_plant" js="1">Potteplante</word>
+  <word key="emoji-feather" js="1">Fjær</word>
+  <word key="emoji-man_feeding_baby" js="1">Mann som mater baby</word>
+  <word key="emoji-woman_feeding_baby" js="1">Kvinne som mater baby</word>
+  <word key="emoji-man_and_woman_holding_hands" js="1">Mann og kvinne som holder hender</word>
+  <word key="emoji-woman_with_veil" js="1">Kvinne med slør</word>
+  <word key="emoji-man_with_veil" js="1">Mann med slør</word>
+  <word key="emoji-pinched_fingers" js="1">Klemte fingre</word>
+  <word key="emoji-woman_in_tuxedo" js="1">Kvinne i smoking</word>
+  <word key="emoji-person_in_tuxedo" js="1">Mann i smoking</word>
+  <word key="emoji-ninja" js="1">Ninja</word>
+  <word key="emoji-person_feeding_baby" js="1">Person som mater baby</word>
+  <word key="emoji-mx_claus" js="1">Nissemor</word>
+  <word key="emoji-anatomical_heart" js="1">Anatomisk hjerte</word>
+  <word key="emoji-lungs" js="1">Lunger</word>
+  <word key="emoji-people_hugging" js="1">Folk som klemmer</word>
+  <word key="emoji-smiling_face_with_tear" js="1">Smilende ansikt med tåre</word>
+  <word key="emoji-disguised_face" js="1">Forkledd ansikt</word>
+  <word key="health_caches_cleared" js="1">Alle cacher ble tømt</word>
+  <word key="health_check_summary" js="1"><![CDATA[<span class='ipsType_warning ipsType_bold'>{# [1:kritisk feil][?:kritiske feil]}</span> and <span class='ipsType_issue'>{# [1:viktig problem][?:viktige problemer]}</span> oppdaget]]></word>
+  <word key="health_ticket_beforeproceeding" js="1">Før du fortsetter er det sterkt anbefalt at du adresserer enhver oppdaget feil siden de kan være årsaken til problemet som du opplever. </word>
+  <word key="stream_subscribe" js="0">Abonner på epost-sammendrag</word>
+  <word key="stream_subscribe_button" js="0">Abonner</word>
+  <word key="stream_unsubscribe" js="0">Meld deg av epost-sammendrag</word>
+  <word key="stream_unsubscribe_button" js="0">Meld deg av</word>
+  <word key="stream_subscription_frequency" js="0">Hvor ofte vil du bli oppdatert?</word>
+  <word key="stream_daily" js="0">Hver dag</word>
+  <word key="stream_weekly" js="0">Hver uke</word>
+  <word key="activity_stream_subscriptions" js="0">Aktiver abonnementer for aktivitetsstrømmer</word>
+  <word key="activity_stream_subscriptions_max" js="0">Maks abonnement</word>
+  <word key="activity_stream_subscriptions_inactive_limit" js="0">Brukeren aktiv siste x dager</word>
+  <word key="activity_stream_subscriptions_inactive_limit_desc" js="0">Medlemmer som ikke har vært aktiv i løpet av de siste x dagene vil ikke motta en epost.</word>
+  <word key="activity_stream_subscriptions_max_desc" js="0">Maksimalt antall strømmer medlemmer kan abonnere på</word>
+  <word key="stream_subscribe_s" js="0">Abonner på %s</word>
+  <word key="mailsub__core_activity_stream_subscription" js="0"><![CDATA[{$stream->_title} - strømabonnement]]></word>
+  <word key="email_core_activity_stream_subscription_daily" js="0">Her er din daglige oppdatering fra %s.</word>
+  <word key="email_core_activity_stream_subscription_weekly" js="0">Her er din ukentlige oppdatering for %s.</word>
+  <word key="unsubscribe_all_streams" js="0">Meld deg av alle aktivitetsstrømmer</word>
+  <word key="subscribed" js="0">Abonner</word>
+  <word key="confirm_stream_unsubscribe" js="0">Er du sikker på at du vil melde deg av denne strømmen?</word>
+  <word key="stream_subscriptions" js="0">Strøm-abonnementer</word>
+  <word key="update_stream_subscriptions" js="0">Oppdater strøm-abonnementer</word>
+  <word key="stream_subscription_unsubscribe_thing" js="0"><![CDATA[Meld deg av fra <em>%s</em>]]></word>
+  <word key="stream_unsubscribe_confirm" js="0">Du vil ikke lenger motta epost-sammendrag fra denne strømmen.</word>
+  <word key="unsubscribe_blurb_stream" js="0">Du får denne e-posten fordi du meldte deg på strømmen '%s'.</word>
+  <word key="stream_guest_unfollowed_thing" js="0">Du har nå stanset e-postvarsler for '%s'</word>
+  <word key="stream_guest_unfollowed_all" js="0">Du har nå stanset e-postvarsler fra alle strømmene du abonnerte på</word>
+  <word key="streamsubscription_guest_all" js="0">Meld deg av alle</word>
+  <word key="streamsubscription_guest_thing" js="0"><![CDATA[Meld deg av epost-sammendrag fra <em>%s</em>]]></word>
+  <word key="guest_unsubscribe_choice" js="0">Meld deg av fra</word>
+  <word key="stream_view_more" js="0">Vis mer</word>
+  <word key="upgrade_confirm_backup" js="0">Bekreft oppgradering</word>
+  <word key="upgrade_confirm_backup_desc" js="0">Jeg forstår at hvis oppgraderingen mislykkes er det ikke sikkert at jeg vil få øyeblikkelig hjelp og at en tilbakestilling til slik forumet var før oppgraderingen kan bli nødvendig. Jeg bekrefter at jeg har tatt nødvendige sikkerhetskopier av nettsamfunnet.</word>
+  <word key="notification__approved_content_grouped" js="0">{count} %s ble godkjent</word>
+  <word key="email_lost_pass_timelimit" js="0">Denne lenken utløper om 1 time.</word>
+  <word key="club_node_public" js="0">Gjør innhold offentlig?</word>
+  <word key="club_node_public_desc" js="0">Tillat brukere som ikke er medlem av klubben å se før de blir med</word>
+  <word key="log_type_title_badges" js="0">Merker</word>
+  <word key="log_type_title_points" js="0">Prestasjonspoeng</word>
+  <word key="health_support_intro3" js="0"><![CDATA[Hvis ansatte i Invision Community trenger tilgang til installasjonen din, vennligst <a href='{internal.app=core&module=support&controller=support&do=admin}' data-ipsDialog data-ipsDialog-title='Administrator Account'>klikk her</a> for å lage en administratorkonto. Kun gjør dette hvis det er en Invision Community-ansatt som spør.]]></word>
+  <word key="administrator_account" js="0">Administratorkonto</word>
+  <word key="copy_admin_info" js="0">Kopier denne informasjonen siden den ikke kan hentes ut igjen senere</word>
+  <word key="stats_badges_member_group_id" js="0">Medlemsgruppe</word>
+  <word key="stats_badges_member_id" js="0">Medlem</word>
+  <word key="stats_badges_count" js="0">Merker tildelt</word>
+  <word key="stats_badges_by_badge" js="0">Tildelte merker</word>
+  <word key="stats_badges_by_group" js="0">Merker etter medlemsgruppe</word>
+  <word key="stats_badges_by_member" js="0">Merker etter medlem</word>
+  <word key="stats_badge_mgroup_badge" js="0">Merke</word>
+  <word key="stats_badge_mgroup_count" js="0">Antall tildelinger</word>
+  <word key="stats_badge_member_badge" js="0">Merke</word>
+  <word key="stats_badge_member_date" js="0">Dato tildelt</word>
+  <word key="stats_badge_tooltip" js="0">Vis tildelte merker</word>
+  <word key="stats_posts_type_comment_id" js="0">Innlegg</word>
+  <word key="stats_posts_type_solved_date" js="0">Markert som løst</word>
+  <word key="stats_posts_by_type" js="0">Innlegg etter type</word>
+  <word key="stats_posts_type_type" js="0">Innleggstype</word>
+  <word key="stats_posts_type_count" js="0">Antall</word>
+  <word key="stats_posts_type_solved" js="0">Løste innlegg</word>
+  <word key="stats_posts_type_recommended" js="0">Anbefalte innlegg</word>
+  <word key="stats_posts_type_meta_data" js="0">Innlegg</word>
+  <word key="stats_posts_type_meta_added" js="0">Anbefalt</word>
+  <word key="stats_posts_show_posts" js="0">Vis innlegg</word>
+  <word key="r__editor_stored_replies" js="0">Standardsvar</word>
+  <word key="r__stored_replies_manage" js="0">Håndter standardsvar</word>
+  <word key="menu__core_editor_storedreplies" js="0">Standardsvar</word>
+  <word key="editor_stored_replies" js="0">Standardsvar</word>
+  <word key="editor_stored_replies_title" js="0">Tittel</word>
+  <word key="editor_stored_replies_enabled" js="0">Aktivert</word>
+  <word key="editor_stored_replies_content" js="0">Svar</word>
+  <word key="perm_editor_stored_reply_perm__view" js="0">Kan bruke svar</word>
+  <word key="perm_editor_stored_reply_perm__label" js="0">Gruppe</word>
+  <word key="editor_stored_replies_no_editor_has_button" js="0"><![CDATA[Du har ikke lagt til standardsvar-knappen i noen tekstverktøy-menyer. Vennligst gå til <a href='{internal.app=core&module=editor&controller=toolbar}'>siden for å konfigurere tekstverktøyet</a> og legg standardsvar-knappen til i stor, middels og lite tekstverktøy. ]]></word>
+  <word key="editor_stored_replies_not_all_editors_have_button" js="0"><![CDATA[Standardsvar-knappen er ikke tilgjengelig i alle tekstverktøy. Vennligst gå til <a href='{internal.app=core&module=editor&controller=toolbar}'>siden for å konfigurere tekstverktøyet</a> og legg standardsvar-knappen til i stor, middels og lite tekstverktøy. ]]></word>
+  <word key="widget_onlineusers_membercount" js="1">{# [1:medlem][?:medlemmer]}</word>
+  <word key="editorStoredReplies" js="1">Standardsvar</word>
  </app>
  <app key="forums" version="">
   <word key="__app_forums" js="0">Forum</word>
@@ -12748,8 +13535,8 @@ For å støtte dette må du <a href='{internal.app=core&module=promotion&control
   <word key="menu__forums_forums_forums" js="0">Forum</word>
   <word key="menu__forums_forums_savedActions" js="0">Lagrede handlinger</word>
   <word key="menu__forums_stats" js="0">Kategorier</word>
-  <word key="menu__forums_stats_topics" js="0">Statistikk: Nye emner</word>
-  <word key="menu__forums_stats_posts" js="0">Statistikk: Nye innlegg</word>
+  <word key="menu__forums_stats_topics" js="0">Tråder</word>
+  <word key="menu__forums_stats_posts" js="0">Innlegg</word>
   <word key="r__forums" js="0">Kategorier</word>
   <word key="r__forums_manage" js="0">Kan se kategorier?</word>
   <word key="r__forums_add" js="0">Kan opprette kategorier?</word>
@@ -12889,7 +13676,7 @@ For å støtte dette må du <a href='{internal.app=core&module=promotion&control
   <word key="edit_forum" js="0">Endre kategori</word>
   <word key="node_no_parentf" js="0">Ingen forelder</word>
   <word key="forum_use_feature_color" js="0">Bruk en fremhevingsfarge?</word>
-  <word key="forum_use_feature_color_desc" js="0">En fremhevingsfarge vil vise forumtittelen som et skilt når det blir brukt i en beskrivelse.</word>
+  <word key="forum_use_feature_color_desc" js="0">En fremhevingsfarge vil ulike steder brukes slik som forum-/kategoritittelen, skilter ol. </word>
   <word key="forum_feature_color" js="0">Fremhevingsfarge</word>
   <word key="rebuilding_starter_ids" js="0">Bygger om ID på trådstarter</word>
   <word key="forums_topic_post" js="0">Foruminnlegg</word>
@@ -13160,8 +13947,6 @@ Arkiverte tråder kan ikke bli skrevet i eller redigert. Du kan hente tråder ti
   <word key="go_to_forum" js="0">Gå til %s</word>
   <word key="go_back_to_forum" js="0">Gå til emneliste</word>
   <word key="go_back_to_qa_forum" js="0">Gå til spørsmålsliste</word>
-  <word key="first_unread_post" js="0">Gå til første uleste innlegg</word>
-  <word key="get_last_post" js="0">Gå til siste innlegg</word>
   <word key="topic_is_archived" js="0">Arkivert</word>
   <word key="topic_archived_desc" js="0">Dette emnet er nå arkivert og stengt for flere svar</word>
   <word key="count_topics_in_forum" js="0">{# [1:emne][?:emner]} i kategorien</word>
@@ -13273,16 +14058,16 @@ Arkiverte tråder kan ikke bli skrevet i eller redigert. Du kan hente tråder ti
   <word key="ad_fluid_index_view_number_suffix" js="0">trådrader når man er i flytende visningsmodus</word>
   <word key="ad_fluid_index_view_repeat" js="0">Gjentatte</word>
   <word key="ad_fluid_index_view_repeat_suffix" js="0">ganger</word>
-  <word key="stats_new_topics" js="0">Nye emner</word>
-  <word key="stats_new_posts" js="0">Nye innlegg</word>
+  <word key="stats_new_topics" js="0">Tråder</word>
+  <word key="stats_new_posts" js="0">Innlegg</word>
   <word key="stats_topics_tab_total" js="0">Alle nye tråder</word>
-  <word key="stats_topics_tab_byforum" js="0">Nye tråder etter forum</word>
-  <word key="stats_topics_title" js="0">Nye emner i tidsperioden</word>
-  <word key="stats_topics_title_byforum" js="0">Nye tråder fordelt etter forum</word>
-  <word key="stats_posts_tab_total" js="0">Alle nye poster</word>
-  <word key="stats_posts_tab_byforum" js="0">Nye poster fordelt etter forum</word>
-  <word key="stats_posts_title" js="0">Nye innlegg i tidsperioden</word>
-  <word key="stats_posts_title_byforum" js="0">Nye poster fordelt etter forum</word>
+  <word key="stats_topics_tab_byforum" js="0">Tråder etter forum</word>
+  <word key="stats_topics_title" js="0">Tråder i tidsperioden</word>
+  <word key="stats_topics_title_byforum" js="0">Tråder fordelt etter forum</word>
+  <word key="stats_posts_tab_total" js="0">Alle poster</word>
+  <word key="stats_posts_tab_byforum" js="0">Poster fordelt etter forum</word>
+  <word key="stats_posts_title" js="0">Innlegg etter tidsperiode</word>
+  <word key="stats_posts_title_byforum" js="0">Poster fordelt etter forum</word>
   <word key="widget_feed_container_topic" js="0">Forum</word>
   <word key="block_topicFeed_title" js="0">Emner</word>
   <word key="block_postFeed_title" js="0">Innlegg</word>
@@ -13433,6 +14218,39 @@ Arkiverte tråder kan ikke bli skrevet i eller redigert. Du kan hente tråder ti
   <word key="app_topic_restricted_cannot_comment" js="0">Kontoen din er for øyeblikkelig begrenset fra å poste.</word>
   <word key="app_topic_unacknowledged_warning_cannot_post" js="0">Du har fått en advarsel som du er nødt til å erkjenne før du kan poste noe mer.</word>
   <word key="app_topic_member_exceeded_posts_per_day" js="0">Du har nådd det maksimale antall poster du kan skrive om dagen.</word>
+  <word key="chart_forums" js="0">Filtrer etter forum</word>
+  <word key="archiving_blurb_cloud_notforced" js="0">Det å arkivere eldre tråder, som ikke er klistret eller promotert, på større sider kan sørge for at nettsamfunnet ditt fortsetter å være effektivt og stabilt. Arkiverte tråder kan ikke postes i eller redigeres, og vil ikke vises i søkeresultater. Når nettsamfunnet når en viss størrelse vil arkivering av gammelt innhold bli påkrevd.</word>
+  <word key="disable_cloud_archiving" js="0">Deaktiver arkivering</word>
+  <word key="__defart_post_plural" js="0">{!#[1:innlegg][?:innlegg]} i en tråd</word>
+  <word key="__defart_topic_plural" js="0">{!#[1:tråd][?:tråder]}</word>
+  <word key="__defart_answer_plural" js="0">{!#[1:svar][?:svar]} på spørsmål</word>
+  <word key="__defart_question_plural" js="0">{!#[1:svar][?:svar]}</word>
+  <word key="forums_sg_lc" js="0">forum</word>
+  <word key="topic_posted_in_groups" js="0">Innlegg av %s</word>
+  <word key="filter_hidden_topics" js="0">Skjulte tråder</word>
+  <word key="filter_hidden_posts_in_topics" js="0">Tråder med skjulte innlegg</word>
+  <word key="stats_percentagesolved" js="0">Prosent løst</word>
+  <word key="stats_percentagesolved_desc" js="0">Prosent løste tråder sammenlignet med det totale antallet tråder postet</word>
+  <word key="stats_solved_tooltip" js="0">%s tråder ble merkert løst ut av %s tråder</word>
+  <word key="stats_solved_tooltip_prev" js="0">%s tråder ble markert løst ut av %s tråder, noe som gir en løsningsandel på %s%%</word>
+  <word key="stats_averagetimesolved" js="0">Gjennomsnittlig tid til løsning</word>
+  <word key="stats_averagetimesolved_desc" js="0">Den gjennomsnittlige tiden som det tar fra tråder startes og til en løsning blir markert. </word>
+  <word key="forums_topic_show_meta_moderation_desc" js="0"><![CDATA[Du kan velge hvilke grupper som kan se moderatorhandlinger i <a href='{internal.app=core&module=members&controller=groups}'>gruppeinnstillingene</a>]]></word>
+  <word key="forums_mod_actions_anon" js="0">Vis moderatornavn ved siden av moderatorhandlinger</word>
+  <word key="forums_mod_actions_anon_desc" js="0">Hvis deaktivert vil navnet på moderatoren som utførte handlingen skjules for andre brukere som ikke har tilgang til å moderere i kategorien.</word>
+  <word key="404_forums_topic" js="0">Vi kunne ikke finne den tråden.</word>
+  <word key="403_forums_topic" js="0">Du har ikke tilgang til å se den tråden.</word>
+  <word key="AchievementAction__AnswerMarkedBest" js="0">Innlegget er markert som beste svar</word>
+  <word key="achievement_filter_AnswerMarkedBest_forum" js="0">Legg til stedsbetingelse</word>
+  <word key="achievement_filter_AnswerMarkedBest_forum_prefix" js="0">Spørsmålet er i kategorien</word>
+  <word key="achievement_filter_AnswerMarkedBest_poster" js="0">Til brukeren som skrev svaret</word>
+  <word key="achievement_filter_AnswerMarkedBest_asker" js="0">Til brukeren som skrev det opprinnelige spørsmålet</word>
+  <word key="achievement_filter_AnswerMarkedBest_nth" js="0">Legg til en milepælsbetingelse</word>
+  <word key="achievement_filter_AnswerMarkedBest_nth_suffix" js="0">. gang en post i den kategorien markeres som beste svar</word>
+  <word key="AchievementAction__AnswerMarkedBest_log_subject" js="0">Svar gitt til %s markert som beste svar</word>
+  <word key="AchievementAction__AnswerMarkedBest_log_other" js="0">Spørsmålet %s hadde et svar markert som beste svar</word>
+  <word key="AchievementAction__AnswerMarkedBest_log_deleted" js="0">et slettet spørsmål</word>
+  <word key="AchievementAction__AnswerMarkedBest_title" js="0">Beste svar</word>
  </app>
  <app key="calendar" version="">
   <word key="__app_calendar" js="0">Kalender</word>
@@ -13933,6 +14751,18 @@ Arkiverte tråder kan ikke bli skrevet i eller redigert. Du kan hente tråder ti
   <word key="recur_human__xweekly" js="0">{# [1:uke][?:uker]}</word>
   <word key="recur_human__xdaily" js="0">{# [1:dag][?:dager]}</word>
   <word key="notifications__calendar_Events_desc" js="0">Disse varslene sendes når en hendelse du har bedt om varsler fra er nært forestående.</word>
+  <word key="__defart_calendar_event_comment_plural" js="0">{!#[1:kommentar][?:kommentarer]} på kalenderhendelser</word>
+  <word key="__defart_calendar_event_plural" js="0">kalender{!#[1:hendelse][?:hendelser]}</word>
+  <word key="__defart_calendar_event_review_plural" js="0">{!#[1:omtale][?:omtaler]} på en kalenderhendelse</word>
+  <word key="calendars_sg_lc" js="0">kalender</word>
+  <word key="notification__event_reminder_title" js="0">Kommende {!#[1:hendelse][?:hendelser]}</word>
+  <word key="cal_allow_anonymous" js="0">Tillat anonyme innlegg?</word>
+  <word key="AchievementAction__Rsvp" js="0">Brukeren melder deltakelse på hendelse</word>
+  <word key="achievement_filter_Rsvp_nth_suffix" js="0"><![CDATA[<span data-role='th'>.</span> slikt svar]]></word>
+  <word key="achievement_filter_Rsvp_receiver" js="0">Til brukeren som postet hendelsen</word>
+  <word key="achievement_filter_Rsvp_giver" js="0">Til brukeren som svarer på deltakelse</word>
+  <word key="AchievementAction__Rsvp_log" js="0">Meldte svar til %s</word>
+  <word key="AchievementAction__Rsvp_title" js="0">Svar utbes på hendelse</word>
  </app>
  <app key="gallery" version="">
   <word key="__app_gallery" js="0">Galleri</word>
@@ -14176,7 +15006,7 @@ Arkiverte tråder kan ikke bli skrevet i eller redigert. Du kan hente tråder ti
   <word key="gallery_bandwidth" js="0">Båndbreddelogging</word>
   <word key="gallery_detailed_bandwidth" js="0">Vis detaljerte logger for båndbreddebruk</word>
   <word key="gallery_detailed_bandwidth_desc" js="0">Hvis du aktiverer dette vil alle galleribildevisninger spores. Du kan deretter bruke loggene for båndbreddebruk for å se hvor mye båndbredde som brukes over definerte tidsperioder. Du kan også finne ut båndbreddebruken knyttet til hvert enkelt medlem.</word>
-  <word key="gallery_bandwidth_period" js="0">Antall timer å beholde logg over båndbreddebruk</word>
+  <word key="gallery_bandwidth_period" js="0">Behold logger i</word>
   <word key="gallery_options" js="0">Generelle valg</word>
   <word key="gallery_rss_enabled" js="0">Aktiver RSS-strøm over nyeste bilder</word>
   <word key="gallery_rebuildimages" js="0">Bygger om bilder</word>
@@ -14740,6 +15570,16 @@ Arkiverte tråder kan ikke bli skrevet i eller redigert. Du kan hente tråder ti
   <word key="loc_gallery_viewing_category_action" js="0">%s utforsker en gallerikategori</word>
   <word key="loc_gallery_viewing_album_action" js="0">%s ser på et album</word>
   <word key="__api_gallery_categories" js="0">Kategorier</word>
+  <word key="__defart_gallery_image_comment_plural" js="0">{!#[1:kommentar][?:kommentarer]} på galleribilde</word>
+  <word key="__defart_gallery_image_plural" js="0">galleri{!#[1:bilde][?:bilder]}</word>
+  <word key="__defart_gallery_album_comment_plural" js="0">{!#[1:kommentar][?:kommentarer]} på gallerialbum</word>
+  <word key="__defart_gallery_album_plural" js="0">gallery{!#[1:album][?:album]}</word>
+  <word key="__defart_gallery_image_review_plural" js="0">{!#[1:omtale][?:omtaler]} på galleribilde</word>
+  <word key="__defart_gallery_album_review_plural" js="0">{!#[1:omtale][?:omtaler]} på gallerialbum</word>
+  <word key="gallery_bandwidth_period_desc" js="0">Detaljerte båndbredde-logger eldre enn tidsrammen vil fjernes for å forbedre ytelsen. Statistikk som er avhengig av disse loggene vil ikke lenger være tilgjengelig når båndbreddelogger fjernes.</word>
+  <word key="gallery_unset_cover" js="0">Fjern forsidebilde</word>
+  <word key="gallery_unset_cover_error" js="0">Du har ikke tilgang til å fjerne forsidebildet</word>
+  <word key="gallery_cover_photo_isunset" js="0">Forsidebildet er fjernet</word>
  </app>
  <app key="blog" version="">
   <word key="__app_blog" js="0">Blogger</word>
@@ -15050,6 +15890,11 @@ Arkiverte tråder kan ikke bli skrevet i eller redigert. Du kan hente tråder ti
   <word key="blog_category_confirm_delete_desc" js="1">Eksisterende innlegg i denne kategorien blir oppdatert slik at de ikke lenger er plassert i en kategori.</word>
   <word key="manage_cats_new_row" js="1">Legg til ny kategori</word>
   <word key="entry_cat_order_saved" js="1">Kategorisortering lagret</word>
+  <word key="blog_subcategories" js="0">Underkategorier</word>
+  <word key="__defart_blog_entry_comment_plural" js="0">{!#[1:kommentar][?:kommentarer]} på blogginnlegg</word>
+  <word key="__defart_blog_entry_plural" js="0">{!#[1:blogginnlegg][?:blogginnlegg]}</word>
+  <word key="blogs_sg_lc" js="0">blogg</word>
+  <word key="delete_blog_warning" js="0">Dette vil slette bloggen og alle dens blogginnlegg permanent.</word>
  </app>
  <app key="cms" version="">
   <word key="__app_cms" js="0">Sider</word>
@@ -16089,6 +16934,19 @@ Arkiverte tråder kan ikke bli skrevet i eller redigert. Du kan hente tråder ti
   <word key="pagebuilderupload_urls" js="0">URL-er</word>
   <word key="pagebuilderupload_urls_desc" js="0">Disse må sorteres i samme rekkefølge som de opplastede bildene</word>
   <word key="pagebuilderupload_height" js="0">Blokkhøyde</word>
+  <word key="__defart_content_record_comments_title_plural" js="0">{!#[1:kommentar][?:kommentarer]}</word>
+  <word key="__defart_content_record_reviews_title_plural" js="0">{!#[1:omtale][?:omtaler]}</word>
+  <word key="delete_db_confirm_detail_msg" js="0">Felt i andre databaser som henviser til denne databasen vil automatisk slettes. </word>
+  <word key="acplogs__cms_deleted_media" js="0">Slettet %s mediafiler i Pages</word>
+  <word key="acplogs__cms_replaced_media" js="0">Erstattet mediafil i Pages: %s</word>
+  <word key="acplogs__cms_uploaded_media" js="0">Lastet opp %s mediafiler i Pages</word>
+  <word key="acplogs__cms_imported_templates" js="0">Importert Pages-maler</word>
+  <word key="acplogs__cms_exported_templates" js="0">Eksporterte Pages-maler</word>
+  <word key="acplogs__cms_template_add" js="0">La til Pages-mal: %s</word>
+  <word key="acplogs__cms_template_container" js="0">La til Pages mal-gruppe: %s</word>
+  <word key="acplogs__cms_template_delete" js="0">Slettet Pages-mal: %s</word>
+  <word key="acplogs__cms_template_save" js="0">Endret Pages-mal: %s</word>
+  <word key="acplogs__cms_template_group_delete" js="0">Slettet Pages-malgruppe: %s</word>
  </app>
  <app key="downloads" version="">
   <word key="__app_downloads" js="0">Nedlastninger</word>
@@ -16622,7 +17480,7 @@ Arkiverte tråder kan ikke bli skrevet i eller redigert. Du kan hente tråder ti
   <word key="idm_highest_rated_categories" js="0">Kategorier</word>
   <word key="idm_show_most_downloaded_categories" js="0">Kategorier</word>
   <word key="downloads_forum_used" js="0"><![CDATA[Dette forumet blir brukt av nedlastningsapplikasjonen for å lage tråder for innsendte filer, og kan ikke bli slettet.<br/>Vennligst fjern assosieringen fra kategori %s for å fortsette]]></word>
-  <word key="makePrimaryScreenshot" js="1">Gjør dette til hovedbildet</word>
+  <word key="makePrimaryScreenshot" js="1">Gjør dette til hovedbildet for denne filen</word>
   <word key="removeScreenshot" js="1">Fjern bildet</word>
   <word key="markCategoryAsReadConfirm" js="1">Er du sikker på at du ønsker å markere alle filene som lest?</word>
   <word key="categoryMarkedRead" js="1">Kategorien har blitt markert som lest</word>
@@ -16657,7 +17515,6 @@ Arkiverte tråder kan ikke bli skrevet i eller redigert. Du kan hente tråder ti
   <word key="select_your_file" js="0">Velg filen din</word>
   <word key="save_and_submit_file" js="0">Lagre og send inn fil</word>
   <word key="save_and_submit_new_version" js="0">Lagre og send inn en ny versjon</word>
-  <word key="downloads_single_upload" js="0">Denne kategorien lar deg kun laste opp en enkelt fil. Før du kan laste opp den nye filen må du først slette den eksisterende. </word>
   <word key="stats_overview_downloads" js="0">Filnedlastinger</word>
   <word key="stats_overview_downloads_desc" js="0">Logging av nedlastinger og oppbevaringsperioden for logger kan justeres per kategori</word>
   <word key="loc_downloads_viewing_file_action" js="0">%s ser på en fil</word>
@@ -16690,6 +17547,15 @@ Arkiverte tråder kan ikke bli skrevet i eller redigert. Du kan hente tråder ti
   <word key="file_subscribe" js="1">Send meg versjonsoppdateringer</word>
   <word key="file_unsubscribe" js="1">Slå av varsler om nye versjoner</word>
   <word key="files_optional" js="1">Begrens filtyper</word>
+  <word key="__defart_downloads_file_comment_plural" js="0">{!#[1:kommentar][?:kommentarer]} på en fil</word>
+  <word key="__defart_downloads_file_plural" js="0">{!#[1:fil][?:filer]}</word>
+  <word key="__defart_downloads_file_review_plural" js="0">{!#[1:omtale][?:omtaler]} på en fil</word>
+  <word key="crequire_changelog" js="0">Krav om endringslogg?</word>
+  <word key="menu__downloads_stats_topdownloads" js="0">Toppfiler</word>
+  <word key="r__topdownloads_manage" js="0">Kan se toppfiler</word>
+  <word key="notification__new_file_version_title" js="0">En fil ble oppdatert</word>
+  <word key="makePrimary" js="1">Primær</word>
+  <word key="file_published" js="0">Publisert</word>
  </app>
  <app key="convert" version="">
   <word key="__app_convert" js="0">Migreringsverktøy</word>
@@ -17161,5 +18027,9 @@ Hvis nei: svaret dems vil ikke bli konvertert.</word>
   <word key="_convert_club_pages" js="0">Klubbsider</word>
   <word key="club_photo_location_desc" js="0">Hvis klubb-bilder for øyeblikket er lagret i databasen, så velger du 'Database'. Hvis ikke så velger du 'Filsystem' og skriver deretter inn den absolutte stien til klubb-bildene i tekstboksen.</word>
   <word key="club_photo_location_nodb_desc" js="0">Sti til klubb-bilder</word>
+  <word key="convert_achievement_badges" js="0">Konverter merker</word>
+  <word key="_convert_achievement_badges" js="0">Merker</word>
+  <word key="convert_achievement_ranks" js="0">Konverter prestasjonsranger</word>
+  <word key="_convert_achievement_ranks" js="0">Prestasjonsrank</word>
  </app>
 </language>
