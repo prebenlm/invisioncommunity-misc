@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<language name="Norsk" rtl="0" author_name="Preben Liland Madsen / TSP" author_url="" version="1.6.7" long_version="16070" update_check="">
+<language name="Norsk" rtl="0" author_name="Preben Liland Madsen / TSP" author_url="" version="1.6.8" long_version="16080" update_check="">
  <app key="core" version="">
   <word key="__app_core" js="0">System</word>
   <word key="__indefart_personal_conversation" js="0">en personlig samtale</word>
@@ -1667,7 +1667,7 @@ Hvis siden din sjelden har mange aktive gjester kan det ta flere ressurser å ha
   <word key="ext__Build" js="0">Kjør selvskrevet kode når applikasjonen bygges.</word>
   <word key="ext__BulkMail" js="0">Tilby ekstra filtre til å bestemme hvem nyhetsbrev blir sendt til.</word>
   <word key="ext__MemberFilter" js="0">Legg inn måter man kan filtrere ut medlemmer for nyhetsbrev osv.</word>
-  <word key="ext__CommunityEnhancements" js="0">Legg til tredjeparts API-er og tjenester til Community Enhancements-seksjonen i adminpanelet.</word>
+  <word key="ext__CommunityEnhancements" js="0">Legg til tredjeparts API-er og tjenester til integrasjoner-seksjonen i adminpanelet.</word>
   <word key="ext__ContentRouter" js="0">Spesifiser innholdstypene i applikasjonen</word>
   <word key="ext__CreateMenu" js="0">Legg til valg i &quot;+Start&quot;-menyen som vises i toppen av siden.</word>
   <word key="ext__Dashboard" js="0">Legg til innhold til adminpanelet sin forside</word>
@@ -3081,13 +3081,7 @@ Det anbefales at du <strong>ikke</strong> aktiverer dette, eller at det kun gis 
   <word key="whitelist_content" js="0">Innhold</word>
   <word key="sitemap_blurb" js="0">Et sidekart er en automatisk generert liste med sider som er brukt av søkemotorer.</word>
   <word key="sitemap_include_generic_desc" js="0">Inkluder i områdekart</word>
-  <word key="sitemap_profiles_include" js="0">Inkluder i områdekart</word>
-  <word key="sitemap_core_Profiles" js="0">Profiler</word>
   <word key="sitemap_dont_include" js="0">Ikke inkluder prioritetsverdi på områdekart</word>
-  <word key="sitemap_profiles_count" js="0">Antallet profiler å inkludere</word>
-  <word key="sitemap_profiles_count_desc" js="0">Skriv inn 0 for å ikke inkludere profiler i sidekartet. Du kan bruke denne innstillingen til å kun inkludere de nyeste medlemmene på nettstedet ditt.</word>
-  <word key="sitemap_profiles_priority" js="0">Profilprioritet</word>
-  <word key="sitemap_profiles_priority_desc" js="0">Prioritetsverdien i en sidekartfil indikerer overfor søkemotorene hvor viktig en side er sammenlignet med andre sider på nettstedet.</word>
   <word key="sitemap_not_found" js="0">Det forespurte sidekartet ble ikke funnet</word>
   <word key="module__core_sitemap" js="0">Sidekart</word>
   <word key="sitemap_ping_google_fail" js="0">Mislyktes med å sende en sidekart-oppdatering til Google</word>
@@ -3106,10 +3100,6 @@ Det anbefales at du <strong>ikke</strong> aktiverer dette, eller at det kun gis 
   <word key="sitemap_default_priority" js="0">Bruk standardprioritet</word>
   <word key="rebuild_sitemap" js="0">Gjenbygg områdekart</word>
   <word key="rebuild_sitemap_initialized" js="0">Bakgrunnsoppgave er initialisert.</word>
-  <word key="sitemap_profiles_content_unlimited" js="0">Inkluder alle medlem</word>
-  <word key="sitemap_profiles_content" js="0">Innholdsteller</word>
-  <word key="sitemap_profiles_content_desc" js="0">Det minste antall innhold medlemmet har laget før profilen blir lagt til områdekartet.</word>
-  <word key="sitemap_profiles_content_suffix" js="0">eller mer</word>
   <word key="meta_tags_blurb" js="0">Meta-tagger</word>
   <word key="seo_tab_metatags" js="0">Meta-nøkkelord</word>
   <word key="seo_meta_add" js="0">Legg til meta-nøkkelord</word>
@@ -3391,7 +3381,6 @@ Det anbefales at du <strong>ikke</strong> aktiverer dette, eller at det kun gis 
   <word key="startpoll_cutoff" js="0">Hvor lang tid etter en tråd er startet hvor en meningsmåling kan bli lagt til</word>
   <word key="view_voters" js="0">Se hvem som stemte på dette</word>
   <word key="can_see_poll_voters" js="0">Kan se hvem som har svart i meningsmålinger?</word>
-  <word key="can_edit_poll_votes" js="0">Kan endre meningmålingsresultat?</word>
   <word key="poll_title" js="0">Tittel på meningsmåling</word>
   <word key="make_votes_public" js="0">Offentliggjør navn på de som står bak stemmene?</word>
   <word key="poll_only_content" js="0">Kun meningsmåling?</word>
@@ -3581,7 +3570,7 @@ Det anbefales at du <strong>ikke</strong> aktiverer dette, eller at det kun gis 
   <word key="menu__core_membersettings_profilecompletion" js="0">Fullføring av profil</word>
   <word key="menu__core_settings_email" js="0">E-postinnstillinger</word>
   <word key="menu__core_settings_general" js="0">Generell konfigurasjon</word>
-  <word key="menu__core_applications_enhancements" js="0">Nettsamfunnsforbedringer</word>
+  <word key="menu__core_applications_enhancements" js="0">Integrasjoner</word>
   <word key="menu__core_settings_licensekey" js="0">IPS lisensnøkkel</word>
   <word key="menu__core_members_ip" js="0">IP-adresseverktøy</word>
   <word key="menu__core_membersettings_notifications" js="0">Varslinger</word>
@@ -3769,8 +3758,8 @@ Det anbefales at du <strong>ikke</strong> aktiverer dette, eller at det kun gis 
   <word key="r__email_errorlog_prune" js="0">Kan justere nedkuttingsinnstillingene for feilemeldingsloggen for e-post</word>
   <word key="r__general" js="0">Generell konfigurasjon</word>
   <word key="r__general_manage" js="0">Kan håndtere generell konfigurasjon</word>
-  <word key="r__enhancements" js="0">Nettsamfunnsforbedringer</word>
-  <word key="r__enhancements_manage" js="0">Kan håndtere nettsamfunnsforbedringer</word>
+  <word key="r__enhancements" js="0">Integrasjoner</word>
+  <word key="r__enhancements_manage" js="0">Kan håndtere integrasjoner</word>
   <word key="r__licensekey" js="0">Lisensnøkkel for IPS</word>
   <word key="r__licensekey_manage" js="0">Kan se og håndtere lisensdata</word>
   <word key="r__spam" js="0">Spamforhindring</word>
@@ -4198,7 +4187,7 @@ Det anbefales at du <strong>ikke</strong> aktiverer dette, eller at det kun gis 
   <word key="theme_css" js="0">CSS</word>
   <word key="theme_wrap" js="0">Pakk inn innhold</word>
   <word key="theme_show_line" js="0">Vis linjenumre</word>
-  <word key="theme_show_original" js="0">Vis standard</word>
+  <word key="theme_show_original" js="0">Sammenlign med standard</word>
   <word key="theme_variables" js="0">Variabler...</word>
   <word key="theme_attributes" js="0">Attributter...</word>
   <word key="theme_edit_css" js="0">Endre CSS-attributter</word>
@@ -4484,7 +4473,7 @@ Det anbefales at du <strong>ikke</strong> aktiverer dette, eller at det kun gis 
   <word key="theme_dm_building_extensions" js="0">Genererer designermodusfilene for andre applikasjoner</word>
   <word key="theme_dev_import_apps" js="0">Importerer designermodusfiler for andre applikasjoner</word>
   <word key="enhancements_ips" js="0">IPS Enhancements</word>
-  <word key="enhancements_thirdparty" js="0">Tredjepartstjenester</word>
+  <word key="enhancements_thirdparty" js="0">Alle integrasjoner</word>
   <word key="enhancements_configure" js="0">Sett opp tjeneste</word>
   <word key="enhancements__core_SpamMonitoring" js="0">IPS Spam Service</word>
   <word key="enhancements__core_SpamMonitoring_desc" js="0">IPS Spam Service stopper spammere fra å forstyrre siden din ved å analysere risiko-nivået og gjennomføre automatiserte handlinger mot nye medlemmer.</word>
@@ -4525,25 +4514,6 @@ Det anbefales at du <strong>ikke</strong> aktiverer dette, eller at det kun gis 
   <word key="acplog__enhancements_disable" js="0">Slo av nettsamfunnstillegg: %s</word>
   <word key="acplog__enhancements_edited" js="0">Endret nettsamfunnstillegg: %s</word>
   <word key="enhancements__core_GoogleAnalytics" js="0">Google Analytics</word>
-  <word key="acplog__analytics_edited" js="0">Endret analyseinnstillinger</word>
-  <word key="ipbseo_ga_provider" js="0">Analyseleverandør</word>
-  <word key="ipbseo_ga_enabled" js="0">Aktiver sporingskode for analyse?</word>
-  <word key="ipseo_ga" js="0">Sporingskode</word>
-  <word key="ipseo_ga_desc" js="0"><![CDATA[Fyll inn Javascript-koden som analyseleverandøren har gitt deg. Fyll inn hele den umodifiserte koden, og den vil automatisk bli satt inn på hver side av siden din. Hvis du trenger hjelp med å skaffe sporingskoden for siden din, så kan du se <a href='{external.ga_support_help}' target='_blank' rel='noopener'>denne brukerstøtte-artikkelen</a>.]]></word>
-  <word key="ipbseo_ga_paginatecode" js="0">Javascript-kode som skal kjøres ved en Ajax-sideendring</word>
-  <word key="ipbseo_ga_paginatecode_desc" js="0">De fleste analyseverktøy vil ikke klare å registere en sidevisning når innhold blir dynamisk lastet inn i den nåværende siden. Hvis du ønsker å manuelt trigge en sidevisning når dette skjer kan du gjøre det ved å spesifisere en Javascript-kode for dette i feltet nedenfor.</word>
-  <word key="analytics_description" js="0"><![CDATA[Analyseverktøy lar deg spore sidevisninger og hvordan besøkende bruker siden din. Det finnes mange ulike tjenester; noen er gratis, mens andre kan ta betalt. Hvis du ikke vet om noen, så er <a href='{external.googleanalytics}' target='_blank' rel='noopener'> et godt gratis alternativ som vil fungere godt for de fleste. ]]></word>
-  <word key="analytics_provider_none" js="0">Ingen</word>
-  <word key="analytics_ga" js="0">Google Analytics sporingskode</word>
-  <word key="analytics_ga_desc" js="0"><![CDATA[Logg inn på din <a href='{external.googleanalytics}' target='_blank' rel='noopener'>Google Analytics</a>-konto og finn frem til sporingskoden som er skrevet i Javascript. Kopier og lim inn hele koden i feltet ovenfor for å legge inn sporingskoden på siden din.<br>Vi vil automatisk registrere en sidevisning i Google Analytics når nytt innhold blir lastet inn dynamisk på siden.]]></word>
-  <word key="analytics_provider_ga" js="0">Google Analytics</word>
-  <word key="analytics_piwik" js="0">Piwik sporingskode</word>
-  <word key="analytics_piwik_desc" js="0"><![CDATA[Logg inn på din <a href='{external.piwik}' target='_blank' rel='noopener'>Piwik</a>-konto, klikk brukernavnet ditt oppe i høyre hjørne og klikk <em>Innstillinger</em>. Klikk <em>Tracking Code</em> in venstremenyen for å lokalisere din sporingskode. Kopier og lim inn koden i feltet ovenfor for å legge inn sporingskoden på siden din.<br>Vi vil automatisk registrere en sidevisning i Piwik når nytt innhold blir lastet inn dynamisk på siden.]]></word>
-  <word key="analytics_provider_piwik" js="0">Matomo</word>
-  <word key="analytics_custom" js="0">Egen sporingskode</word>
-  <word key="analytics_custom_desc" js="0"><![CDATA[Bruk dette og klipp ut og lim inn sporingskoden (skrevet i Javascript) ovenfor dersom du får denne fra en annen analysetjeneste enn de som er listet ovenfor. Vi setter inn denne koden på alle sider, like før </body>.]]></word>
-  <word key="analytics_provider_custom" js="0">Annet</word>
-  <word key="analytics_none" js="0">Ingen</word>
   <word key="enhancements__core_Mapbox" js="0">Mapbox</word>
   <word key="enhancements__core_Mapbox_desc" js="0">Mapbox leverer kart for å forbedre visning av stedsdata, som for eksempel i verktøyet for IP-adressesøk.</word>
   <word key="mapbox_api_key" js="0">API-nøkkel</word>
@@ -4882,8 +4852,8 @@ Brukeren må aktivt fjerne markeringen for nyhetsbrev dersom de ikke ønsker mot
   <word key="image_jpg_quality_desc" js="0">Denne verdien påvirker den endelige kvaliteten til JPG- eller WebP-bilder som er generert av IPS Community Suite. En verdi på 0 vil føre til den verste kvaliteten, men gir små filer. En verdi på 100 gir den beste kvaliteten, men de største filene. Det er anbefalt at du setter en verdi mellom 80 og 90 med mindre du krever småversjoner i høykvalitet. </word>
   <word key="image_png_quality_gd" js="0">PNG-komprimering</word>
   <word key="image_png_quality_gd_desc" js="0">Denne verdien påvirker filstørrelsen til PNG-bilder som blir generert av IPS Community Suite. En verdi på 0 vil føre til at filen blir ferdig raskt, men gir større filer. En verdi på 9 bruker lengst tid, men gir deg mindre filer.</word>
-  <word key="imagick_strip_exif" js="0">Fjern EXIF-data</word>
-  <word key="imagick_strip_exif_desc" js="0">EXIF-data kan bli automatisk fjernet fra opplastede bilder for å unngå at at sensitive detaljer (som GPS-geolokasjonsdata fra bilder tatt med mobiltelefon) blir beholdt.</word>
+  <word key="imagick_strip_exif" js="0">Fjern sensitive EXIF-data</word>
+  <word key="imagick_strip_exif_desc" js="0">Sensitive EXIF-data vil automatisk fjernes fra opplastede bilder for å unngå at at sensitive detaljer (som GPS-geolokasjonsdata fra bilder tatt med mobiltelefon) blir beholdt.</word>
   <word key="acplogs__image_settings_updated" js="0">Oppdaterte bildehåndteringsinnstillinger</word>
   <word key="upload_type" js="0">Lagringsmetode for opplastede filer</word>
   <word key="filehandler__Database" js="0">Database</word>
@@ -5099,9 +5069,6 @@ For å støtte dette må du <a href='{internal.app=core&module=promotion&control
   <word key="acplogs__seo_sitemap_settings" js="0">Oppdaterte sidekartinnstillinger</word>
   <word key="acplogs__seo_metatag_settings" js="0">Oppdaterte innstillinger for meta-tags</word>
   <word key="acplogs__seo_tracking_settings" js="0">Oppdaterte innstillinger for søkemotorlogging</word>
-  <word key="menu__core_promotion_analytics" js="0">Analyse</word>
-  <word key="r__analytics" js="0">Analyse</word>
-  <word key="r__analytics_manage" js="0">Kan håndtere analyse-integrasjon</word>
   <word key="menu__core_promotion_advertisements" js="0">Annonser</word>
   <word key="r__advertisements" js="0">Annonser</word>
   <word key="r__advertisements_add" js="0">Kan legge til annonser?</word>
@@ -9060,7 +9027,6 @@ For å støtte dette må du <a href='{internal.app=core&module=promotion&control
   <word key="ip_address_prune_desc" js="0">Dette vil fjerne IP-adresser fra brukerpublisert innhold etter det spesifiserte antallet dager</word>
   <word key="pp_desc_GoogleAnalytics" js="0">Google Analytics er en webanalysetjeneste levert av Google Inc. (&quot;Google&quot;). Google bruker innsamlet data for å følge og analysere bruken av nettsiden, for å lage aktivitetsrapporter og dele det med andre Google-tjenester.</word>
   <word key="pp_desc_FacebookPixel" js="0">Facebook sin annonsesporing er en analysetjeneste fra Facebook, Inc. som kobler data fra Facebook sitt annonsenettverk med handlinger utført på denne siden.</word>
-  <word key="pp_desc_Piwik" js="0">Matomo er en tjeneste for webanalyse. Den ikke-identifiserbare dataen blir brukt for å samle informasjon om besøkende til nettsiden.</word>
   <word key="pp_desc_SpamMonitoring" js="0">IPS Spam Defense-tjenesten leverer e-postadresse og IP-adressen til det registrerte medlemmet til tjenesten. Det er for å vurdere sannsynligheten for at den registrerte kontoen er en spamkonto.</word>
   <word key="privacy_show_processors" js="0">Legg til tredjepartsinformasjon</word>
   <word key="privacy_show_processors_desc" js="0">Vis detaljer for tillatte tredepartssystemer, som eksempelvis Google Analytics og Facebook Pixel.</word>
@@ -11529,7 +11495,6 @@ For å støtte dette må du <a href='{internal.app=core&module=promotion&control
   <word key="zapier_setup_intro" js="0"><![CDATA[For å komme i gang må du gå til <a href='{external.zapier_apps}' target='_blank' rel='noopener'>My apps</a>-seksjonen til din Zapier-konto og velge Invision Community. Gi følgende detaljer når du blir spurt:]]></word>
   <word key="zapier_community_url" js="0">NettsamfunnsURL</word>
   <word key="zapier_error_friendly_urls" js="0"><![CDATA[For å bruke Zapier må du aktivere vennlige URL-er og omskriving av URL-er på siden for <a href='{internal.app=core&module=promotion&controller=seo}' target='_blank'>innstillingene for søkemotoroptimalisering</a>.]]></word>
-  <word key="zapier_error_cgi" js="0">For å bruke Zapier kan du ikke kjøre PHP i CGI-modus. Kontakt din serverleverandør eller en systemadministrator og spør om å få PHP installert som en modul på serveren.</word>
   <word key="zapier_error_api" js="0"><![CDATA[Zapier må benytte seg av REST API-et til å kommunisere med nettsamfunnet ditt, men du har et problem med ditt oppsett av REST API. Besøk siden <a href='{internal.app=core&module=applications&controller=api}' target='_blank'>REST & OAuth</a> for å finne ut mer og løse problemet.]]></word>
   <word key="sitemap_core_Applications" js="0">Applikasjoner</word>
   <word key="meta_tags_automatic_notice" js="0">Følgende tags ble automatisk generert for denne siden. Hvis du vil kan du overskrive meta-taggene nedenfor, men da vil de ikke lenger oppdateres automatisk. For eksempel, hvis du overskriver meta-beskrivelsen og teksten i originalinnholdet endres, så vil fortsatt beskrivelsen som du la inn være den gjeldende. </word>
@@ -13509,6 +13474,122 @@ For å støtte dette må du <a href='{internal.app=core&module=promotion&control
   <word key="editor_stored_replies_not_all_editors_have_button" js="0"><![CDATA[Standardsvar-knappen er ikke tilgjengelig i alle tekstverktøy. Vennligst gå til <a href='{internal.app=core&module=editor&controller=toolbar}'>siden for å konfigurere tekstverktøyet</a> og legg standardsvar-knappen til i stor, middels og lite tekstverktøy. ]]></word>
   <word key="widget_onlineusers_membercount" js="1">{# [1:medlem][?:medlemmer]}</word>
   <word key="editorStoredReplies" js="1">Standardsvar</word>
+  <word key="editor_uploaded_audio" js="0">Opplastet lyd</word>
+  <word key="all_permissions" js="0">Alle tilganger</word>
+  <word key="more_info" js="0">Mer informasjon</word>
+  <word key="all_permissions_group_hovertitle" js="0">Se alle tilganger for gruppen &quot;%s&quot;</word>
+  <word key="all_permissions_node_hovertitle" js="0">Se alle tilganger for &quot;%s&quot;</word>
+  <word key="achievement_points" js="0">Prestasjonspoeng</word>
+  <word key="mf_banned" js="0">Utestengt</word>
+  <word key="mf_banned_banned" js="0">Utestengt</word>
+  <word key="mf_banned_not_banned" js="0">Ikke utestengt</word>
+  <word key="mf_validating" js="0">I valideringskø</word>
+  <word key="mf_validating_validating" js="0">Validerer</word>
+  <word key="mf_validating_not_validating" js="0">Ikke i valideringskø</word>
+  <word key="mf_locked" js="0">Låst</word>
+  <word key="mf_locked_locked" js="0">Låst</word>
+  <word key="mf_locked_not_locked" js="0">Ikke låst</word>
+  <word key="mf_spammer" js="0">Spammer</word>
+  <word key="mf_spammer_spammer" js="0">Spammer</word>
+  <word key="mf_spammer_not_spammer" js="0">Ikke en spammer</word>
+  <word key="member_activity_results_inactive" js="0">{# [1:inaktivt medlem][?:inaktive medlemmer]} som ble med mellom %s og %s</word>
+  <word key="activity_no_activity" js="0">Finn medlemmer som ikke har noen aktivitet</word>
+  <word key="stats_activity_overview" js="0">Oversikt</word>
+  <word key="stats_activity_inactive" js="0">Inaktive medlemmer</word>
+  <word key="theme_show_parent" js="0">Sammenlign med forelder</word>
+  <word key="pp_desc_Matomo" js="0">Matomo er en tjeneste for nettsideanalyse. De ikke-identifiserbare dataene brukes til å samle informasjon om de besøkende til denne nettsiden.</word>
+  <word key="notification_email_did_you_know_count" js="0">Visste du at færre enn %s medlemmer har denne rangen?</word>
+  <word key="notification_email_keep_it_going" js="0">Du gjør det storartet. Hold det gående!</word>
+  <word key="notification_email_days_rank_took_low" js="0">Wow, det tok bare %s dager å bli forfremmet til denne rangen! Det er utrolig!</word>
+  <word key="notification_email_days_rank_took_high" js="0">Det tok kanskje %s dager å få denne rangen, men det var verdt ventinga!</word>
+  <word key="menu__core_stats_spam" js="0">Spambeskyttelse</word>
+  <word key="stats_spam_title" js="0">Spambeskyttelsesresultater over tid</word>
+  <word key="r__spamstats" js="0">Spamstatistikk</word>
+  <word key="r__spamstats_manage" js="0">Kan se spamstatistikk?</word>
+  <word key="spam_service_action_stats_1" js="0">Usannsynlig at er en spammer</word>
+  <word key="spam_service_action_stats_2" js="0">Muligens en spammer</word>
+  <word key="spam_service_action_stats_3" js="0">Sannsynlig at er en spammer</word>
+  <word key="spam_service_action_stats_4" js="0">Kjent spammer</word>
+  <word key="menu__core_stats_preferences" js="0">Medlemspreferanser</word>
+  <word key="stats_member_pref_theme" js="0">Utseende</word>
+  <word key="stats_member_pref_lang" js="0">Språk</word>
+  <word key="r__preferences" js="0">Brukerpreferanser</word>
+  <word key="r__preferences_manage" js="0">Kan se statistikk på brukerpreferanser</word>
+  <word key="menu__core_stats_referrals" js="0">Topp henvisere</word>
+  <word key="core_stats_referrer_count" js="0">{# [1:medlem][?:medlemmer]} vervet andre.</word>
+  <word key="menu__core_stats_follow" js="0">Følge</word>
+  <word key="stats_followers_title" js="0">Følgere</word>
+  <word key="stats_following_title" js="0">Følger</word>
+  <word key="stats_followers_desc" js="0">Medlemmer med flest følgere</word>
+  <word key="stats_following_desc" js="0">Medlemmer som følger flest folk</word>
+  <word key="r__follow" js="0">Følgere</word>
+  <word key="r__follow_manage" js="0">Kan se følger-statistikk?</word>
+  <word key="enhancements__core_GoogleAnalytics_desc" js="0">Google Analytics gir deg gratisverktøyene du trenger for å analysere data for bedriften din på et sted, slik at du kan gjøre smartere valg.</word>
+  <word key="ga_enabled" js="0">Aktiver</word>
+  <word key="ga_code" js="0">Sporingskode fra Google Analytics</word>
+  <word key="ga_code_desc" js="0"><![CDATA[Logg inn på din <a href='{external.googleanalytics}' target='_blank' rel='noopener'>Google Analytics</a>-konto, og lokaliser Javascript-koden for sporing (<em>Tracking Code</em>). Kopier og lim inn biten i sin helhet i feltet ovenfor for å legge til sporingskoden på nettsamfunnet ditt.<br>Vi registrerer automatisk en ny sidevisning hos Google Analytics når nytt innhold lastes inn dynamisk på siden.]]></word>
+  <word key="enhancements__core_Matomo" js="0">Matomo</word>
+  <word key="enhancements__core_Matomo_desc" js="0">En kraftig plattform for nettside-analyse som gir deg eierskap til 100% av dataene.</word>
+  <word key="matomo_code" js="0">Sporingskode fra Matomo</word>
+  <word key="matomo_enabled" js="0">Aktiver</word>
+  <word key="matomo_code_desc" js="0"><![CDATA[Logg inn på <a href='{external.matomo}' target='_blank' rel='noopener'>Matomo</a>-kontoen din, klikk brukernavnet oppe til høyre og klikk <em>Settings</em> (innstillinger). Klikk <em>Tracking Code</em> (sporingskode) i venstremenyen for å finne sporingskoden. Kopier og lim inn kodebiten i sin helhet i feltet ovenfor for å legge til sporingskoden til nettsamfunnet ditt.<br>Vi vil automatisk registrere en sidevisning hos Matomo når nytt innhold lastes inn dynamisk på siden.]]></word>
+  <word key="enhancements__core_GoogleTagManager" js="0">Google Tag Manager</word>
+  <word key="enhancements__core_GoogleTagManager_desc" js="0">Google Tag Manager er et &quot;tag management system&quot; (TMS) som lar deg raskt og enkelte oppdatere tagger/kodesnutter som f.eks. kommer fra tredjeparter for å måle og analysere nettsidetrafikk.</word>
+  <word key="googletag_head_code" js="0">Kodebit i head</word>
+  <word key="googletag_head_code_desc" js="0"><![CDATA[Kodebiten fra Google som skal plasseres innenfor <head>]]></word>
+  <word key="googletag_noscript_code" js="0">Kodebit i body</word>
+  <word key="googletag_noscript_code_desc" js="0"><![CDATA[Kodebiten fra Google som skal plasseres innenfor <body>]]></word>
+  <word key="googletag_enabled" js="0">Aktiver</word>
+  <word key="page_output" js="0">Sideinnhold</word>
+  <word key="custom_body_code" js="0">Body-kode</word>
+  <word key="custom_body_code_desc" js="0"><![CDATA[Noen eksterne tjenester krever at en kodebit skal inkluderes på siden mellom <body>-taggene. Du kan legge til slike kodebiter her.]]></word>
+  <word key="custom_page_view_js" js="0">Javascript-kode for sidevisning</word>
+  <word key="custom_page_view_js_desc" js="0">Som standard vil de fleste analyseleverandører ikke registrere en sidevisning når nytt innhold lastes inn dynamisk på den nåværende siden. Hvis du ønsker å trigge en sidevisning når dette skjer så kan du fylle inn Javascript-kode fra leverandøren for å få til det her.</word>
+  <word key="menu__core_stats_warnings" js="0">Advarsler</word>
+  <word key="stats_warnings_title" js="0">Advarsler over tid</word>
+  <word key="r__warnings_manage" js="0">Kan se advarselsstatistikk?</word>
+  <word key="stats_warnings_reason" js="0">Advarsler etter grunn</word>
+  <word key="stats_warnings_suspended" js="0">Suspenderte brukere</word>
+  <word key="menu__core_activitystats_reports" js="0">Rapporter</word>
+  <word key="stats_reports" js="0">Rapporter</word>
+  <word key="stats_reports_title" js="0">Rapporter over tid</word>
+  <word key="r__reportstats" js="0">Rapportstatistikk</word>
+  <word key="r__reportstats_manage" js="0">Kan se rapportstatistikk?</word>
+  <word key="menu__core_stats_moderators" js="0">Moderatoraktivitet</word>
+  <word key="stats_moderator_activity_title" js="0">Moderatorhandlinger over tid</word>
+  <word key="mf_points" js="0">Prestasjonspoeng</word>
+  <word key="mf_badges" js="0">Merker tildelt</word>
+  <word key="mf_ranks" js="0">Ranger</word>
+  <word key="mf_badges_choose" js="0">Filtrer etter merker</word>
+  <word key="mf_ranks_choose" js="0">Filtrer etter ranger</word>
+  <word key="member_filter_core_cheev_desc" js="0">hvilken som helst av %s</word>
+  <word key="achievement_ranks_pluralize" js="0">{# [1:rang][?:ranger]}</word>
+  <word key="member_filter_core_cheev_points_gt_desc" js="0">prestasjonspoeng er større enn %s</word>
+  <word key="member_filter_core_cheev_points_lt_desc" js="0">prestasjonspoeng er mindre enn %s</word>
+  <word key="member_filter_core_cheev_points_eq_desc" js="0">prestasjonspoeng er nøyaktig %ssamm</word>
+  <word key="seo_tab_robotstxt" js="0">Crawl-håndtering</word>
+  <word key="use_robotstxt" js="0">Robots.txt</word>
+  <word key="use_robotstxt_desc" js="0"><![CDATA[Robots.txt er en fil som <a href='{external.robots_txt}' target='_blank' rel='noopener'>gir instrukser</a> til søkemotorindekserere på hva de kan og ikke kan legge til i søkeindeksen sin.]]></word>
+  <word key="use_robotstxt_off" js="0">Ikke bruk</word>
+  <word key="use_robotstxt_off_desc" js="0">Ikke gi noen spesielle regler til søkemotorer.</word>
+  <word key="use_robotstxt_default" js="0">Optimalisert for Invision Community</word>
+  <word key="use_robotstxt_default_desc" js="0"><![CDATA[Bruk de anbefalte reglene til å optimalisere indeksering. <a href='{external.robots_txt_info}' target='_blank' rel='noopener'>Les mer <i class='fa fa-external-link'></i></a>.]]></word>
+  <word key="use_robotstxt_custom" js="0">Tilpasset</word>
+  <word key="use_robotstxt_custom_desc" js="0">Bruk dine egne regler.</word>
+  <word key="use_robotstxt_custom_editor" js="0">Tilpassede regler</word>
+  <word key="use_robotstxt_custom_editor_desc" js="0">Kun for avanserte brukere. Å gjøre en feil i oppsettet av en robots.txt-fil kan føre til feil og en reduksjon i antallet sider som indekseres av søkemotorer.</word>
+  <word key="use_robotstxt_warning_off" js="0">Siden nettsamfunnet ditt er i en mappe er du nødt til å endre eller fjerne %s/robots.txt for å fjerne nettsamfunnsreglene.</word>
+  <word key="use_robotstxt_warning_download" js="0"><![CDATA[Siden nettsamfunnet ditt er i en mappe må du <a href='{internal.app=core&module=promotion&controller=seo&do=downloadRobotstxt}'><strong>laste ned denne filen</strong></a> og laste den opp til %s/robots.txt for å bruke disse reglene.]]></word>
+  <word key="use_robotstxt_warning_existing_off" js="0">Du har en eksisterende robots.txt-fil. Du er nødt til å redigere eller fjerne %s/robots.txt for å fjerne nettsamfunnsreglene.</word>
+  <word key="use_robotstxt_warning_existing_download" js="0"><![CDATA[Du har en eksisterende robots.txt-fil. Du må <a href='{internal.app=core&module=promotion&controller=seo&do=downloadRobotstxt}'><strong>laste ned denne filen</strong></a> og manuelt legge til i din %s/robots.txt-fil for å bruke disse reglene.]]></word>
+  <word key="editor_stored_replies_none_created_button" js="0">Du har lagt til knappen for standardsvar i tekstverktøyet, men knappen vil ikke vises før du opprettet ett eller flere standardsvar.</word>
+  <word key="menu__core_activitystats_deletedcontent" js="0">Slettet innhold</word>
+  <word key="stats_deletedcontent_title" js="0">Slettet innhold</word>
+  <word key="r__deletedcontent" js="0">Slettet innholdsstatistikk</word>
+  <word key="r__deletedcontent_manage" js="0">Kan se slettet innholdsstatistikk?</word>
+  <word key="stats_deletedcontent_percent" js="0">Slettet innhold</word>
+  <word key="stats_percentagedeleted_desc" js="0">Prosentdelen slettet innhold sammenlignet med den totale mengden nytt innhold</word>
+  <word key="theme_diff_parent_header" js="1">Forelders innhold</word>
  </app>
  <app key="forums" version="">
   <word key="__app_forums" js="0">Forum</word>
@@ -13553,9 +13634,9 @@ For å støtte dette må du <a href='{internal.app=core&module=promotion&control
   <word key="r__savedActions_edit" js="0">Kan endre lagrede handlinger</word>
   <word key="r__savedActions_delete" js="0">Kan slette lagrede handlinger</word>
   <word key="r__topics" js="0">Statistikk over nye emner</word>
-  <word key="r__topics_manage" js="0">Kan se statistikk over nye emner</word>
+  <word key="r__topics_manage" js="0">Kan se statistikk om tråder</word>
   <word key="r__posts" js="0">Statistikk over nye innlegg</word>
-  <word key="r__posts_manage" js="0">Kan se statistikk over nye innlegg</word>
+  <word key="r__posts_manage" js="0">Kan se statistikk om innlegg</word>
   <word key="modperms__core_Content_forums_Topic" js="0">Forum</word>
   <word key="can_pin_topic" js="0">Kan klistre emner/spørsmål?</word>
   <word key="can_unpin_topic" js="0">Kan avklistre emner/spørsmål?</word>
@@ -14251,6 +14332,14 @@ Arkiverte tråder kan ikke bli skrevet i eller redigert. Du kan hente tråder ti
   <word key="AchievementAction__AnswerMarkedBest_log_other" js="0">Spørsmålet %s hadde et svar markert som beste svar</word>
   <word key="AchievementAction__AnswerMarkedBest_log_deleted" js="0">et slettet spørsmål</word>
   <word key="AchievementAction__AnswerMarkedBest_title" js="0">Beste svar</word>
+  <word key="stats_topics_tab_solved" js="0">Løste tråder etter forum</word>
+  <word key="stats_topics_title_solved" js="0">Løste tråder etter forum</word>
+  <word key="menu__forums_stats_questions" js="0">Spørsmål</word>
+  <word key="stats_question_ratings_title" js="0">Opp/ned-stemmer på spørsmål over tid</word>
+  <word key="stats_question_ratings_negative" js="0">Nedstemt</word>
+  <word key="stats_question_ratings_positive" js="0">Oppstemt</word>
+  <word key="r__questions" js="0">Spørsmål</word>
+  <word key="r__questions_manage" js="0">Kan se spørsmålsstatistikk?</word>
  </app>
  <app key="calendar" version="">
   <word key="__app_calendar" js="0">Kalender</word>
@@ -14763,6 +14852,13 @@ Arkiverte tråder kan ikke bli skrevet i eller redigert. Du kan hente tråder ti
   <word key="achievement_filter_Rsvp_giver" js="0">Til brukeren som svarer på deltakelse</word>
   <word key="AchievementAction__Rsvp_log" js="0">Meldte svar til %s</word>
   <word key="AchievementAction__Rsvp_title" js="0">Svar utbes på hendelse</word>
+  <word key="menu__calendar_stats" js="0">Kalender</word>
+  <word key="menu__calendar_stats_rsvp" js="0">RSVP</word>
+  <word key="calendar_stats_rsvp_title" js="0">Påmeldingstilbakemeldinger over tid</word>
+  <word key="calendar_stats_rsvp_response_0" js="0">Deltar ikke</word>
+  <word key="calendar_stats_rsvp_response_1" js="0">Deltar</word>
+  <word key="calendar_stats_rsvp_response_2" js="0">Kanskje</word>
+  <word key="menu__calendar_stats_venues" js="0">Steder</word>
  </app>
  <app key="gallery" version="">
   <word key="__app_gallery" js="0">Galleri</word>
@@ -15580,6 +15676,7 @@ Arkiverte tråder kan ikke bli skrevet i eller redigert. Du kan hente tråder ti
   <word key="gallery_unset_cover" js="0">Fjern forsidebilde</word>
   <word key="gallery_unset_cover_error" js="0">Du har ikke tilgang til å fjerne forsidebildet</word>
   <word key="gallery_cover_photo_isunset" js="0">Forsidebildet er fjernet</word>
+  <word key="gallery_stats_uploader_count" js="0">{# [1:medlem][?:medlemmer]} lastet opp bilder.</word>
  </app>
  <app key="blog" version="">
   <word key="__app_blog" js="0">Blogger</word>
@@ -17556,6 +17653,19 @@ Arkiverte tråder kan ikke bli skrevet i eller redigert. Du kan hente tråder ti
   <word key="notification__new_file_version_title" js="0">En fil ble oppdatert</word>
   <word key="makePrimary" js="1">Primær</word>
   <word key="file_published" js="0">Publisert</word>
+  <word key="__defart_downloads_file_pending" js="0">nye versjoner</word>
+  <word key="download_categories_lc" js="0">nedlastinger-kategorier</word>
+  <word key="downloads_file_sg_lc" js="0">nedlastinger-fil</word>
+  <word key="downloads_stats_uploader_count" js="0">{# [1:medlem][?:medlemmer]} lastet opp filer.</word>
+  <word key="downloads_stats_downloader_count" js="0">{# [1:medlem][?:medlemmer]} lastet ned filer.</word>
+  <word key="file_version_pending_cannot_approve" js="0">Grunnversjonen av denne filen må godkjennes først før denne nye versjonen kan godkjennes.</word>
+  <word key="achievement_filter_DownloadFile_nth_suffix" js="0">. nedlasting</word>
+  <word key="achievement_filter_DownloadFile_receiver" js="0">Til brukeren som lastet opp filen</word>
+  <word key="achievement_filter_DownloadFile_giver" js="0">Til brukeren som lastet ned filen</word>
+  <word key="AchievementAction__DownloadFile_log" js="0">Lastet ned filen %s</word>
+  <word key="AchievementAction__DownloadFile_title_generic" js="0">lastet ned fil</word>
+  <word key="AchievementAction__DownloadFile_title" js="0">Brukeren laster ned en fil</word>
+  <word key="AchievementAction__DownloadFile" js="0">Brukeren laster ned en Nedlastinger-fil</word>
  </app>
  <app key="convert" version="">
   <word key="__app_convert" js="0">Migreringsverktøy</word>
