@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<language name="Norsk" rtl="0" author_name="Preben Liland Madsen / TSP" author_url="" version="1.6.11" long_version="16110" update_check="">
+<language name="Norsk" rtl="0" author_name="Preben Liland Madsen / TSP" author_url="" version="1.7.3" long_version="17030" update_check="">
  <app key="core" version="">
   <word key="__app_core" js="0">System</word>
   <word key="__indefart_personal_conversation" js="0">en personlig samtale</word>
@@ -2351,7 +2351,7 @@ Navnet på kolonnen i medlemstabellen som inneholder et brukernavn. Dette kreves
   <word key="quota_allowance" js="0">av tillatt %s</word>
   <word key="quota_allowance_unlimited" js="0">av ubegrenset mengde</word>
   <word key="quota_allowance_disabled" js="0">Dette medlemmet er i en gruppe som ikke har tillatelse til å laste opp vedlegg.</word>
-  <word key="messenger_quota_disabled_self" js="0">Dette medlemmet har deaktivert deres meldingssystem.</word>
+  <word key="messenger_quota_disabled_self" js="0">Dette medlemmet har deaktivert sin innboks og kan ikke motta nye samtaler med mindre avsender har rolle som moderator, administratorer eller lignende.</word>
   <word key="messenger_quota_disabled_admin" js="0">Meldingsfunksjonen har blitt deaktivert for dette medlemmet av en administrator.</word>
   <word key="messenger_quota_disabled_group" js="0">Dette medlemmet er i en gruppe som ikke har tillatelse til å bruke meldingssystemet.</word>
   <word key="profile_data" js="0">Profildata</word>
@@ -4015,7 +4015,7 @@ Det anbefales at du <strong>ikke</strong> aktiverer dette, eller at det kun gis 
   <word key="reverted_emailtpl" js="0">E-postmal reversert</word>
   <word key="emailtpl_nofind" js="0">Fant ikke e-postmalen du forsøkte å endre</word>
   <word key="emailtpl_params_head" js="0">Parametre: %s</word>
-  <word key="emailtpl_edit" js="0">Endre e-post</word>
+  <word key="emailtpl_edit" js="0">Endre e-post: %s</word>
   <word key="content_plaintext" js="0">E-post i ren tekst</word>
   <word key="content_plaintext_desc" js="0">I e-poster som kun inneholder ren tekst blir mellomrom beholdt som de er.</word>
   <word key="content_html" js="0">HTML-epost</word>
@@ -4235,7 +4235,7 @@ Det anbefales at du <strong>ikke</strong> aktiverer dette, eller at det kun gis 
   <word key="theme_version" js="0">Versjon: %s.</word>
   <word key="search_templates" js="0">Søk i maler...</word>
   <word key="icons_favicon" js="0">Favicon</word>
-  <word key="icons_favicon_desc" js="0">Favorittikon-bildet blir vist ved siden av navnet på websiden, på forskjellige områder i brukerens nettleser, som f.eks. i bokmerkeliste og nettleserfane. Anbefalt dimensjon for dette bildet er 48px x 48px</word>
+  <word key="icons_favicon_desc" js="0"><![CDATA[Favorittikon-bildet blir vist ved siden av navnet på websiden, på forskjellige områder i brukerens nettleser, som f.eks. i bokmerkeliste og nettleserfane. Anbefalt dimensjon for dette bildet er 48px x 48px.<br>Noen nettlesere kan bruke manifest.xml-filen til å velge det beste ikonet i stedet for favorittikon-bildet definert her.]]></word>
   <word key="icons_sharer_logo" js="0">Del bilder som standard</word>
   <word key="icons_sharer_logo_desc" js="0">Bilder som er lastet opp her vil bli brukt når en side er delt gjennom et sosial media som støtter Open Graph-standarden (som f.eks. Facebook), og som ikke har mer spesifikke bilder som kan representere innholdet. </word>
   <word key="icons_homescreen" js="0">Applikasjonsikon</word>
@@ -5160,7 +5160,7 @@ For å støtte dette må du <a href='{internal.app=core&module=promotion&control
   <word key="acplog_ad_disabled" js="0">Slo av en annonse</word>
   <word key="ad_toggled_visible" js="0">Annonsen ble aktivert</word>
   <word key="ad_toggled_notvisible" js="0">Annonsen ble slått av</word>
-  <word key="ad_script_disabled" js="0">Av sikkerhetshensyn kjøres ikke Javascriptet</word>
+  <word key="ad_script_disabled" js="0">Forhåndsvisning av annonser som inneholder Javascript er deaktivert i adminpanelet av sikkerhetshensyn.</word>
   <word key="ad_not_found" js="0">Vi fant ikke siden som annonsen ønsket å sende deg til</word>
   <word key="ad_not_found_admin" js="0">En annonse ble klikket på, men det oppsto en feil. Det skyldes enten at vi ikke fant annonsen i databasen eller det manglet en URL å sende personen til.</word>
   <word key="_ad_custom_" js="0">Definer dine egne plasseringer</word>
@@ -5448,7 +5448,7 @@ For å støtte dette må du <a href='{internal.app=core&module=promotion&control
   <word key="attachment_resample_size" js="0">Maksimal bildedimensjon på bilder som lagres</word>
   <word key="attachment_resample_size_desc" js="0">Hvis det lastes opp et bilde som har større dimensjoner enn det som er angitt vil bildet bli forminsket slik at det ikke er større enn den tillatte verdien og den originale versjonen beholdes ikke. Å redusere et bilde sin størrelse kan gå utover bildekvaliteten så det er vanligvis best å ikke sette en begrensning med mindre nettsamfunnet ditt lagrer mange bilder og du vil begrense diskbruken.</word>
   <word key="attachment_image_size" js="0">Maksimale bildedimensjoner i visning</word>
-  <word key="attachment_image_size_desc" js="0"><![CDATA[Hvis et bilde er større enn den definerte størrelsen, blir det opprettet en mindre versjon som blir vist sammen med innholdet. Dersom man trykker på bildet vil man bli tatt til den originale versjonen av bildet. Det kan være en ide å bruke denne funksjonen dersom nettsamfunnet ditt laster opp mange bilder og du vil redusere båndbreddebruken. Innstillingen gjelder kun nye bilder, med mindre du <a data-confirm href='{internal.app=core&module=settings&controller=posting&do=rebuildThumbnails.csrf}'>bygger om eksisterende bilder</a>.]]></word>
+  <word key="attachment_image_size_desc" js="0">Hvis et bilde er større enn den definerte størrelsen, blir det opprettet en mindre versjon som blir vist sammen med innholdet. Dersom man trykker på bildet vil man bli tatt til den originale versjonen av bildet. Det kan være en ide å bruke denne funksjonen dersom nettsamfunnet ditt laster opp mange bilder og du vil redusere båndbreddebruken. Innstillingen gjelder kun for nye bilder.</word>
   <word key="thumbnails_rebuilt" js="0">Småversjonene av bildevedleggene vil bli generert på nytt i bakgrunnen.</word>
   <word key="editor_embeds" js="0">Innebygg lenker automatisk?</word>
   <word key="editor_embeds_desc" js="0"><![CDATA[Noe innhold kan bli automatisk "innebygget" i siden. For eksempel dersom en bruker poster en lenke til en video på Youtube eller Vimeo kan videoen inkluderes slik at den kan spilles av i innlegget den er inkludert. Det å endre denne innstillingen vil ikke berøre eksisterende innhold.<br>Lenker fra følgende sider støttes: College Humor, Coub, Dailymotion, Facebook, Flickr, Funny Or Die, Gfycat, Google Maps, Hulu, Instagram, ReverbNation, Screencast.com, SmugMug, SoundCloud, Spotify, TED, Twitter, Ustream, Vimeo, Vine, Wistia, YouTube, og interne lenker til innhold i dette nettsamfunnet.]]></word>
@@ -5881,11 +5881,11 @@ For å støtte dette må du <a href='{internal.app=core&module=promotion&control
   <word key="loc_using_messenger" js="0">Sender eller leser meldinger</word>
   <word key="move_message_to" js="0">Flytt til...</word>
   <word key="messenger_disabled_can_enable" js="0"><![CDATA[Meldingssystem er slått av. <a href='%s'>Klikk her for å aktivere det igjen</a>.]]></word>
-  <word key="messenger_disabled" js="0">Meldingssystem slått av</word>
+  <word key="messenger_disabled" js="0">Innboksen er deaktivert</word>
   <word key="messenger_member_left" js="0">%s kan ikke bli lagt til fordi han forlot samtalen.</word>
   <word key="messenger_disabled_msg" js="0">Ditt meldingssystem er slått av. Vil du aktivere det igjen?</word>
-  <word key="messenger_enabled" js="0">Meldingssystem slått på</word>
-  <word key="disable_messenger" js="0">Slå av mitt meldingssystem</word>
+  <word key="messenger_enabled" js="0">Innboksen aktivert</word>
+  <word key="disable_messenger" js="0">Deaktiver min innboks</word>
   <word key="messenger_filtering" js="0">Filtrerer resultater etter %s</word>
   <word key="messenger_deleted_member" js="0">Slettet medlem</word>
   <word key="messenger_message_count" js="0">{# [1:melding][?:meldinger]}</word>
@@ -6670,9 +6670,9 @@ For å støtte dette må du <a href='{internal.app=core&module=promotion&control
   <word key="report_err_already_reported" js="0">Du har allerede rapportert dette.</word>
   <word key="num_reports" js="0">{!#[1:rapport][?:rapporter]}</word>
   <word key="report_center_header" js="0">Rapportert innhold</word>
-  <word key="report_status_1" js="0">Ny rapport</word>
-  <word key="report_status_2" js="0">Under behandling</word>
-  <word key="report_status_3" js="0">Fullført</word>
+  <word key="report_status_1" js="0">Alle nye rapporter</word>
+  <word key="report_status_2" js="0">Alle under behandling</word>
+  <word key="report_status_3" js="0">Alle fullførte</word>
   <word key="report_from" js="0">Fra %s %s</word>
   <word key="report__comment_placeholder" js="0">Kommenter på rapporten...</word>
   <word key="report_submit_comment" js="0">Send inn kommentar</word>
@@ -7573,21 +7573,12 @@ For å støtte dette må du <a href='{internal.app=core&module=promotion&control
   <word key="system_information" js="0">Systeminformasjon</word>
   <word key="php_version" js="0">PHP</word>
   <word key="mysql_version" js="0">MySQL</word>
-  <word key="sql_toolbox" js="0">Verktøykasse for SQL</word>
-  <word key="sql_table_name" js="0">Tabell</word>
-  <word key="sql_table_rows" js="0">Rader</word>
-  <word key="sql_table_engine" js="0">Motor</word>
-  <word key="sql_toolbox_query" js="0">Spørring</word>
-  <word key="run_query" js="0">Kjør spørring</word>
-  <word key="sql_toolbox_done" js="0">Spørring ble fullført.</word>
-  <word key="sql_toolbox_not_allowed" js="0">Denne typen spørring kan ikke kjøres fra verktøykassn for SQL.</word>
   <word key="continue_anyway" js="0">Fortsett likevel</word>
   <word key="bad_datastore_configuration" js="0"><![CDATA[Du har satt opp lagring av data til å skrive filer til %s, men denne mappen er ikke skrivbar. Gjør den skrivbar, eller <a href='{internal.app=core&module=settings&controller=advanced&tab=datastore}' target='_blank' rel='noopener'>oppdater dine innstillinger</a> og se om problemet løser seg.]]></word>
   <word key="upgrade_now" js="0">Oppgrader nå</word>
   <word key="upgrade_more_information" js="0">Mer informasjon</word>
   <word key="server_path" js="0">Serversti</word>
   <word key="server_ip" js="0">Server-IP</word>
-  <word key="sql_toolbox_warning" js="0">Dette er kun for avanserte brukere og verktøyene har potensiale til å forårsake store skader til nettsamfunnet ditt som ikke kan angres. Aldri kjør en spørring før du er sikker på hva effekten blir.</word>
   <word key="system_logs" js="0">Systemlogg</word>
   <word key="error_logs" js="0">Feilmeldingslogger</word>
   <word key="error_logs_notification" js="0">En feilmelding har blitt loggført</word>
@@ -7597,7 +7588,6 @@ For å støtte dette må du <a href='{internal.app=core&module=promotion&control
   <word key="r__support" js="0">Brukerstøtte</word>
   <word key="r__get_support" js="0">Kan kontakte teknisk brukerstøtte?</word>
   <word key="r__diagnostic_log_settings" js="0">Kan håndtere innstillinger for diagnostiske logger?</word>
-  <word key="r__sql_toolbox" js="0">Kan bruke SQL-verktøyet?</word>
   <word key="get_support_duplicate" js="0"><![CDATA[Du har sendt en brukerstøtte-forespørsel allerede. Denne meldingen har <strong>ikke</strong> blitt sendt. Vi gjør dette for å hindre dobbelt opp med saker om samme problem. Hvis du trenger å følge opp din eksisterende forespørsel ber vi om at du gjør dette direkte fra klientområdet ditt. ]]></word>
   <word key="get_support_error" js="0">Vi klarte ikke sende meldingen din til vår brukerstøtte-avdeling. Prøv på nytt ved å sende direkte fra klientområdet ditt.</word>
   <word key="no_translate_with_vle" js="0">Du kan ikke bruke oversettelsessiden mens hurtigoversetting er aktiv</word>
@@ -7928,7 +7918,7 @@ For å støtte dette må du <a href='{internal.app=core&module=promotion&control
   <word key="oauth_apps_info" js="0">Applikasjoner og sider som du har gitt tillatelse til at de skal få tilgang til kontoen din</word>
   <word key="oauth_app_issued" js="0">Autorisert</word>
   <word key="oauth_app_scopes" js="0">Tillatelser</word>
-  <word key="oauth_app_revoke" js="0">Fjern</word>
+  <word key="oauth_app_revoke" js="0">Trekk tilbake</word>
   <word key="oauth_app_update" js="0">Oppdater tillatelser</word>
   <word key="oauth_app_revoke_confirm" js="0">Applikasjonen vil ikke lenger ha tilgang ti ldin konto, men kan likevel fremdeles ha noe informasjon lagret. Hvis du ønsker å bruke applikasjonen eller siden igjen, må du gi tilgang.</word>
   <word key="oauth_apps_empty" js="0">Det er ingen applikasjoner som har tilgang til din konto.</word>
@@ -11494,7 +11484,7 @@ For å støtte dette må du <a href='{internal.app=core&module=promotion&control
   <word key="zapier_setup_intro" js="0"><![CDATA[For å komme i gang må du gå til <a href='{external.zapier_apps}' target='_blank' rel='noopener'>My apps</a>-seksjonen til din Zapier-konto og velge Invision Community. Gi følgende detaljer når du blir spurt:]]></word>
   <word key="zapier_community_url" js="0">NettsamfunnsURL</word>
   <word key="zapier_error_friendly_urls" js="0"><![CDATA[For å bruke Zapier må du aktivere vennlige URL-er og omskriving av URL-er på siden for <a href='{internal.app=core&module=promotion&controller=seo}' target='_blank'>innstillingene for søkemotoroptimalisering</a>.]]></word>
-  <word key="zapier_error_api" js="0"><![CDATA[Zapier må benytte seg av REST API-et til å kommunisere med nettsamfunnet ditt, men du har et problem med ditt oppsett av REST API. Besøk siden <a href='{internal.app=core&module=applications&controller=api}' target='_blank'>REST & OAuth</a> for å finne ut mer og løse problemet.]]></word>
+  <word key="zapier_error_api" js="0"><![CDATA[Zapier må benytte seg av REST API-et til å kommunisere med nettsamfunnet ditt, men du har et problem med ditt oppsett av REST API. Besøk siden <a href='{internal.app=core&module=applications&controller=api&fromZapier=1}' target='_blank'>REST & OAuth</a> for å finne ut mer og løse problemet.]]></word>
   <word key="sitemap_core_Applications" js="0">Applikasjoner</word>
   <word key="meta_tags_automatic_notice" js="0">Følgende tags ble automatisk generert for denne siden. Hvis du vil kan du overskrive meta-taggene nedenfor, men da vil de ikke lenger oppdateres automatisk. For eksempel, hvis du overskriver meta-beskrivelsen og teksten i originalinnholdet endres, så vil fortsatt beskrivelsen som du la inn være den gjeldende. </word>
   <word key="meta_tags_none_custom" js="0">Ingen tilpassede meta-tagger definert</word>
@@ -11850,7 +11840,6 @@ For å støtte dette må du <a href='{internal.app=core&module=promotion&control
   <word key="support_third_party_theme_count" js="0">Ikke-standard utseende</word>
   <word key="support_third_party_editor_count" js="0">Tilpasset tekstverktøy</word>
   <word key="support_third_party_ads_count" js="0">{# [1:annonse][?:annonser]}</word>
-  <word key="sql_table_size" js="0">Størrelse</word>
   <word key="requirements_file_uploads" js="0">Filopplastinger er deaktivert i PHP-konfigurasjonen din, noe som vil hindre mange funksjoner fra å fungere ordentlig. Du bør ta kontakt med din serverleverandør og be dem aktive PHP-valget `file_uploads`. </word>
   <word key="allow_remote_images_desc" js="0">Det kan hende du ønsker å la brukere lenke til bilder som leveres fra andre servere og som vil vises sammen med resten av innholdet. Merk at innhold som leveres fra andre tjenester kan fjernes når som helst, i noen tilfeller kan utløse advarsler i nettlesere, og at eksterne sider kan spore visningene av bildet tilbake til dine brukere som så det. </word>
   <word key="allow_only_https_remote_images" js="0">Bare tillat sikre bilder?</word>
@@ -12992,9 +12981,9 @@ For å støtte dette må du <a href='{internal.app=core&module=promotion&control
   <word key="health_caches_cleared" js="1">Alle cacher ble tømt</word>
   <word key="health_check_summary" js="1"><![CDATA[<span class='ipsType_warning ipsType_bold'>{# [1:kritisk feil][?:kritiske feil]}</span> og <span class='ipsType_issue'>{# [1:anbefaling][?:anbefalinger]}</span>]]></word>
   <word key="health_ticket_beforeproceeding" js="1">Før du fortsetter er det sterkt anbefalt at du adresserer enhver oppdaget feil siden de kan være årsaken til problemet som du opplever. </word>
-  <word key="stream_subscribe" js="0">Abonner på epost-sammendrag</word>
+  <word key="stream_subscribe" js="0">Send meg oppdateringer på e-post</word>
   <word key="stream_subscribe_button" js="0">Abonner</word>
-  <word key="stream_unsubscribe" js="0">Meld deg av epost-sammendrag</word>
+  <word key="stream_unsubscribe" js="0">Stopp å sende oppdatering på e-post</word>
   <word key="stream_unsubscribe_button" js="0">Meld deg av</word>
   <word key="stream_subscription_frequency" js="0">Hvor ofte vil du bli oppdatert?</word>
   <word key="stream_daily" js="0">Hver dag</word>
@@ -13125,10 +13114,10 @@ For å støtte dette må du <a href='{internal.app=core&module=promotion&control
   <word key="matomo_code_desc" js="0"><![CDATA[Logg inn på <a href='{external.matomo}' target='_blank' rel='noopener'>Matomo</a>-kontoen din, klikk brukernavnet oppe til høyre og klikk <em>Settings</em> (innstillinger). Klikk <em>Tracking Code</em> (sporingskode) i venstremenyen for å finne sporingskoden. Kopier og lim inn kodebiten i sin helhet i feltet ovenfor for å legge til sporingskoden til nettsamfunnet ditt.<br>Vi vil automatisk registrere en sidevisning hos Matomo når nytt innhold lastes inn dynamisk på siden.]]></word>
   <word key="enhancements__core_GoogleTagManager" js="0">Google Tag Manager</word>
   <word key="enhancements__core_GoogleTagManager_desc" js="0">Google Tag Manager er et &quot;tag management system&quot; (TMS) som lar deg raskt og enkelte oppdatere tagger/kodesnutter som f.eks. kommer fra tredjeparter for å måle og analysere nettsidetrafikk.</word>
-  <word key="googletag_head_code" js="0">Kodebit i head</word>
-  <word key="googletag_head_code_desc" js="0"><![CDATA[Kodebiten fra Google som skal plasseres innenfor <head>]]></word>
-  <word key="googletag_noscript_code" js="0">Kodebit i body</word>
-  <word key="googletag_noscript_code_desc" js="0"><![CDATA[Kodebiten fra Google som skal plasseres innenfor <body>]]></word>
+  <word key="googletag_head_code" js="0">GTM-kodebit i head</word>
+  <word key="googletag_head_code_desc" js="0"><![CDATA[Kodebiten fra Google som skal plasseres innenfor <span class='ipsType_monospace'><head></span>]]></word>
+  <word key="googletag_noscript_code" js="0">GTM-kodebit i body</word>
+  <word key="googletag_noscript_code_desc" js="0"><![CDATA[<span class='ipsType_monospace'><noscript></span>-koden fra Google som skal plasseres innenfor <span class='ipsType_monospace'><body></span> i sidekoden]]></word>
   <word key="googletag_enabled" js="0">Aktiver</word>
   <word key="page_output" js="0">Sideinnhold</word>
   <word key="custom_body_code" js="0">Body-kode</word>
@@ -13253,6 +13242,367 @@ For å støtte dette må du <a href='{internal.app=core&module=promotion&control
   <word key="wl_reason" js="0">Årsak</word>
   <word key="wl_date" js="0">Dato</word>
   <word key="ctime" js="0">Dato</word>
+  <word key="lost_pass_expired" js="0"><![CDATA[Lenken du brukte for å nullstille passordet ditt har utløpt, vennligst <a href='{internal.app=core&module=system&controller=lostpass}'>rbe om ny link</a>.]]></word>
+  <word key="modlog__action_warn_user" js="0">Advarte bruker: %s</word>
+  <word key="filestorage__core_Ranks" js="0">Ranger</word>
+  <word key="acplog__support_tool_caches_cleared" js="0">Cacher tømt med brukerstøtteverktøyet</word>
+  <word key="acplog__support_tool_apps_disabled" js="0">Applikasjoner deaktivert med brukerstøtteverktøyet.</word>
+  <word key="acplog__support_tool_apps_enabled" js="0">Applikasjoner aktivert med brukerstøtteverktøyet.</word>
+  <word key="acplog__support_tool_plugins_disabled" js="0">Plugins deaktivert med brukerstøtteverktøyet.</word>
+  <word key="acplog__support_tool_plugins_enabled" js="0">Plugins aktivert med brukerstøtteverktøyet.</word>
+  <word key="acplog__support_tool_theme_restored" js="0">Standardutseende gjenopprettet med brukerstøtteverktøyet</word>
+  <word key="acplog__support_tool_theme_deleted" js="0">Standardutseende slettet med brukerstøtteverktøyet.</word>
+  <word key="acplog__support_tool_editor_restored" js="0">Standard tekstverktøy-konfigurasjon gjenopprettet med brukerstøtteverktøyet.</word>
+  <word key="acplog__support_tool_editor_customized" js="0">Tilpasset tekstverktøy-konfigurasjon gjenopprettet med brukerstøtteverktøyet.</word>
+  <word key="acplog__support_tool_ads_disabled" js="0">Annonser deaktivert med brukerstøtteverktøyet.</word>
+  <word key="acplog__support_tool_ads_enabled" js="0">Annonser aktivert med brukerstøtteverktøyet.</word>
+  <word key="webhook_logs_success" js="0">Fjern gamle vellykkede webhook-forespørsler og svar</word>
+  <word key="acplog__webhook_settings" js="0">Justerte innstillinger for webhook</word>
+  <word key="stream_solved" js="0">Løst</word>
+  <word key="stream_solved_all" js="0">Alt</word>
+  <word key="stream_solved_solved" js="0">Løst</word>
+  <word key="stream_solved_unsolved" js="0">Uløst</word>
+  <word key="stream_blurb_unsolved" js="0">er uløst</word>
+  <word key="stream_blurb_solved" js="0">er løst</word>
+  <word key="stream_subscribe_desc" js="0">Motta regelmessige e-poster med et sammendrag av ny aktivitet på denne strømmen</word>
+  <word key="stream_subscriptions_short" js="0">Abonnementer</word>
+  <word key="alt_label_could_be" js="0">Kan inneholde:</word>
+  <word key="userbar_messages_disabled" js="0">Meldinger (Deaktivert innboks)</word>
+  <word key="inbox_disabled" js="0">Deaktivert innboks</word>
+  <word key="inbox_disabled_tooltip" js="0">For å motta nye samtaler fra andre må du aktivere innboksen din</word>
+  <word key="inbox_enable" js="0">Aktiver innboks</word>
+  <word key="ext__SearchIndex" js="0">Endre søkeindeksdataene før de lagres.</word>
+  <word key="g_bypass_badwords_images" js="0">Omgå ord-, lenke- og bildefiltre?</word>
+  <word key="site_site_elsewhere" js="0">Er hovedsiden et annet sted?</word>
+  <word key="site_site_elsewhere_desc" js="0">Hvis dette nettsamfunnet ikke er din primære nettside kan du aktivere denne innstillingen og fylle inn detaljene for hovedsiden din.</word>
+  <word key="site_main_url" js="0">HovedsideURL</word>
+  <word key="site_main_title" js="0">Hovedsidetittel</word>
+  <word key="searchstats_log" js="0">Søkelogg</word>
+  <word key="search_logs" js="0">Søkelogg</word>
+  <word key="searchlog_exclude_groups" js="0">Ekskluder grupper</word>
+  <word key="searchlog_exclude_groups_desc" js="0">Søk som gjøres av disse gruppene vil ikke inkluderes i søkeloggene. Gjester er deaktivert som standard, så eksterne indekseringsmotorer ikke påvirker resultatene.</word>
+  <word key="theme_advanced_mode_off" js="0">Bruk enkel utseenderedigering</word>
+  <word key="theme_advanced_mode_on" js="0">Bruk avansert utseenderedigering</word>
+  <word key="theme_simple_css_tab" js="0">Tilpasset CSS</word>
+  <word key="theme_simple_header_tab" js="0">Topp-HTML</word>
+  <word key="theme_simple_footer_tab" js="0">Bunntekst HTML</word>
+  <word key="theme_simple_header_desc" js="0"><![CDATA[Denne HTML-koden legges til like etter åpningen av <body>-taggen. Trenger du mer avanserte muligheter? <a href='{internal.app=core&module=customization&controller=themes&do=advancedEditingToggle}'>Aktiver avansert redigeringsmodus</a>]]></word>
+  <word key="theme_simple_footer_desc" js="0"><![CDATA[Denne HTML-koden vil legges til like før den avsluttende <body>-taggen. Trenger du mer avanserte muligheter? <a href='{internal.app=core&module=customization&controller=themes&do=advancedEditingToggle}'>Aktiver avansert redigeringsmodus</a>]]></word>
+  <word key="theme_simple_css_desc" js="0"><![CDATA[Den tilpassede CSS-en inkluderes etter all annen CSS fra Invision Community. Trenger du mer avanserte muligheter? <a href='{internal.app=core&module=customization&controller=themes&do=advancedEditingToggle}'>Aktiver avansert redigeringsmodus</a>]]></word>
+  <word key="theme_mode_switched" js="0">Endret redigeringsmodus for utseende</word>
+  <word key="theme_advanced_mode_submessage_off" js="0">Bruk et enklere mal-verktøy til å håndtere tilpasset CSS, og toppen og bunnen av HTML-koden.</word>
+  <word key="theme_advanced_mode_submessage_on" js="0">Avansert redigering er for de som er komfortable med å redigere kompleks HTML og CSS på tvers av alle Invision Community-maler</word>
+  <word key="theme_simple_lots_of_css_files" js="0">Dette utseendet har flere CSS-filer. Å lagre dette utseendet i enkel redigeringsmodus vil slå dem sammen til en enkelt CSS-fil</word>
+  <word key="theme_error_in_template" js="0">Feil i %s</word>
+  <word key="theme_simple_save_all" js="0">Lagre alle</word>
+  <word key="core_theme_set_header_and_footer_header" js="0">Toppdel og bunndel</word>
+  <word key="theme_simple_header_settings" js="0">Topp-HTML</word>
+  <word key="theme_simple_footer_settings" js="0">Bunntekst HTML</word>
+  <word key="theme_simple_header_settings_desc" js="0"><![CDATA[Denne HTML-koden legges til like etter åpningen av <body>-taggen.]]></word>
+  <word key="theme_simple_footer_settings_desc" js="0"><![CDATA[Denne HTML-koden vil legges inn like før den avsluttende <body>-taggen og erstatter {theme="footerHtml"}-taggen]]></word>
+  <word key="captcha_type_hcaptcha" js="0">hCaptcha</word>
+  <word key="captcha_type_hcaptcha_desc" js="0"><![CDATA[Brukeren må klikke i en markeringsboks og kan bli påkrevd å velge spesifikke bilder i et rutenett. <a href='{external.captcha_hcaptcha}' target='_blank' rel='noopener'>Finn ut mer</a>]]></word>
+  <word key="hcaptcha_sitekey" js="0">Sidenøkkel fra hCaptcha</word>
+  <word key="hcaptcha_secret" js="0">Hemmelig kode fra hCaptcha</word>
+  <word key="hcaptcha_secret_desc" js="0"><![CDATA[For å bruke hCaptcha må du <a href='{external.hcaptcha_signup}' target='_blank' rel='noopener'>opprette en konto</a> og fylle inn nøkkelen din.]]></word>
+  <word key="hcaptcha_privacy" js="0">Vi bruker hCaptcha anti-bot-tjenesten (heretter kalt &quot;hCaptcha&quot;) på nettstedet vårt. Denne tjenesten leveres av Intuition Machines, Inc., et Delaware US Corporation (&quot;IMI&quot;). hCaptcha brukes til å sjekke om dataene som er lagt inn på nettsiden vår (som på en påloggingsside eller kontaktskjema) er lagt inn av et menneske eller av et automatisert program. For å gjøre dette, analyserer hCaptcha oppførselen til nettsiden eller den besøkende på mobilappen basert på ulike egenskaper. Denne analysen starter automatisk så snart den besøkende på nettstedet eller mobilappen går inn på en del av nettstedet eller appen med hCaptcha aktivert. For analysen vurderer hCaptcha ulike opplysninger (f.eks. IP-adresse, hvor lenge den besøkende har vært på nettsiden eller appen, eller musebevegelser gjort av brukeren). Dataene som samles inn under analysen vil bli videresendt til IMI. hCaptcha-analyse i &quot;usynlig modus&quot; kan foregå helt i bakgrunnen. Besøkende på nettstedet eller appen blir ikke informert om at en slik analyse finner sted hvis brukeren ikke blir vist en utfordring. Databehandling er basert på art. 6(1)(f) i GDPR (DSGVO): Nettstedet eller mobilappoperatøren har en legitim interesse i å beskytte nettstedet sitt mot støtende automatisk gjennomsøking og spam. IMI fungerer som en &quot;databehandler&quot; som handler på vegne av sine kunder som definert under GDPR, og en &quot;tjenesteleverandør&quot; i henhold til California Consumer Privacy Act (CCPA). For mer informasjon om hCaptcha og IMIs personvernerklæring og bruksvilkår, vennligst besøk følgende lenker: https://www.hcaptcha.com/privacy og https://www.hcaptcha.com/terms.</word>
+  <word key="disable_messenger_desc" js="0">Deaktivering av innboksen din hindrer andre (unntatt roller som moderatorer og administratorer) fra å starte nye samtaler med deg. Du kan fortsatt starte en samtale med andre og svare på eksisterende samtaler.</word>
+  <word key="search_opensearch_server_unsupported_version" js="0">OpenSearch-versjon %s støttes ikke.</word>
+  <word key="oauth_app_revoke_title" js="0">Trekk tilbake autorisering?</word>
+  <word key="online_status_cannot_change" js="0">Administratoren gir deg ikke lov til å endre din pålogget-status.</word>
+  <word key="menu__core_settings_dataLayer" js="0">Datalag</word>
+  <word key="r__dataLayer" js="0">Datalag</word>
+  <word key="r__dataLayer_manage" js="0">Håndter generelle innstillinger for datalag, hendelser og egenskaper</word>
+  <word key="r__dataLayer_handlers_view" js="0">Se datalagbehandlere</word>
+  <word key="r__dataLayer_handlers_edit" js="0">Opprett, endre og slett datalagbehandlere</word>
+  <word key="core_datalayer_use_gtm" js="0">Dytt datalag-hendelser til GTM</word>
+  <word key="core_datalayer_gtmkey" js="0">Navnet på Javascript-variabelen for datalaget til GTM</word>
+  <word key="core_datalayer_gtmkey_desc" js="0"><![CDATA[I de fleste tilfeller trenger du ikke endre dette. I GTM, så kan du endre javascript-variabelen fra <span class="ipsType_monospace">dataLayer</span> til noe annet. Forumprogramvaren vil dytte hendelser til en Javascript array-variabel med dette navnet.]]></word>
+  <word key="core_datalayer_enabled" js="0">Datalag aktivert</word>
+  <word key="core_datalayer_enabled_desc" js="0">Når det er aktivert vil forumprogramvaren dytte hendelser og egenskaper til datalaget.</word>
+  <word key="core_datalayer_include_pii" js="0">Samle inn egenskaper som inneholder PII</word>
+  <word key="core_datalayer_include_pii_desc" js="0"><![CDATA[Forumprogramvaren vil regne at en egenskap inneholder PII (personlig identifiserbar informasjon) hvis den ble generert med informasjon gitt av bruker. Se egenskapsfanen for mer informasjon. Hvis dette er deaktivert vil egenskaper med PII ha verdien <span class="ipsType_monospace">undefined</span> i datalaget.]]></word>
+  <word key="core_datalayer_member_pii_choice" js="0">Medlemmer kan fristille seg fra å eksponere sin egen PII</word>
+  <word key="core_datalayer_member_pii_choice_desc" js="0">Medlemmer vil se dette valget i sine kontoinnstillinger, og valget vil også vises på brukerprofil-siden i adminpanelet.</word>
+  <word key="datalayer_main" js="0">Generell</word>
+  <word key="datalayer_events" js="0">Hendelser</word>
+  <word key="datalayer_properties" js="0">Alle egenskaper</word>
+  <word key="datalayer_handlers" js="0">Behandlere</word>
+  <word key="_datalayer_events" js="0">Datalag - Hendelser</word>
+  <word key="_datalayer_properties" js="0">Datalag - Alle egenskaper</word>
+  <word key="_datalayer_handlers" js="0">Datalag - Behandlere</word>
+  <word key="datalayer_pageContext" js="0">Sidekontekst</word>
+  <word key="_datalayer_pageContext" js="0">Datalag - Sidekontekst</word>
+  <word key="datalayer_property_short" js="0">Kort beskrivelse</word>
+  <word key="datalayer_property_short_desc" js="0">Dette er det som vises i verktøytipset når du holder musepekeren over denne egenskapen i sidefeltet til venstre og i egenskapslisten til hver hendelse i hendelse-fanen</word>
+  <word key="datalayer_property_value" js="0">Verdi</word>
+  <word key="datalayer_property_page_level" js="0">Inkluder i sidekonteksten</word>
+  <word key="datalayer_property_value_desc" js="0">I datalaget, denne egenskapen vil inneholde denne verdien som tekst</word>
+  <word key="datalayer_property_event_keys" js="0">Hendelser som inkluderer denne egenskapen</word>
+  <word key="datalayer_add_property" js="0">Ny datalag-egenskap</word>
+  <word key="datalayer_event_enabled" js="0">Aktivert</word>
+  <word key="datalayer_property_description" js="0">Beskrivelse</word>
+  <word key="datalayer_property_enabled" js="0">Aktivert</word>
+  <word key="datalayer_property_formatted_name" js="0">Navn</word>
+  <word key="datalayer_event_formatted_name" js="0">Navn</word>
+  <word key="datalayer_event_formatted_name_desc" js="0"><![CDATA[Dette navnet sendes til datalaget som hendelsens navn. For GTM er dette <span class="ispType_monospace" >event</span>-egenskapen i <span class="ipsType_monospace">dataLayer</span>-objektet. Ingen mellomrom, tomrom eller dupliserte navn.]]></word>
+  <word key="datalayer_property_formatted_name_desc" js="0">Når et objekt med denne egenskapen dyttes til datalaget vil dette være nøkkelen som brukes i nevnte egenskap. Ingen mellomrom, tomme tegn eller duplikate navn.</word>
+  <word key="core_datalayer_replace_with_sso" js="0">Bruk en identifikator fra en SSO-behandler</word>
+  <word key="core_datalayer_replace_with_sso_desc" js="0">Noen egenskaper som dyttes til datalaget inneholder en brukers ID. Du kan velge å bruke en identifikator fra en konfigurert system for SSO-innlogging. Hvis en bruker ikke har brukt den valgte innloggingsmetoden vil verdien være null i datalaget.</word>
+  <word key="use_gtm_for_installation" js="0"><![CDATA[Merk at for å bruke Google Tag Manager må du bruke installasjonskodene som Google gir deg. Hvis du allerede har implementert GTM trenger du ikke noe mer her. I andre tilfeller kan du lime inn installasjonskoden på siden med innstillingene for <a style="text-decoration: none;" href="{internal.app=core&module=applications&controller=enhancements&do=edit&id=core_GoogleTagManager}" target="_blank">Google Tag Manager-integrering <i class="fa fa-external-link"></i></a>. Hvis du bruker Google Analytics eller en annen gtag.js-integrasjon, se guiden for <a style="text-decoration: none;" href="https://support.google.com/tagmanager/answer/7582054?hl=en&ref_topic=3441530" target="_blank">Google's Tag Manager og gtag.js <i class="fa fa-external-link"></i></a> for nærmere instrukser.]]></word>
+  <word key="datalayer_handler_form" js="0">Ny datalagsbehandler</word>
+  <word key="datalayer_handler_message" js="0">Vær forsiktig før du bruker denne behandlerens JavaScript. Bugs og syntaksfeil kan ikke bare føre til at denne behandleren ikke fungerer, men kan også lage problemer for andre datalagsbehandlere.</word>
+  <word key="datalayer_handler_main" js="0">Generell</word>
+  <word key="datalayer_handler_javascript" js="0">JavaScript</word>
+  <word key="datalayer_handler_use_js" js="0">Bruk denne behandlerens Javascript i head-taggen</word>
+  <word key="datalayer_handler_name" js="0">Navn</word>
+  <word key="datalayer_handler_enabled" js="0">Aktivert</word>
+  <word key="datalayer_handler_head_code" js="0">Kode til head</word>
+  <word key="datalayer_handler_head_code_desc" js="0"><![CDATA[Dette genereres vanligvis av Tag Manager eller annen ekstern tjeneste og settes inn så høyt som mulig i <span class="ipsType_monospace"><head></span>-taggen.]]></word>
+  <word key="datalayer_handler_body_code" js="0">Body-snutt</word>
+  <word key="datalayer_handler_body_code_desc" js="0"><![CDATA[Dette genereres vanligvis av din Tag Manager eller annen ekstern tjeneste og legges til i <span class="ipsType_monospace"><body></span>-taggen nær toppen.]]></word>
+  <word key="datalayer_handler_initializer_code" js="0">Datalag-initialiseringen (JavaScript)</word>
+  <word key="datalayer_handler_initializer_code_desc" js="0"><![CDATA[Denne JavaScript-koden kjøres ved sideinnlasting før koden til head legges til. Den sendes sidekonteksten som JavaScript-variabelen <span class="ipsType_monospace">context</span>]]></word>
+  <word key="datalayer_handler_event_handler" js="0">Hendelsesbehandlere for datalag</word>
+  <word key="datalayer_handler_event_handler_desc" js="0"><![CDATA[Denne Javascript-koden kjører når en gyldig datalag-hendelse skjer. Javascript-variabelen, <span class="ipsType_monospace">_event</span>, vil inneholde to egenskaper, <span class="ipsType_monospace">_key</span> og <span class="ipsType_monospace">_properties</span>, som kommer fra respektivt datalag-hendelsene og egenskapene. Alt i <span class="ipsType_monospace">_properties</span> er en aktivert og PII-godkjent egenskap, og behandlerne sendes bare aktiverte datalaghendelser.]]></word>
+  <word key="datalayer_handler_properties_handler" js="0">Egenskapsbehandler for datalag (JavaScript)</word>
+  <word key="datalayer_handler_properties_handler_desc" js="0"><![CDATA[Denne JavaScript-koden kjøres hver gang sideegenskaper oppdateres etter at siden er lastet inn. For eksempel utløser ikke sidenavigering en ny sideinnlasting, men kontekstegenskapen <span class="ipsType_monospace">page_number</span> oppdateres. Egenskapene finnes i JavaScript-variabelen, <span class="ipsType_monospace">_properties</span>]]></word>
+  <word key="datalayer_handler_datalayer_key" js="0">Variabelnavn for datalag</word>
+  <word key="datalayer_handler_datalayer_key_desc" js="0"><![CDATA[All bruk av <span class="ipsType_monospace">{dataLayer}</span> i initialiseringen, hendelseshåndteringen og egenskapshåndteringen vil byttes om med denne verdien. <strong>Forsikre deg om at du henviser til datalag-variabelen i Javascript ved å bruke denne nøkkelen, og ikke direkte, for å hindre kollisjoner.</strong>]]></word>
+  <word key="datalayer_name" js="0">Navn</word>
+  <word key="datalayer_type" js="0">Datatype</word>
+  <word key="datalayer_pii" js="0">Inneholder PII</word>
+  <word key="datalayer_short" js="0">Info</word>
+  <word key="datalayer_omit_member_pii" js="0">Ekskluder PII fra datalag</word>
+  <word key="datalayer_collect_member_pii" js="0">Inkluder PII i datalaget</word>
+  <word key="datalayer_pii_opt_out" js="0">Utelat identifiserende informasjon fra tredjepartsanalyser</word>
+  <word key="datalayer_pii_opt_out_desc" js="0">Denne nettsiden kan bruke tredjeparts analyse- og rapporteringstjenester. Denne innstillingen gjelder kun for ikke-essensiell tredjepartsbruk av personlig identifiserbar informasjon (PII). Det gjelder ikke bruk av ikke-identifiserende personopplysninger, og det gjelder heller ikke nødvendig tredjepartsbruk av PII.</word>
+  <word key="datalayer_collected" js="0">Identifiserende data er inkludert</word>
+  <word key="datalayer_omitted" js="0">Identifiserende data utelatt</word>
+  <word key="datalayer_omit" js="0">Utelat personlig identifiserende informasjon</word>
+  <word key="datalayer_collect" js="0">Inkluder personlig identifiserbar informasjon</word>
+  <word key="history_spam_defense_5" js="0"><![CDATA[Spambeskyttelsen sjekket og returnerte poengsum <code>%s</code> - kontoen krever moderatorgodkjenning av innlegg.]]></word>
+  <word key="mobilenavigation_CustomItem" js="0">Tilpasset URL</word>
+  <word key="googletag_code_required" js="0">Head og Body-kode for GTM påkrevd</word>
+  <word key="datalayer_title" js="0">Tilpassede behandlere</word>
+  <word key="datalayer_desc" js="0"><![CDATA[Datalagsbehandlere er ansvarlige for å håndtere kontekst og data generert av programvaren. Hver behandler kan ha noe som initialiserer datalaget, hodesnutt, hendelsebehandler, egenskaperbehandler, og body-snutt, som legges til i kildekoden for siden i den rekkefølgen. Hode og body-snuttene er HTML som vanligvis genereres av din Tag Manager/CRM, og kopieres inn i toppen av henholdsvis <span class="ipsType_monospace"><head></span> og <span class="ipsType_monospace"><body></span>-taggene. Initalisereren, hendelsebehandleren og egenskapsbehandleren er biter med Javascript som inneholder logikken din for å håndtere hendelser og egenskaper.]]></word>
+  <word key="datalayer_custom_handler_none" js="0">Ingen tilpassede datalag har blitt konfigurert.</word>
+  <word key="datalayer_custom_handler_create" js="0">Opprett tilpasset håndterer</word>
+  <word key="datalayer_custom_title_prefix" js="0">Javascript variabel-navn:</word>
+  <word key="datalayer_page_context" js="0">Sidekontekst</word>
+  <word key="datalayer_page_content_desc" js="0"><![CDATA["Sidekontekst" lastes inn på hver side, og gir datalaget grunnleggende informasjon før det startes. For et standard GTM-datalag legges disse egenskapene til et objekt inne i datalaget <i>før</i> oppsettkoden fra Google inkluderes (gtag.js).]]></word>
+  <word key="datalayer_enabled" js="0">Aktivert</word>
+  <word key="datalayer_disabled" js="0">Deaktivert</word>
+  <word key="datalayer_custom" js="0">Tilpasset</word>
+  <word key="datalayer_pii_desc" js="0">*Merk at aktiverte egenskaper som inneholder PII fortsatt vil bli utelatt hvis &quot;Inkluder egenskaper som inneholder PII&quot;-innstillingen ikke er angitt</word>
+  <word key="datalayer_note_dec" js="0"><![CDATA[Merk, siden denne egenskapen er tilpasset, vil den alltid ha samme verdi når den er inkludert i datalaget, <span class="ipsType_monospace">%s</span>]]></word>
+  <word key="datalayer_events_using_property" js="0">Hendelser som bruker denne egenskapen</word>
+  <word key="datalayer_events_properties" js="0">Hendelsesegenskaper</word>
+  <word key="datalayer_no_events_use_property" js="0">Ingen hendelser bruker denne egenskapen. Hvis det er en egendefinert egenskap, kan du valgfritt velge hendelser som vil inkludere denne egenskapen.</word>
+  <word key="datalayer_no_events_here" js="0">Denne hendelsen har ingen egenskaper</word>
+  <word key="modcp_alerts" js="0">Varsler</word>
+  <word key="add_alert" js="0">Skriv varsel</word>
+  <word key="edit_alert" js="0">Endre varsel</word>
+  <word key="edit_alert_author" js="0">Endre forfatter</word>
+  <word key="alert_change_author" js="0">Endre forfatter</word>
+  <word key="alert_delete" js="0">Slett varsel</word>
+  <word key="alert_title" js="0">Tittel</word>
+  <word key="alert_content" js="0">Innhold</word>
+  <word key="alert_start" js="0">Startdato</word>
+  <word key="alert_end" js="0">Sluttdato</word>
+  <word key="alert_recipient_type" js="0">Send til</word>
+  <word key="alert_type_user" js="0">Enkeltmedlem</word>
+  <word key="alert_type_group" js="0">Gruppe</word>
+  <word key="alert_recipient_user" js="0">Bruker</word>
+  <word key="alert_recipient_group" js="0">Gruppe</word>
+  <word key="alert_no_recipient_selected" js="0">Du må velge en bruker</word>
+  <word key="alert_send" js="0">Send varsel</word>
+  <word key="alert_anonymous" js="0">Send anonymt?</word>
+  <word key="alert_anonymous_desc" js="0">Hvis varsler sendes anonymt vil ikke medlemmer kunne svare på det.</word>
+  <word key="alert_anon" js="0">Anonymt</word>
+  <word key="can_manage_alerts" js="0">Kan håndtere varsler?</word>
+  <word key="alert_reply" js="0">Svar</word>
+  <word key="alert_no_reply" js="0">Ingen svar</word>
+  <word key="alert_can_reply" js="0">Brukere kan velge om de vil svare.</word>
+  <word key="alert_must_reply" js="0">Brukere må svare</word>
+  <word key="alert_modal_title" js="0">Svarer til %s</word>
+  <word key="alert_tooltip_groups" js="0">Grupper: %s</word>
+  <word key="alert_tooltip_member" js="0">Medlem: %s</word>
+  <word key="alert_not_viewed" js="0">Ikke sett ennå</word>
+  <word key="alert_viewed_times" js="0">Sett {# [1:gang][?:ganger]}</word>
+  <word key="alert_filter_viewed" js="0">Sett</word>
+  <word key="alert_filter_not_viewed" js="0">Ikke sett</word>
+  <word key="alert_filter_groups" js="0">Mål: grupper</word>
+  <word key="alert_filter_user" js="0">Mål: medlem</word>
+  <word key="alert_show_to" js="0">Vis til</word>
+  <word key="alert_show_to_all" js="0">Alle</word>
+  <word key="alert_show_to_all_desc" js="0">Vises til alle i de valgte gruppene uavhengig av når de registrerte seg. (Eksempel: retningslinje-oppdateringer)</word>
+  <word key="alert_show_to_new" js="0">Kun nye medlemmer</word>
+  <word key="alert_show_to_new_desc" js="0">Vil kun vises til nyregistrerte medlemmer i de valgte gruppene som registrerte seg etter startdatoen. (Eksempel: velkomstmelding)</word>
+  <word key="alert_dismiss" js="0">Fjern</word>
+  <word key="alert_must_reply_modal" js="0">%s har bedt om at du svarer på denne notisen.</word>
+  <word key="alert_filter_active" js="0">Aktiv</word>
+  <word key="alert_filter_inactive" js="0">Inaktiv</word>
+  <word key="alert_you_cannot_receive_messages" js="0">Svarvalgene er fjernet siden ditt meldingssystem er deaktivert.</word>
+  <word key="pluploaderr_IMAGE_SCANNER_BLOCKED" js="1">Bildet kunne ikke lastes opp fordi det ser ut som det bryter våre retningslinjer.</word>
+  <word key="streamFilter_stream_solved_all" js="1"><![CDATA[<em>Alt</em>]]></word>
+  <word key="streamFilter_stream_solved_solved" js="1">Løst</word>
+  <word key="streamFilter_stream_solved_unsolved" js="1">Uløst</word>
+  <word key="ucp_devices_email" js="0">E-postvarsel</word>
+  <word key="ucp_devices_email_desc" js="0">Når du aktiverer dette vil du ikke lenger motta varsler når nye enheter brukes til å logge inn på kontoen din.</word>
+  <word key="ucp_devices_email_off" js="0">Deaktivert</word>
+  <word key="ucp_devices_email_on" js="0">Aktivert</word>
+  <word key="ucp_devices_email_enable" js="0">Aktiver</word>
+  <word key="ucp_devices_email_disable" js="0">Deaktiver</word>
+  <word key="__api_core_promotions" js="0">Promoterte gjenstander</word>
+  <word key="edit_page" js="0">Endre denne siden</word>
+  <word key="delete_page" js="0">Slett denne siden</word>
+  <word key="menu__core_stats_rankprogression" js="0">Rangprogresjon</word>
+  <word key="core_stats_rank_progression_v" js="0">Antall dager</word>
+  <word key="core_stats_rank_progression_h" js="0">Rang</word>
+  <word key="core_stats_rank_progression_desc" js="0">Antall dager det gjennomsnittlig tar et medlem å nå hver enkelt rang</word>
+  <word key="r__rankprogression" js="0">Rangprogresjon</word>
+  <word key="r__rankprogression_manage" js="0">Kan se statistikk over rangprogresjon?</word>
+  <word key="rankprogression_rebuild" js="0">Bygger rangprogresjon</word>
+  <word key="r__moderatorstats_manage" js="0">Kan se moderatoraktivitet</word>
+  <word key="stats_deleted_tooltip" js="0">Slettet</word>
+  <word key="webhook_member_registration_complete" js="0">Fyres av når en bruker registrerer seg</word>
+  <word key="webhook_member_warned" js="0">Fyres av når en bruker advares</word>
+  <word key="webhook_member_merged" js="0">Fyres av når en brukerkonto slås sammen med en annen</word>
+  <word key="webhook_content_promoted" js="0">Fyres av når innhold blir promotert</word>
+  <word key="webhook_content_marked_solved" js="0">Fyres av når innhold merkes som løst</word>
+  <word key="webhook_content_type" js="0">Innholdstype</word>
+  <word key="webhook_content_type_desc" js="0">Innholdstypen for forespørselen.</word>
+  <word key="webhook_content_type_other" js="0">Tilpasset</word>
+  <word key="acplog__streams_restored" js="0">Standard aktivitetsstrømmer gjenopprettet</word>
+  <word key="acplog__all_activity_settings" js="0">Endret alle aktivitetsstrøm-innstillinger</word>
+  <word key="editor__core_Alert" js="0">Varsler</word>
+  <word key="download_upgrade_initial_resource_title" js="0">Sjekk av tredjepartsressurser</word>
+  <word key="download_upgrade_initial_resource_explain" js="0"><![CDATA[<p>Vi sjekker tredjepartsressursene dine for kompatibilitet før oppgraderingsprosessen. Denne kontrollen er av de installerte ressursene og finner kanskje ikke alle inkompatibiliteter under denne kontrollen.</p><p>Når du oppgraderer, vil applikasjonene og pluginene dine igjen bli skannet for kompatibilitetsproblemer.</p> <p>Hvis inkompatibilitet er oppdaget som ville føre til at fellesskapet ditt går i stykker, vil disse applikasjonene og pluginene automatisk deaktiveres.</p>]]></word>
+  <word key="download_upgrade_initial_resource_upgrade_updates" js="0">%s {!#[1:ressursen][?:ressursene]} trenger en oppdatering</word>
+  <word key="download_upgrade_initial_resource_upgrade_updates_blurb" js="0"><![CDATA[<em>Etter at oppgraderingen er utført må du installere den oppdaterte ressursen fra markedsplassen. Hvis den oppdaterte ressursen er kompatibel kan den fortsette å være aktivert. Hvis den oppdaterte ressursen gjør at siden din stopper å fungere må den applikasjonen eller pluginen deaktiveres.</em>]]></word>
+  <word key="download_upgrade_initial_resource_upgrade_noupdate" js="0">%s {!#[1:ressursen][?:ressursene]} er ikke kompatible og har ikke kompatible oppdateringer</word>
+  <word key="download_upgrade_initial_resource_upgrade_noupdate_blurb" js="0"><![CDATA[Denne ressursen kan fjernes om den ikke er i bruk. Det bør antas at ressursen vil deaktiveres i løpet av oppgraderingen om den ikke er kompatibel. Hvis dette er en ressurs som er nødvendig for deg kan det hende du ønsker å utsette oppgraderingen.</em>]]></word>
+  <word key="download_upgrade_initial_resource_upgrade_nocheck" js="0">Vi klarte ikke sjekke markedsplassen for %s {!#[1:ressurs][?:ressurser]}.</word>
+  <word key="download_upgrade_initial_resource_upgrade_nocheck_blurb" js="0"><![CDATA[Vennligst undersøk disse manuelt på <a href='https://invisioncommunity.com/marketplace' target='_blank'>markedsplass-seksjonen av siden vår</a>.</em>]]></word>
+  <word key="download_upgrade_initial_resource_upgrade_compatible" js="0">%s {!#[1:ressurs er][?:ressurser er]} er markert som kompatible av utvikleren</word>
+  <word key="download_upgrade_initial_resource_upgrade_compatible_blurb" js="0"><![CDATA[<em>Ressursen kan bli deaktivert under oppgraderingen hvis den ikke er kompatibel.</em>]]></word>
+  <word key="download_upgrade_initial_resource_upgrade_custom" js="0">%s {!#[1:tilpasset ressurs][?:tilpassede ressurser]} kan trenge oppmerksomhet</word>
+  <word key="download_upgrade_initial_resource_upgrade_custom_blurb" js="0"><![CDATA[<em>Disse kan ikke gjennomgås i denne ressurssjekken. Ressursen kan bli deaktivert under oppgradering hvis den er inkompatibel.</em>]]></word>
+  <word key="login_front" js="0">Tillat innlogginger i front-end?</word>
+  <word key="acplog__recount_member_content" js="0">Telte om alle medlemmers innhold</word>
+  <word key="acplog__recount_member_rep" js="0">Telte om alle medlemmers ryktepoeng</word>
+  <word key="acplog__deleted_guest_content" js="0">Slettet gjesteinnhold: %s</word>
+  <word key="acplog__member_reaction_removed_given" js="0">Fjernet gitte reaksjoner: %s</word>
+  <word key="acplog__member_reaction_removed_received" js="0">Fjernet mottatte reaksjoner: %s</word>
+  <word key="acplog__member_pii_exported" js="0">Medlemmets personopplysninger eksportert: %s</word>
+  <word key="mailsub__core_solved_reengagement" js="0">Svarte dette på spørsmålet ditt?</word>
+  <word key="emailtpl_solved_reengagement" js="0">Løst re-engasjement</word>
+  <word key="emailstats_solved_reengagement" js="0">Løst re-engasjement</word>
+  <word key="mail_solved_reengagement" js="0"><![CDATA[Det har kommet svar til din %s, <a href='%s'>%s</a>.]]></word>
+  <word key="mail_solved_reengagement_solved" js="0"><![CDATA[<strong>Svarte noen av disse svarene på spørsmålet ditt?</strong> Det kan være flere svar enn det som vises her.]]></word>
+  <word key="mail_solved_reengagement_wyw" js="0">Dette skrev du:</word>
+  <word key="mail_solved_reengagement_others" js="0">Dette svarte andre:</word>
+  <word key="mail_solved_reengagement_action" js="0">Hjelp andre ved å besøke tråden og merk det beste svaret som løsning ved å trykke på knappen for det</word>
+  <word key="unsubscribed_solved_desc" js="0">Du vil ikke lenger motta varsler om å merke svar til trådene dine som løsninger.</word>
+  <word key="solved_reengage_on" js="0">Påminnelser på e-post om å merke svar som løsning</word>
+  <word key="mark_solved_reengage_back_on" js="0">Du vil nå motta påminnelser til eposten din om å merke innhold løst. Du kan deaktivere dette ved å bruke en lenke i slike eposter.</word>
+  <word key="solved_reengagement_stop" js="0">Stopp å motta disse påminnelsene på e-post</word>
+  <word key="acplog__rebuilt_leaderboard" js="0">Bygget om lederbordet</word>
+  <word key="stats_overview_others" js="0">Andre</word>
+  <word key="acplog__theme_converted_custom" js="0">Utseende konvertert fra enkel modus - %s</word>
+  <word key="acplog__theme_member_reset" js="0">Nullstilte medlemmers utseende</word>
+  <word key="acplog__theme_resource_deleted" js="0">Ressurs slettet - %s</word>
+  <word key="acplog__theme_resource_edited" js="0">Ressurs endret - %s</word>
+  <word key="acplog__theme_resource_added" js="0">Ressurs lagt til - %s</word>
+  <word key="acplogs__theme_setting_reverted" js="0">Utseendeinnstillingen tilbakestilt - %s</word>
+  <word key="acplog__emoticon_set_deleted" js="0">Emoji-sett slettet</word>
+  <word key="acplog__profanity_edited" js="0">Banning endret</word>
+  <word key="acplog__profanity_added" js="0">Banning lagt til</word>
+  <word key="acplog__profanity_deleted" js="0">Banning slettet</word>
+  <word key="acplog__acronym_added" js="0">Akronym lagt til</word>
+  <word key="acplog__acronym_edited" js="0">Akronym endret</word>
+  <word key="acplog__acronym_deleted" js="0">Akronym slettet</word>
+  <word key="acplog__custom_word_added" js="0">La til frase - %s</word>
+  <word key="acplog__custom_word_deleted" js="0">Tilpasset frase slettet - %s</word>
+  <word key="acplog__language_settings_edited" js="0">Endret språk-innstillinger</word>
+  <word key="acplog__background_tasks_ran" js="0">Kjørte bakgrunnsoppgaver</word>
+  <word key="php8_required_soon" js="0">Vår november 2022-lansering vil kreve at du kjører PHP8 eller nyere </word>
+  <word key="php8_required_soon_desc" js="0">PHP7 vil fra november ikke lenger motta sikkerhetsoppdateringer og vil derfor ikke støttes. Vi anbefaler at du oppdaterer til PHP8 så raskt som mulig.</word>
+  <word key="acplogs__all_plugins_disabled" js="0">Deaktiverte alle plugins</word>
+  <word key="acplogs__all_plugins_reenabled" js="0">Re-aktiverte alle plugins</word>
+  <word key="acplog__support_tool_admin" js="0">Opprettet administratorkonto for support</word>
+  <word key="show_all" js="0">Når som helst</word>
+  <word key="reply" js="0">Svar</word>
+  <word key="acplog__enabled_recovery" js="0">Aktiverte gjenopprettings-modus</word>
+  <word key="hooks_hooks_id" js="0">ID</word>
+  <word key="acplog__facebook_promote_auth_edited" js="0">Autentisering for Facebook-promotering endret</word>
+  <word key="acplog__club_approved" js="0">Godkjente klubb - %s</word>
+  <word key="acplog__quick_register_enabled" js="0">Rask registrering aktivert</word>
+  <word key="acplog__profile_step_added" js="0">Profilsteg lagt til: %s</word>
+  <word key="acplog__referrals_enabled" js="0">Henvisninger aktivert</word>
+  <word key="acplog__referrals_disabled" js="0">Henvisninger deaktivert</word>
+  <word key="solved_did_it_tho_title" js="0">%s, hvilket svar var det mest hjelpsomme?</word>
+  <word key="solved_did_it_tho_desc" js="0"><![CDATA[Hvis noen av disse svarene besvarte spørsmålet ditt er det fint om du bruker noen sekunder på klikke knappen "Merk som løsning" på innlegget med det beste svaret.<br>Å markere ett innlegg som løsningssvaret vil hjelpe andre besøkende til siden med å finne svaret raskere. Tusen takk for hjelpen!]]></word>
+  <word key="health__scanner_title" js="0">Kompatibilitetsskanner for PHP8</word>
+  <word key="acplog__support_tool_db_check" js="0">Kjørte databasesjekkerspørringer automatisk</word>
+  <word key="method_check_fail" js="0">Inkompatible tilpasninger for PHP8</word>
+  <word key="method_check_fix" js="0">Utdaterte tredjepartsmetoder i subklasser</word>
+  <word key="methodscanner_no_issues" js="0">Ingen PHP8-feil funnet</word>
+  <word key="invalid_php8_customization" js="0">Inneholder utdatert kode. Vennligst ta kontakt med utvikleren for en oppdatert versjon.</word>
+  <word key="method_issue_security" js="0">Motstridende sikkerhetsnivå</word>
+  <word key="method_issue_static" js="0">Inkonsistent statisk-deklarasjon</word>
+  <word key="method_issue_return_type" js="0">Motstridende hint om retur-type</word>
+  <word key="method_issue_parameter_type" js="0">Motstridende parameter-type</word>
+  <word key="method_issue_nullable" js="0">Motstridende nullbarhet av parameter</word>
+  <word key="method_issue_reference" js="0">Motstridende referering</word>
+  <word key="method_issue_packed" js="0">&quot;Packed&quot;-status er forskjellig</word>
+  <word key="method_issue_final" js="0">Overstyrer en endelig/final metode</word>
+  <word key="method_issue_parameters" js="0">Parameterlisten samsvarer ikke</word>
+  <word key="method_issue_security_desc" js="0">Metoden i subklassen i app/plugin endrer sikkerhetsnivået for metoden (public, private eller protected) sammenlignet med samme metode i superklassen den arver fra</word>
+  <word key="method_issue_static_desc" js="0">Den opprinnelige metoden i superklassen er statisk og metoden i subklassen er ikke det, eller omvendt</word>
+  <word key="method_issue_return_type_desc" js="0">Superklassemetoden har et annet hint for returtype enn subklassens metode</word>
+  <word key="method_issue_parameter_type_desc" js="0">Metoden i subklassen endrer parameterets type</word>
+  <word key="method_issue_nullable_desc" js="0">Metoden i superklassen definerte at et parameter kan være null, men metoden i subklassen gjør ikke det, eller omvendt.</word>
+  <word key="method_issue_reference_desc" js="0">Parameteren sendes med referanse til superklassemetoden, men ikke til subklassemetoden eller omvendt</word>
+  <word key="method_issue_packed_desc" js="0">Parameteret er &quot;packed&quot; i metoden i superklassen, men ikke i subklassen, eller omvendt</word>
+  <word key="method_issue_final_desc" js="0">En klasse i app/plugin forsøker overstyre en metode som i superklassen er deklarert som endelig/final, noe man ikke kan gjøre</word>
+  <word key="method_issue_parameters_desc" js="0">En metode i subklassen til app/plugin definerer et annet sett med parametre enn superklassen den arver fra</word>
+  <word key="method_type" js="0">Type</word>
+  <word key="method_app" js="0">App</word>
+  <word key="method_reason" js="0">Problem</word>
+  <word key="method_scanner_method" js="0">Metode</word>
+  <word key="method_subclassFile" js="0">Underklasse/hook-fil</word>
+  <word key="method_baseFile" js="0">Superklassefil</word>
+  <word key="method_parameter" js="0">Dårlig parameter</word>
+  <word key="method_na" js="0">N/A</word>
+  <word key="method_priority" js="0">Prioritet</word>
+  <word key="acp_notification_ManualInterventionMessage" js="0">Inkompatible PHP8-tilpasninger</word>
+  <word key="advise_removal_of_php8_incompatible_code" js="0"><![CDATA[Vi er for tiden i ferd med å migrere plattformen vår fra PHP7 til PHP8 for å gi deg det høyeste nivået av ytelse og sikkerhet. Vi har identifisert en eller flere applikasjoner eller plugins som er installert på nettstedet ditt som inneholder PHP8-inkompatible hooks og/eller underklasser. I PHP8 vil endring av arvede metodesignaturer i en underklasse resultere i en fatal feil som kan gjøre at et nettsted ikke kan brukes. Dessuten er hook-systemet vårt avhengig av underklasser, så denne endringen gjelder også for hooks. Derfor må denne koden enten erstattes med en oppdatert versjon, fjernes eller deaktiveres fra nettstedet ditt så snart som mulig. <br><br> <strong>Hvis du ikke er sikker på hva dette betyr, må du kontakte forfatteren av en oppført applikasjon eller programtillegg for en oppdatert versjon. Hvis du ikke kan oppdatere til en PHP8-kompatibel versjon, må applikasjonen eller plugin-modulen deaktiveres eller fjernes.</strong>]]></word>
+  <word key="acplogs__exported_badges" js="0">Eksporterte merker</word>
+  <word key="acplogs__imported_badges" js="0">Importerte merker</word>
+  <word key="acplogs__exported_ranks" js="0">Eksporterte ranger</word>
+  <word key="acplogs__imported_ranks" js="0">Importerte ranger</word>
+  <word key="acplogs__rule_enabled" js="0">Prestasjonsregel %s aktivert</word>
+  <word key="acplogs__rule_disabled" js="0">Prestasjonsregel %s er satt på pause</word>
+  <word key="acplogs__rules_exported" js="0">Prestasjonsregler eksportert</word>
+  <word key="acplogs__rules_imported" js="0">Prestasjonsregler importert</word>
+  <word key="acplog__referral_commission_settings_edited" js="0">Innstillinger for henvisningsprovisjon redigert</word>
+  <word key="acplog__robotstxt_edited" js="0">Robots.txt endret</word>
+  <word key="acplog__datalayer_settings_edited" js="0">Datalag-innstillinger endret</word>
+  <word key="acplog__data_layer_property_edited" js="0">Datalag-egenskap endret: %s</word>
+  <word key="acplog__data_layer_property_added" js="0">Datalag-egenskap lagt til: %s</word>
+  <word key="acplog__data_layer_property_deleted" js="0">Datalag-egenskap slettet: %s</word>
+  <word key="acplog__data_layer_event_edited" js="0">Hendelseskonfigurasjon for datalag endret: %s</word>
+  <word key="alert_reply__nopm_desc" js="0"><![CDATA[<div class='ipsMessage ipsMessage_warning'>Svaralternativer er ikke tilgjengelige siden du har deaktivert innboksen eller har deaktivert meldingssystemet via AdminCP.</div>]]></word>
+  <word key="hookscanner_error" js="1">Det oppsto en feil under lastingen av resultatene fra hook-skanningen</word>
+  <word key="google_maps_static_use_embed" js="0">Interaktive kartinnbygginger?</word>
+  <word key="google_maps_static_use_embed_desc" js="0">Bruk en interaktiv Google Maps-embed i stedet for et statisk generert bilde av kartet.</word>
+  <word key="rebuilding_report_index_data" js="0">Bygger om rapportsenterdata</word>
+  <word key="report_status_1_app" js="0">Nye rapporter fra %s</word>
+  <word key="pruning_pms" js="0">Fjern samtaler</word>
+  <word key="prune_pms" js="0">Fjern samtaler uten svar</word>
+  <word key="profile_settings_pms" js="0">Samtaler</word>
  </app>
  <app key="forums" version="">
   <word key="__app_forums" js="0">Forum</word>
@@ -13593,7 +13943,6 @@ Arkiverte tråder kan ikke bli skrevet i eller redigert. Du kan hente tråder ti
   <word key="asc" js="0">Stigende (eldste først/alfabetisk)</word>
   <word key="desc" js="0">Synkende (nyeste først)</word>
   <word key="time_frame" js="0">Siste svar</word>
-  <word key="show_all" js="0">Hvem som helst</word>
   <word key="since_last_visit" js="0">Min siste innloggings (%s)</word>
   <word key="forum_home" js="0">Forumforside</word>
   <word key="all_questions" js="0">Alle spørsmål i kategorien</word>
@@ -13857,7 +14206,7 @@ Arkiverte tråder kan ikke bli skrevet i eller redigert. Du kan hente tråder ti
   <word key="forum_card_image" js="0">Bilde for rutenett</word>
   <word key="forum_card_image_desc" js="0">Når kategorier vises i et rutenett vil det valgte bildet settes som bakgrunnsbilde.</word>
   <word key="bw_enable_answers_moderator" js="0">Aktiver løst?</word>
-  <word key="bw_enable_answers_moderator_desc" js="0">Moderatorer kan markere innlegg som løsningen.</word>
+  <word key="bw_enable_answers_moderator_desc" js="0">Moderatorer (og trådstartere hvis de gis muligheten) kan markere innlegg som løsningen.</word>
   <word key="bw_enable_answers__member" js="0">Tillat trådstarter å markere som løst</word>
   <word key="bw_enable_answers__member_desc" js="0">Du kan velge å la trådstarteren også merke innlegg som løsningen på problemstillingen.</word>
   <word key="archiving_blurb_cloud" js="0">Arkivering av eldre tråder, som ikke er klistret eller fremhevet, vil bidra til at siden din fungerer bedre. Arkiverte tråder kan ikke postes i eller redigeres, og vil ikke dukke opp i søkeresultater. Du kan flytte tråder tilbake fra arkivet hvis du ombestemmer deg.</word>
@@ -14003,31 +14352,49 @@ Arkiverte tråder kan ikke bli skrevet i eller redigert. Du kan hente tråder ti
   <word key="stats_question_ratings_positive" js="0">Oppstemt</word>
   <word key="r__questions" js="0">Spørsmål</word>
   <word key="r__questions_manage" js="0">Kan se spørsmålsstatistikk?</word>
+  <word key="bw_fluid_view" js="0">Aktiver kombinert flytende visning</word>
+  <word key="bw_fluid_view_desc" js="0">Når det er aktivert vil alle tråder fra denne kategorien og tilhørende underkategorier vises i en enkelt liste med en filtreringsboks som lar medlemmer filtrere ut underkategorier</word>
+  <word key="bw_fluid_view__warning" js="0">Kombinert flytende visning kan ikke aktiveres siden denne kategorien ikke har noen underkategorier</word>
+  <word key="combined_fluid_view" js="0">Kombinert flytende visning</word>
+  <word key="topic_date" js="0">Publiser</word>
+  <word key="menu__forums_stats_solved" js="0">Løst</word>
+  <word key="can_future_publish_topic" js="0">Kan sette en fremtidig publiseringsdato?</word>
+  <word key="can_view_future_topic" js="0">Kan se innhold som venter på fremtidig publisering skrevet av andre medlemmer</word>
+  <word key="forums_solved_topic_reengage" js="0">Send en e-post til forfatteren for å merke et svar som løsning</word>
+  <word key="forums_solved_topic_reengage_prefix" js="0">hvis tråden ikke er løst og tråden ble startet</word>
+  <word key="forums_solved_topic_reengage_suffix" js="0">dager siden eller mer</word>
+  <word key="forums_solved_topic_reengage_never" js="0">aldri send e-post til forfatteren for å spørre</word>
+  <word key="forums_solved_stats_time" js="0">Tid til løst (i antall dager)</word>
+  <word key="forums_solved_stats_percentage" js="0">Prosentandel løst</word>
+  <word key="solved_stats_rebuild_started" js="0">Startet ombygging av statistikk</word>
+  <word key="solved_stats_rebuild_button" js="0">Bygg om statistikk over løsninger</word>
+  <word key="solved_rebuilding_stats" js="0">Bygger om løsningsstatistikken for kategorien %s</word>
+  <word key="solved_stats_chart_desc" js="0">Dataene i dette diagrammet oppdateres én gang per dag.</word>
  </app>
  <app key="calendar" version="">
-  <word key="__app_calendar" js="0">Kalender</word>
-  <word key="frontnavigation_calendar" js="0">Kalender</word>
-  <word key="__indefart_calendar_event_comment" js="0">en kommentar til en kalenderhendelse</word>
-  <word key="__indefart_calendar_event" js="0">en kalenderhendelse</word>
-  <word key="__indefart_calendar_event_review" js="0">en omtale av en kalenderhendelse</word>
-  <word key="__defart_calendar_event_comment" js="0">kommentar til en kalenderhendelse</word>
-  <word key="__defart_calendar_event" js="0">kalenderhendelse</word>
-  <word key="__defart_calendar_event_review" js="0">omtale på en kalenderhendelse</word>
+  <word key="__app_calendar" js="0">Hendelser</word>
+  <word key="frontnavigation_calendar" js="0">Hendelser</word>
+  <word key="__indefart_calendar_event_comment" js="0">en kommentar på en hendelse</word>
+  <word key="__indefart_calendar_event" js="0">en hendelse</word>
+  <word key="__indefart_calendar_event_review" js="0">en omtale av en hendelse</word>
+  <word key="__defart_calendar_event_comment" js="0">kommentar på en hendelse</word>
+  <word key="__defart_calendar_event" js="0">hendelse</word>
+  <word key="__defart_calendar_event_review" js="0">omtale på en hendelse</word>
   <word key="calendar_event_container" js="0">kalender</word>
-  <word key="menu__calendar_calendars" js="0">Kalender</word>
-  <word key="menu__calendar_calendars_calendars" js="0">Kalender</word>
+  <word key="menu__calendar_calendars" js="0">Hendelser</word>
+  <word key="menu__calendar_calendars_calendars" js="0">Kalendre</word>
   <word key="menu__calendar_calendars_ical" js="0">iCalendar-strømmer</word>
   <word key="menu__calendar_calendars_settings" js="0">Innstillinger</word>
-  <word key="module__calendar_calendar" js="0">Kalender</word>
+  <word key="module__calendar_calendar" js="0">Hendelser</word>
   <word key="module__calendar_calendars" js="0">Kalendre</word>
   <word key="module__calendar_events" js="0">Hendelser</word>
   <word key="menu__calendar_venues" js="0">Spillesteder</word>
   <word key="event" js="0">Kalenderhendelse</word>
-  <word key="editor__calendar_Events" js="0">Kalenderhendelser</word>
+  <word key="editor__calendar_Events" js="0">Hendelser</word>
   <word key="editor__calendar_Calendar" js="0">Kalendre</word>
   <word key="editor__calendar_Venue" js="0">Spillesteder</word>
   <word key="acp_search_title_calendar_Calendars" js="0">Kalendere</word>
-  <word key="calendar_event_pl_lc" js="0">kalenderhendelser</word>
+  <word key="calendar_event_pl_lc" js="0">hendelser</word>
   <word key="search_contextual_item_calendars" js="0">Denne kalenderen</word>
   <word key="search_contextual_item_calendar_event" js="0">Dette arrangementet</word>
   <word key="r__calendars" js="0">Kalendre</word>
@@ -14045,8 +14412,6 @@ Arkiverte tråder kan ikke bli skrevet i eller redigert. Du kan hente tråder ti
   <word key="loc_calendar_viewing_calendar" js="0">Viser kalender: %s</word>
   <word key="loc_calendar_viewing_calendar_all" js="0">Viser kalender</word>
   <word key="loc_calendar_viewing_event" js="0">Viser hendelse: %s</word>
-  <word key="show_bday_calendar" js="0">Vis bursdager i kalenderen</word>
-  <word key="show_bday_calendar_desc" js="0">Kalenderen kommer til å vise antallet medlemsbursdager på hver dag og vil liste opp medlemmene som har bursdag når en dag vises.</word>
   <word key="ipb_calendar_mon" js="0">Start ukene med mandag</word>
   <word key="ipb_calendar_mon_desc" js="0">Kalenderen vil normalt bruker søndag som startdagen for hver uke. Bruk denne innstillingen hvis du heller ønsker mandag.</word>
   <word key="calendar_rss_feed" js="0">Aktiver RSS-strøm for fremtidige hendelser</word>
@@ -14061,7 +14426,6 @@ Arkiverte tråder kan ikke bli skrevet i eller redigert. Du kan hente tråder ti
   <word key="cal_df_month" js="0">Denne måneden</word>
   <word key="cal_df_week" js="0">Denne uken</word>
   <word key="cal_df_day" js="0">I dag</word>
-  <word key="cal_df_stream" js="0">Strøm av kommende hendelser</word>
   <word key="filestorage__calendar_Events" js="0">Bannerbilder i kalender</word>
   <word key="calendar_df_locale" js="0">Bruk standard datoformatering</word>
   <word key="calendar_df_d_sm_y" js="0">DD MMM YYYY (Eksempel: 01. Jan 2000)</word>
@@ -14182,9 +14546,6 @@ Arkiverte tråder kan ikke bli skrevet i eller redigert. Du kan hente tråder ti
   <word key="no_events_today" js="0">Ingen hendelser er satt opp i dag</word>
   <word key="no_events_month" js="0">Ingen hendelser er satt opp i denne måneden</word>
   <word key="error_bad_date" js="0">Datoen du spurte etter er ikke gyldig</word>
-  <word key="birthdays_today" js="0">{# [1:bursdag][?:bursdager]} i dag</word>
-  <word key="birthdays_count" js="0">{# [1:bursdag][?:bursdager]}</word>
-  <word key="birthdays_view_all" js="0">Vis alle</word>
   <word key="calendar_event" js="0">Hendelse</word>
   <word key="calendar_event_comment" js="0">Henndelseskommentar</word>
   <word key="calendar_event_review" js="0">Hendelsesomtale</word>
@@ -14368,9 +14729,6 @@ Arkiverte tråder kan ikke bli skrevet i eller redigert. Du kan hente tråder ti
   <word key="days_ahead" js="0">Antall dager å vise</word>
   <word key="maximum_count" js="0">Antall hendelser</word>
   <word key="view_this_event" js="0">Vis arrangementet %s</word>
-  <word key="block_todaysBirthdays" js="0">Dagens bursdager</word>
-  <word key="block_todaysBirthdays_desc" js="0">Viser profiler til personer med bursdag i dag</word>
-  <word key="no_members_birthday_today" js="0">Ingen brukere har bursdag i dag</word>
   <word key="no_upcoming_events" js="0">Ingen kommende hendelser funnet</word>
   <word key="member_age" js="0">({# [?:år]} gammel)</word>
   <word key="block_recentReviews" js="0">Nylige hendelsesomtaler</word>
@@ -14503,9 +14861,9 @@ Arkiverte tråder kan ikke bli skrevet i eller redigert. Du kan hente tråder ti
   <word key="recur_human__xweekly" js="0">{# [1:uke][?:uker]}</word>
   <word key="recur_human__xdaily" js="0">{# [1:dag][?:dager]}</word>
   <word key="notifications__calendar_Events_desc" js="0">Disse varslene sendes når en hendelse du har bedt om varsler fra er nært forestående.</word>
-  <word key="__defart_calendar_event_comment_plural" js="0">{!#[1:kommentar][?:kommentarer]} på kalenderhendelser</word>
-  <word key="__defart_calendar_event_plural" js="0">kalender{!#[1:hendelse][?:hendelser]}</word>
-  <word key="__defart_calendar_event_review_plural" js="0">{!#[1:omtale][?:omtaler]} på en kalenderhendelse</word>
+  <word key="__defart_calendar_event_comment_plural" js="0">{!#[1:kommentar][?:kommentarer]} på hendelse</word>
+  <word key="__defart_calendar_event_plural" js="0">{!#[1:hendelse][?:hendelser]}</word>
+  <word key="__defart_calendar_event_review_plural" js="0">{!#[1:omtale][?:omtaler]} på en hendelse</word>
   <word key="calendars_sg_lc" js="0">kalender</word>
   <word key="notification__event_reminder_title" js="0">Kommende {!#[1:hendelse][?:hendelser]}</word>
   <word key="cal_allow_anonymous" js="0">Tillat anonyme innlegg?</word>
@@ -14522,8 +14880,48 @@ Arkiverte tråder kan ikke bli skrevet i eller redigert. Du kan hente tråder ti
   <word key="calendar_stats_rsvp_response_1" js="0">Deltar</word>
   <word key="calendar_stats_rsvp_response_2" js="0">Kanskje</word>
   <word key="menu__calendar_stats_venues" js="0">Steder</word>
-  <word key="birthdays" js="0">Bursdager</word>
   <word key="webhook_calendarEvent_rsvp" js="0">Avfyres når noen endrer sin RSVP-status</word>
+  <word key="cal_df_overview" js="0">Oversikt</word>
+  <word key="showing_events_near_you" js="0">Viser hendelser i nærheten av deg.</word>
+  <word key="see_more_events_near_you" js="0">Se flere hendelser i nærheten</word>
+  <word key="event_online" js="0">Internetthendelse</word>
+  <word key="event_url" js="0">URL</word>
+  <word key="all_events" js="0">Alle</word>
+  <word key="online_events" js="0">Internetthendelser</word>
+  <word key="open_event" js="0">Åpen hendelse</word>
+  <word key="powered_by" js="0">Drevet av</word>
+  <word key="physical_events" js="0">Fysiske hendelser</word>
+  <word key="event_view_overview" js="0">Oversikt</word>
+  <word key="event_view_daily" js="0">Daglig</word>
+  <word key="event_view_weekly" js="0">Ukentlig</word>
+  <word key="event_view_monthly" js="0">Månedlig</word>
+  <word key="events_search_your_location" js="0">Din lokasjon</word>
+  <word key="events_search_use_location" js="0">Bruk min lokasjon</word>
+  <word key="events_search_cancel_location" js="0">Avbryt lokasjon</word>
+  <word key="events_search_location" js="0">Lokasjon</word>
+  <word key="events_search_type" js="0">Type</word>
+  <word key="events_search_from" js="0">Fra</word>
+  <word key="events_search_to" js="0">Til</word>
+  <word key="events_search_search" js="0">Søk</word>
+  <word key="events_search_events" js="0">Søk hendelser</word>
+  <word key="events_search_back_to_overview" js="0">Tilbake til oversikten</word>
+  <word key="events_search_sort_by" js="0">Sorter etter:</word>
+  <word key="events_search_distance" js="0">Distanse</word>
+  <word key="events_search_date" js="0">Dato</word>
+  <word key="events_search_show_more" js="0">Vis flere resultater</word>
+  <word key="events_search_no_events" js="0">Ingen flere hendelser å vise</word>
+  <word key="events_search_no_events_long" js="0">Ingen hendelser stemte overens med ditt søk</word>
+  <word key="events_happening_near_you" js="0">Foregår nær deg</word>
+  <word key="events_online_events" js="0">Internetthendelser</word>
+  <word key="events_browse_by_month" js="0">Finn etter måned</word>
+  <word key="events_no_more_this_month" js="0">Ingen flere hendelser denne måneden</word>
+  <word key="events_show_more" js="0">Vis flere hendelser</word>
+  <word key="map_center_lat" js="0">Kartsenter, breddegrad</word>
+  <word key="map_center_lon" js="0">Kartsenter, lengdegrad</word>
+  <word key="map_center_lat_desc" js="0">Standard breddegrad som skal brukes når ingen brukerplassering kan bestemmes av geolokalisering eller ip-oppslag.</word>
+  <word key="map_center_lon_desc" js="0">Standard lengdegrad som skal brukes når ingen brukerplassering kan bestemmes av geolokalisering eller ip-oppslag.</word>
+  <word key="event_happening_now" js="0">Akkurat nå</word>
+  <word key="event_happening_today" js="0">Skjer i dag</word>
  </app>
  <app key="gallery" version="">
   <word key="__app_gallery" js="0">Galleri</word>
@@ -16318,7 +16716,7 @@ Arkiverte tråder kan ikke bli skrevet i eller redigert. Du kan hente tråder ti
   <word key="database_forum_record__desc" js="0">Start en tråd i den angitte forumkategorien hver gang en ny oppføring blir lagt til.</word>
   <word key="database_forum_record__rebuild" js="0"><![CDATA[<a href='%s' data-ipsDialog data-ipsDialog-title='Bygg om synkronisert trådinnhold'>Bygg om synkronisert trådinnhold</a>.]]></word>
   <word key="database_forum_comments" js="0">Bruk forumet til kommentarer</word>
-  <word key="database_forum_comments_desc" js="0">Kommentarer vil bli publisert som svar. Hvis du endrer måten kommentarer lagres på vil eksisterende kommentarer ikke lenger vises. Kommentarer blir altså ikke kopiert mellom forumet eller den interne kommentardatabasen hvis du endrer denne innstillingen.</word>
+  <word key="database_forum_comments_desc" js="0">Kommentarer vil bli publisert som svar.</word>
   <word key="database_forum_comments__rebuild" js="0"><![CDATA[<a href='%s' data-ipsDialog data-ipsDialog-title='Tell antall kommentarer på nytt'>Tell kommentarantall på nytt</a>.]]></word>
   <word key="database_forum_forum" js="0">Kategori</word>
   <word key="database_forum_prefix" js="0">Emneprefiks</word>
@@ -16712,6 +17110,19 @@ Arkiverte tråder kan ikke bli skrevet i eller redigert. Du kan hente tråder ti
   <word key="acplogs__cms_template_delete" js="0">Slettet Pages-mal: %s</word>
   <word key="acplogs__cms_template_save" js="0">Endret Pages-mal: %s</word>
   <word key="acplogs__cms_template_group_delete" js="0">Slettet Pages-malgruppe: %s</word>
+  <word key="__indefart_cms_page" js="0">en side</word>
+  <word key="r__databases_use" js="0">Kan bruke databaser?</word>
+  <word key="field_number_min" js="0">Min</word>
+  <word key="field_number_max" js="0">Maks</word>
+  <word key="database_forum_comments_in_progress" js="0"><![CDATA[<strong>Kommentarer er i ferd med å flyttes, du kan ikke endre denne innstillingen før flyttingen er gjennomført.</strong>]]></word>
+  <word key="acplogs__cms_imported_database" js="0">Importerte database: %s</word>
+  <word key="acplogs__cms_downloaded_database" js="0">Lastet ned database: %s</word>
+  <word key="acplogs__cms_database_topic_resync" js="0">Resynkroniserte tråder for database %s</word>
+  <word key="acplogs__cms_database_comments_recount" js="0">Telte om kommentarantall for database %s</word>
+  <word key="acplogs__cms_deleted_record" js="0">Slettet %s fra database %s</word>
+  <word key="acplogs__cms_moved_record" js="0">Flyttet %s fra %s til %s i %s</word>
+  <word key="acplogs__cms_added_record" js="0">La %s til %s</word>
+  <word key="acplogs__cms_edited_recored" js="0">Endret %s i %s</word>
  </app>
  <app key="downloads" version="">
   <word key="__app_downloads" js="0">Nedlastninger</word>
@@ -17334,6 +17745,7 @@ Arkiverte tråder kan ikke bli skrevet i eller redigert. Du kan hente tråder ti
   <word key="AchievementAction__DownloadFile_title_generic" js="0">lastet ned fil</word>
   <word key="AchievementAction__DownloadFile_title" js="0">Brukeren laster ned en fil</word>
   <word key="AchievementAction__DownloadFile" js="0">Brukeren laster ned en Nedlastinger-fil</word>
+  <word key="acplogs__downloads_resync_topics" js="0">Resynkronisert trådinnhold for %s</word>
  </app>
  <app key="convert" version="">
   <word key="__app_convert" js="0">Migreringsverktøy</word>
@@ -17809,5 +18221,6 @@ Hvis nei: svaret dems vil ikke bli konvertert.</word>
   <word key="_convert_achievement_badges" js="0">Merker</word>
   <word key="convert_achievement_ranks" js="0">Konverter prestasjonsranger</word>
   <word key="_convert_achievement_ranks" js="0">Prestasjonsrank</word>
+  <word key="queue_rebuilding_profile_photos" js="0">Bygger om småversjoner av profilbilder</word>
  </app>
 </language>
